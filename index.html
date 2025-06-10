@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Transformando Almas</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+    <!-- Barra Fixa -->
+        <header class="navbar">
+        <h1>Transformando Almas</h1>
+        <nav>
+            <button onclick="carregarPagina('inicio')">Início</button>
+            <button onclick="carregarPagina('reflexoes')">Reflexões</button>
+            <button onclick="carregarPagina('biblia')">Bíblia</button>
+            <button onclick="toggleDarkMode()" id="darkModeBtn" title="Alternar modo escuro">
+            ☀️ <!-- Ícone padrão -->
+            </button>
+        </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main id="conteudo"></main>
+
+        <footer class="rodape">
+        <p>© 2025 - Inspirado na Palavra de Deus | Desenvolvido com amor 💙</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

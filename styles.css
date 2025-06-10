@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 70px; /* Espaço para barra fixa */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #005792;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar nav button {
+  margin-left: 1rem;
+  background-color: #fff;
+  color: #005792;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2, .card h3 {
+  color: #005792;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-style: italic;
+}
+
+.biblia-lista li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.biblia-lista button {
+  background: none;
+  border: none;
+  color: #005792;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+}
+
+
+
+
+.rodape {
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0;
+  color: #666;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rodape p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Modo escuro */
+.dark-mode .rodape {
+  background-color: #1e1e1e;
+  color: #aaa;
+}
+
+
+
+
+
+.card-livro {
+  background-color: #ffffff; /* modo claro */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Modo escuro */
+.dark-mode .card-livro {
+  background-color: #202020;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.card-livro:hover {
+  transform: translateY(-4px);
+}
+
+.botao-livro {
+  width: 100%;
+  text-align: left;
+  background-color: #005792;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-livro:hover {
+  background-color: #007acc;
+}
+
+.lista-capitulos {
+  margin-top: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lista-capitulos button {
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.lista-capitulos button:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+.botao-reflexao {
+  background-color: #005792;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icone-reflexao {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 18px;
+  text-align: center;
+}
+
+.botao-reflexao:hover {
+  background-color: #007acc;
+}
+
+.texto-reflexao {
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.reflexao-oculta {
+  overflow: hidden;
+  background-color: #f1f8ff;
+  border-left: 4px solid #005792;
+  border-radius: 6px;
+  padding: 0 1rem 0 1rem;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.4s ease;
+}
+
+.reflexao-oculta.mostrar {
+  max-height: 300px; /* Limite razoável */
+  opacity: 1;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+/* === Modo Escuro === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.navbar.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.navbar.dark-mode button {
+  background-color: #333;
+  color: white;
+}
+
+.card.dark-mode {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.card.dark-mode h2,
+.card.dark-mode h3 {
+  color: #6ec1e4;
+}
+
+.botao-reflexao.dark-mode {
+  background-color: #333;
+  color: #6ec1e4;
+  border: 1px solid #6ec1e4;
+}
+
+.botao-reflexao.dark-mode:hover {
+  background-color: #6ec1e4;
+  color: #121212;
+}
+
+.reflexao-oculta.dark-mode {
+  background-color: #2a2a2a;
+  border-left-color: #6ec1e4;
+  color: #f0f0f0;
+}
