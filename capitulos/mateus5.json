@@ -1,0 +1,8 @@
+{
+  "livro": "Mateus",
+  "capitulo": "5",
+  "versiculos": [
+    {"numero": "3", "texto": "Bem-aventurados os pobres em espírito, porque deles é o reino dos céus."},
+    {"numero": "4", "texto": "Bem-aventurados os que choram, porque serão consolados."}
+  ]
+}
