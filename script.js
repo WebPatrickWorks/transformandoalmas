@@ -4,9 +4,14 @@ let capitulosDisponiveis = {};
 let reflexoes = [];
 let versiculos = [];
 
+// Carregar página inicial automaticamente
+window.addEventListener('DOMContentLoaded', function () {
+  carregarPagina('inicio');
+});
+
 // Função para carregar página principal
 function carregarPagina(pagina) {
-  paginaAtual = pagina;
+  paginaAtual = pagina || 'inicio';
   livroSelecionado = null;
   const conteudo = document.getElementById("conteudo");
   let html = '';
@@ -270,8 +275,6 @@ function aplicarModoEscuroDinamico() {
   }
 }
 
-
-
 // Abre/fecha o menu mobile
 function toggleMenu() {
   const menu = document.getElementById("menuMobile");
@@ -293,3 +296,4 @@ document.addEventListener('click', function(event) {
     menu.classList.remove("aberto");
   }
 });
+
