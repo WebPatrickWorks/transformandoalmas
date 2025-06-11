@@ -378,7 +378,6 @@ main {
 
 /* Botão "Mostrar Reflexão" ocupando 100% da largura em mobile */
 .botao-reflexao {
-  width: 100%;
   box-sizing: border-box;
 }
 
