@@ -12,19 +12,135 @@ body {
   padding-top: 70px; /* Espaço para barra fixa */
 }
 
+
+/* === Navegação Responsiva === */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #005792;
-  color: white;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #005792;
+  color: white;
+  padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.navbar h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Menu Desktop */
+.menu-desktop {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-desktop button {
+  background-color: white;
+  color: #005792;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-desktop button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Botão Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Menu Mobile */
+.menu-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #005792;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-mobile ul li button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu-mobile ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-mobile.aberto {
+  max-height: 300px;
+}
+
+/* === Posicionamento responsivo do botão de modo escuro === */
+
+.dark-mode-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modo escuro no menu mobile */
+.dark-mode .menu-mobile {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .menu-mobile ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Tela menor que 768px (celular) */
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+ 
+  .dark-mode-btn {
+    display: block;
+    margin-right: 10px;
+  }
 }
 
 .navbar h1 {
@@ -84,6 +200,8 @@ main {
   font-size: 1rem;
   text-align: left;
 }
+
+
 
 
 
@@ -172,6 +290,7 @@ main {
 .lista-capitulos button:hover {
   background-color: #e0e0e0;
 }
+
 
 
 
@@ -270,3 +389,4 @@ body.dark-mode {
   border-left-color: #6ec1e4;
   color: #f0f0f0;
 }
+

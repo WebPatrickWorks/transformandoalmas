@@ -199,10 +199,19 @@ document.addEventListener('click', function(event) {
   }
 });
 
+
 // Verifica preferência salva
 function checkDarkMode() {
   const isDark = localStorage.getItem('darkMode') === 'true';
   if (isDark) enableDarkMode();
+  else disableDarkMode();
+
+  // Atualiza os dois botões na inicialização
+  const btnMobile = document.getElementById("darkModeBtnMobile");
+  const btnDesktop = document.getElementById("darkModeBtnDesktop");
+
+  if (btnMobile) btnMobile.textContent = isDark ? '🌙' : '☀️';
+  if (btnDesktop) btnDesktop.textContent = isDark ? '🌙' : '☀️';
 }
 
 // Ativa modo escuro
@@ -235,6 +244,13 @@ function toggleDarkMode() {
     enableDarkMode();
     localStorage.setItem('darkMode', 'true');
   }
+
+  // Sincroniza os dois botões
+  const btnMobile = document.getElementById("darkModeBtnMobile");
+  const btnDesktop = document.getElementById("darkModeBtnDesktop");
+
+  if (btnMobile) btnMobile.textContent = isDark ? '☀️' : '🌙';
+  if (btnDesktop) btnDesktop.textContent = isDark ? '☀️' : '🌙';
 }
 
 // Executa na inicialização
@@ -253,3 +269,27 @@ function aplicarModoEscuroDinamico() {
     document.querySelector('.navbar')?.classList.remove('dark-mode');
   }
 }
+
+
+
+// Abre/fecha o menu mobile
+function toggleMenu() {
+  const menu = document.getElementById("menuMobile");
+  menu.classList.toggle("aberto");
+}
+
+// Fecha o menu após selecionar uma página
+function fecharMenu() {
+  const menu = document.getElementById("menuMobile");
+  menu.classList.remove("aberto");
+}
+
+// Fecha o menu ao clicar fora
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById("menuMobile");
+  const botaoMenu = document.querySelector('.hamburger');
+
+  if (!event.target.closest('.navbar') && !event.target.closest('.menu-mobile')) {
+    menu.classList.remove("aberto");
+  }
+});
