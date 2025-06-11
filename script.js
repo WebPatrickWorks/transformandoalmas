@@ -17,12 +17,16 @@ function carregarPagina(pagina) {
   let html = '';
 
   if (pagina === 'inicio') {
-    html = `
-      <section class="card">
-        <h2>Bem-vindo!</h2>
-        <p>Este é um espaço dedicado à Palavra de Deus, onde você encontrará reflexões e versículos bíblicos que podem trazer alívio e esperança nos momentos difíceis.</p>
-      </section>
-    `;
+    fetch('inicio.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("conteudo").innerHTML = html;
+        aplicarModoEscuroDinamico();
+      })
+      .catch(err => {
+        console.error('Erro ao carregar início:', err);
+        document.getElementById("conteudo").innerHTML = '<p>Erro ao carregar página inicial.</p>';
+      });
   } else if (pagina === 'reflexoes') {
     if (!reflexoes.length) {
       html = '<p>Carregando reflexões...</p>';

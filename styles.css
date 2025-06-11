@@ -427,3 +427,62 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
+
+
+
+/* === Versículo em Destaque === */
+.versiculo-destaque {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #005792;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
+  max-width: 700px;
+  border-left: 5px solid #005792;
+  border-right: 5px solid #005792;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  line-height: 1.8;
+  position: relative;
+}
+
+.versiculo-destaque footer {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  color: #333;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Modo escuro - versículo em destaque */
+.dark-mode .versiculo-destaque {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-left-color: #6ec1e4;
+  border-right-color: #6ec1e4;
+}
+
+.dark-mode .versiculo-destaque footer {
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .versiculo-destaque {
+    font-size: 1.1rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .versiculo-destaque footer {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+}
+
+.icone-versiculo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
