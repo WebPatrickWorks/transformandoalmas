@@ -151,7 +151,7 @@ body {
   }
 
   .lista-capitulos button {
-    font-size: clamp(1rem, 4vw, 1.2rem); /* Ajusta entre 1rem e 1.2rem conforme a tela */
+    font-size: 1.1rem; /* Um pouco maior no mobile */
     padding: 0.7rem 1.2rem; /* Mais espaço pra toque */
   }
 
@@ -350,10 +350,9 @@ main {
   color: #7c7c7c;
 }
 
-
 .reflexao-oculta {
   overflow: hidden;
-  max-height: 1000px; /* Limite razoável */
+  max-height: 2000px; /* Limite razoável */
   background-color: #f1f8ff;
   border-left: 4px solid #005792;
   border-radius: 6px;
