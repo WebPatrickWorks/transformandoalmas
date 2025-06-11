@@ -284,7 +284,7 @@ function fecharMenu() {
   menu.classList.remove("aberto");
 }
 
-// Fecha o menu ao clicar fora
+// Fecha o menu ao clicar fora.
 document.addEventListener('click', function(event) {
   const menu = document.getElementById("menuMobile");
   const botaoMenu = document.querySelector('.hamburger');
