@@ -141,6 +141,29 @@ body {
     display: block;
     margin-right: 10px;
   }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .lista-capitulos button {
+    font-size: clamp(1rem, 4vw, 1.2rem); /* Ajusta entre 1rem e 1.2rem conforme a tela */
+    padding: 0.7rem 1.2rem; /* Mais espaço pra toque */
+  }
+
+  .botao-reflexao {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .texto-reflexao {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 .navbar h1 {
@@ -171,6 +194,7 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
+  overflow: visible; /* Evita cortes inesperadas */
 }
 
 .card:hover {
@@ -278,12 +302,13 @@ main {
 }
 
 .lista-capitulos button {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
   text-align: left;
+  font-size: 1rem; /* Tamanho padrão */
   transition: background-color 0.2s ease;
 }
 
@@ -325,22 +350,36 @@ main {
   color: #7c7c7c;
 }
 
+
 .reflexao-oculta {
   overflow: hidden;
+  max-height: 1000px; /* Limite razoável */
   background-color: #f1f8ff;
   border-left: 4px solid #005792;
   border-radius: 6px;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 1rem 1rem;
   opacity: 0;
   max-height: 0;
   transition: all 0.4s ease;
 }
 
 .reflexao-oculta.mostrar {
-  max-height: 300px; /* Limite razoável */
+  max-height: 1000px; /* Limite razoável */
   opacity: 1;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+/* Garante que o texto não quebre ou corte em telas pequenas */
+.reflexao-oculta p {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Botão "Mostrar Reflexão" ocupando 100% da largura em mobile */
+.botao-reflexao {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
