@@ -28,20 +28,41 @@ function carregarPagina(pagina) {
         document.getElementById("conteudo").innerHTML = '<p>Erro ao carregar página inicial.</p>';
       });
   } else if (pagina === 'reflexoes') {
-    if (!reflexoes.length) {
-      html = '<p>Carregando reflexões...</p>';
-      fetch('reflexoes.json').then(res => res.json()).then(data => {
-        reflexoes = data;
-        carregarPagina('reflexoes');
+    fetch('reflexoes.html')
+      .then(res => {
+        if (!res.ok) throw new Error("Página não encontrada.");
+        return res.text();
+      })
+      .then(htmlContent => {
+        document.getElementById("conteudo").innerHTML = htmlContent;
+
+        // Reaplica modo escuro aos novos elementos, se estiver ativo
+        if (document.body.classList.contains('dark-mode')) {
+          document.querySelectorAll('.card').forEach(el => el.classList.add('dark-mode'));
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById("conteudo").innerHTML = `<p>Erro ao carregar a página de Reflexões.</p>`;
       });
-    } else {
-      html = reflexoes.map(item => `
-        <div class="card">
-          <h2>${item.titulo}</h2>
-          <p>${item.texto}</p>
-        </div>
-      `).join('');
-    }
+  } else if (pagina === 'testemunho') {
+    fetch('testemunho.html')
+      .then(res => {
+        if (!res.ok) throw new Error("Página não encontrada.");
+        return res.text();
+      })
+      .then(htmlContent => {
+        document.getElementById("conteudo").innerHTML = htmlContent;
+
+        // Reaplica modo escuro aos novos elementos, se estiver ativo
+        if (document.body.classList.contains('dark-mode')) {
+          document.querySelectorAll('.card').forEach(el => el.classList.add('dark-mode'));
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById("conteudo").innerHTML = `<p>Erro ao carregar a página de testemunho.</p>`;
+      });
   } else if (pagina === 'biblia') {
     html = `<h2>Livros da Bíblia</h2>`;
 
