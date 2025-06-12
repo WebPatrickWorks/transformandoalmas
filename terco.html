@@ -1,0 +1,18 @@
+<!-- terco.html -->
+<h2>Terço Virtual</h2>
+
+<div class="terco-container">
+  <div class="controles">
+    <button onclick="iniciarTerco()" class="botao-iniciar">Iniciar Terço</button>
+    <button onclick="avançarOracao()" class="botao-avancar" id="btnAvancar" style="display: none;">Avançar</button>
+    <button onclick="reiniciarTerco()" class="botao-reiniciar" id="btnReiniciar" style="display: none;">Reiniciar</button>
+  </div>
+
+  <!-- Container com imagem + texto sobreposto -->
+  <div class="imagem-com-texto" onclick="alternarTexto()">
+    <img src="" alt="Imagem do Terço" id="imagemTerco" class="imagem-terco" />
+    <p id="textoOracao" class="texto-oracao" onclick="ocultarTexto(event)">
+      Clique em "Iniciar Terço" para começar.
+    </p>
+  </div>
+</div>

@@ -486,3 +486,86 @@ body.dark-mode {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+
+
+
+
+
+/* === Terço Virtual - Uso de <img> === */
+.terco-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.controles {
+  margin-bottom: 1rem;
+}
+
+.botao-iniciar,
+.botao-avancar,
+.botao-reiniciar {
+  background-color: #005792;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-iniciar:hover,
+.botao-avancar:hover,
+.botao-reiniciar:hover {
+  background-color: #007acc;
+}
+
+.imagem-terco {
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* Máximo 80% da altura da tela */
+  object-fit: contain; /* Garante que a imagem toda apareça */
+  display: none; /* Começa oculta até iniciar */
+  border-radius: 10px;
+  margin: auto;
+}
+
+.texto-oracao {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.texto-oracao.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imagem-com-texto {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer; /* Mãozinha aparece pra indicar clique */
+}
+
+.dark-mode .texto-oracao {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
