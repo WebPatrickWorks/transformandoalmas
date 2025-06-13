@@ -1,0 +1,201 @@
+{
+  "livro": "Mateus",
+  "capitulo": "23",
+  "versiculos": [
+    {
+      "numero": "1",
+      "texto": "Então falou Jesus à multidão, e aos seus discípulos,",
+      "reflexao": "Jesus não tem medo de expor a hipocrisia religiosa diante de todos. Isso nos ensina que a verdade do Reino deve ser dita com amor, mas também com clareza e coragem, sempre com o propósito de libertar e transformar vidas."
+    },
+    {
+      "numero": "2",
+      "texto": "Dizendo: Na cadeira de Moisés estão assentados os escribas e fariseus.",
+      "reflexao": "Eles ocupavam posições de autoridade, mas nem sempre viviam o que ensinavam. Isso nos alerta sobre o perigo de uma liderança espiritual desconectada da prática do amor, da verdade e da justiça. A responsabilidade de quem ensina é viver o que prega."
+    },
+    {
+      "numero": "3",
+      "texto": "Observai, pois, e praticai tudo o que vos disserem; mas não procedais em conformidade com as suas obras, porque dizem e não fazem.",
+      "reflexao": "Aqui está um grande alerta: falar sobre Deus não é o mesmo que viver para Deus. Isso nos faz refletir sobre a coerência entre aquilo que falamos e aquilo que praticamos. A autenticidade é um dos pilares da vida no Reino."
+    },
+    {
+      "numero": "4",
+      "texto": "Pois atam fardos pesados e difíceis de suportar, e os põem aos ombros dos homens; eles, porém, nem com o dedo querem movê-los.",
+      "reflexao": "A religiosidade impõe peso, culpa e regras sem oferecer amor, cuidado ou auxílio. Isso nos ensina que a missão do Reino não é sobre carregar fardos, mas aliviar. Jesus nos chama a sermos canais de graça, não de opressão sobre os outros."
+    },
+    {
+      "numero": "5",
+      "texto": "E fazem todas as obras a fim de serem vistos pelos homens; pois trazem largos filactérios, e alargam as franjas das suas vestes,",
+      "reflexao": "A busca por aparência e reconhecimento é um sinal claro de religiosidade vazia. Isso nos desafia a refletir: nossas obras são para agradar a Deus ou para sermos vistos e aplaudidos pelos homens? No Reino, a motivação vale mais que a aparência."
+    },
+    {
+      "numero": "6",
+      "texto": "E amam os primeiros lugares nas ceias, e as primeiras cadeiras nas sinagogas,",
+      "reflexao": "A sede por status, honra e prestígio revela um coração distante do Reino. Isso nos lembra que, no Reino de Deus, a verdadeira grandeza está em servir, não em ser servido; em se humilhar, não em buscar exaltação humana."
+    },
+    {
+      "numero": "7",
+      "texto": "E as saudações nas praças, e o serem chamados pelos homens: Rabi, Rabi.",
+      "reflexao": "A busca por títulos, aplausos e reconhecimento é incompatível com o coração do Reino. Isso nos leva a refletir: queremos ser reconhecidos pelos homens ou pelo céu? A verdadeira identidade está em ser filho de Deus, não em títulos terrenos."
+    },
+    {
+      "numero": "8",
+      "texto": "Vós, porém, não queirais ser chamados Rabi, porque um só é o vosso Mestre, a saber, o Cristo, e todos vós sois irmãos.",
+      "reflexao": "O Reino nivela todos como irmãos. Não há espaço para hierarquias humanas que exaltem uns acima dos outros. Somos todos discípulos do mesmo Mestre, chamados a viver em amor, unidade e serviço mútuo."
+    },
+    {
+      "numero": "9",
+      "texto": "E a ninguém na terra chameis vosso pai, porque um só é o vosso Pai, o qual está nos céus.",
+      "reflexao": "Jesus nos ensina sobre dependência e paternidade espiritual. Nosso verdadeiro Pai é Deus, e Ele é quem cuida, orienta e guia nossos passos. Isso nos liberta de dependências humanas e nos conecta diretamente com o Pai celestial."
+    },
+    {
+      "numero": "10",
+      "texto": "Nem vos chameis mestres, porque um só é o vosso Mestre, que é o Cristo.",
+      "reflexao": "Toda autoridade e todo ensino verdadeiro procedem de Cristo. Isso nos lembra que, no Reino, ninguém é dono da verdade — somos apenas instrumentos que refletem a sabedoria e o amor do nosso verdadeiro Mestre, Jesus."
+    },
+    {
+      "numero": "11",
+      "texto": "O maior dentre vós será vosso servo.",
+      "reflexao": "Aqui está a lógica do Reino: grandeza é servir. Quem serve de coração, por amor, alcança honra diante de Deus. Isso nos convida a abandonar a busca por posições e abraçar a vocação de cuidar, amar e servir ao próximo."
+    },
+    {
+      "numero": "12",
+      "texto": "E, o que a si mesmo se exaltar será humilhado; e o que a si mesmo se humilhar será exaltado.",
+      "reflexao": "O orgulho precede a queda, mas a humildade precede a exaltação no Reino. Isso nos ensina que, quanto mais nos rendemos, reconhecemos nossa dependência de Deus e servimos com amor, mais o céu nos honra no tempo certo."
+    },
+    {
+      "numero": "13",
+      "texto": "Mas ai de vós, escribas e fariseus, hipócritas! Pois que fechais aos homens o reino dos céus; e nem vós entrais, nem deixais entrar aos que estão entrando.",
+      "reflexao": "A religiosidade não apenas impede quem a pratica de viver o Reino, como também fecha portas para quem busca. Isso nos alerta a sermos ponte, e não obstáculo; canal de amor, graça e verdade, e não de julgamento, opressão e condenação."
+    },
+    {
+      "numero": "14",
+      "texto": "(Ai de vós, escribas e fariseus, hipócritas! Pois que devorais as casas das viúvas, sob pretexto de longas orações; por isso recebereis maior condenação.)",
+      "reflexao": "Aqui Jesus denuncia a exploração espiritual disfarçada de piedade. Isso nos alerta que toda espiritualidade usada para benefício próprio, para manipular ou explorar, é abominável diante de Deus e traz severo juízo. O Reino é serviço, não exploração."
+    },
+    {
+      "numero": "15",
+      "texto": "Ai de vós, escribas e fariseus, hipócritas! Pois que percorreis o mar e a terra para fazer um prosélito; e, depois de o terdes feito, o fazeis filho do inferno duas vezes mais do que vós.",
+      "reflexao": "Quando a religiosidade é transmitida, ela não gera vida, mas morte espiritual. Isso nos alerta que evangelizar sem amor, sem verdade e sem transformação genuína não traz pessoas para Deus, mas para sistemas de opressão espiritual."
+    },
+    {
+      "numero": "16",
+      "texto": "Ai de vós, guias cegos, que dizeis: Qualquer que jurar pelo templo, isso nada é; mas o que jurar pelo ouro do templo, esse é devedor.",
+      "reflexao": "Aqui Jesus expõe como a religiosidade inverte valores, colocando mais peso nas coisas materiais do que no que é santo e eterno. Isso nos faz refletir: onde temos colocado nosso valor? No Reino, o que vale são as coisas eternas, e não o ouro ou os títulos terrenos."
+    },
+    {
+      "numero": "17",
+      "texto": "Insensatos e cegos! Pois qual é maior: o ouro, ou o templo que santifica o ouro?",
+      "reflexao": "Jesus deixa claro que o valor não está no material, mas no espiritual. Isso nos ensina que não é o que temos que nos torna valiosos, mas a presença de Deus em nossa vida. É Ele quem dá sentido, valor e propósito a tudo."
+    },
+    {
+      "numero": "18",
+      "texto": "E qualquer que jurar pelo altar, isso nada é; mas aquele que jurar pela oferta que está sobre o altar, esse é devedor.",
+      "reflexao": "A lógica distorcida dos religiosos priorizava o que era exterior, material, visível. Jesus corrige isso, mostrando que no Reino, o que tem valor é aquilo que é consagrado, aquilo que carrega presença, propósito e adoração verdadeira."
+    },
+    {
+      "numero": "19",
+      "texto": "Cegos! Pois qual é maior: a oferta, ou o altar que santifica a oferta?",
+      "reflexao": "O altar representa a presença de Deus, o lugar da consagração. Isso nos ensina que o valor da nossa entrega não está no que damos, mas em para quem damos e no coração com que oferecemos. É a presença de Deus que santifica tudo o que temos e fazemos."
+    },
+    {
+      "numero": "20",
+      "texto": "Portanto, o que jurar pelo altar, jura por ele e por tudo quanto sobre ele está.",
+      "reflexao": "Jesus reforça que o compromisso no Reino não é superficial, é total. Quem se compromete com o Reino assume integralmente os princípios, valores e verdades do céu. Deus não aceita compromissos pela metade — é tudo ou nada."
+    },
+    {
+      "numero": "21",
+      "texto": "E o que jurar pelo templo, jura por ele e por aquele que nele habita.",
+      "reflexao": "Jurar pelo templo é se comprometer com Deus, que habita nele. Isso nos lembra que toda nossa vida, nossos votos e nossos compromissos devem ser feitos diante de Deus, com reverência, sinceridade e temor, porque Ele habita no meio dos que O amam."
+    },
+    {
+      "numero": "22",
+      "texto": "E o que jurar pelo céu, jura pelo trono de Deus, e por aquele que está assentado sobre ele.",
+      "reflexao": "O céu não é apenas um lugar, é o trono de Deus. Isso nos leva a refletir sobre a grandiosidade do Reino, da soberania de Deus e da seriedade de tudo o que fazemos, falamos e prometemos — tudo é visto e julgado diante do trono do Altíssimo."
+    },
+    {
+      "numero": "23",
+      "texto": "Ai de vós, escribas e fariseus, hipócritas! Pois que dizimais a hortelã, o endro e o cominho, e desprezais o mais importante da lei, o juízo, a misericórdia e a fé; deveis, porém, fazer estas coisas, e não omitir aquelas.",
+      "reflexao": "Jesus não condena a prática do dízimo, mas denuncia a inversão de prioridades. De nada adianta rigor com detalhes religiosos e negligência com aquilo que é essencial no Reino: amor, justiça, misericórdia e fé. O equilíbrio é fazer ambas as coisas, sem esquecer o que é mais importante."
+    },
+    {
+      "numero": "24",
+      "texto": "Guias cegos! Que coais um mosquito e engolis um camelo.",
+      "reflexao": "Jesus denuncia a hipocrisia de quem se preocupa com detalhes irrelevantes, mas ignora questões muito mais importantes e graves. Isso nos faz refletir: será que temos nos perdido em discussões pequenas, enquanto negligenciamos amor, misericórdia e justiça?"
+    },
+    {
+      "numero": "25",
+      "texto": "Ai de vós, escribas e fariseus, hipócritas! Pois que limpais o exterior do copo e do prato, mas por dentro estão cheios de rapina e intemperança.",
+      "reflexao": "A religiosidade foca na aparência, mas Deus olha o coração. Isso nos ensina que a transformação começa de dentro para fora. De nada adianta uma vida com aparência de santidade, se por dentro há sujeira, orgulho e maldade não tratados."
+    },
+    {
+      "numero": "26",
+      "texto": "Fariseu cego! Limpa primeiro o interior do copo e do prato, para que também o exterior fique limpo.",
+      "reflexao": "A verdadeira santidade começa no coração. Quando o interior é purificado pela presença de Deus, o exterior naturalmente reflete essa transformação. O Reino é, antes de tudo, uma obra interna de restauração, arrependimento e santificação."
+    },
+    {
+      "numero": "27",
+      "texto": "Ai de vós, escribas e fariseus, hipócritas! Pois que sois semelhantes aos sepulcros caiados, que por fora realmente parecem formosos, mas interiormente estão cheios de ossos de mortos e de toda imundícia.",
+      "reflexao": "A aparência pode enganar os homens, mas não a Deus. Isso nos alerta sobre o perigo de viver uma fé de fachada — bonita por fora, mas vazia, seca e morta por dentro. O Reino não se impressiona com aparência, mas com um coração quebrantado e sincero."
+    },
+    {
+      "numero": "28",
+      "texto": "Assim também vós exteriormente pareceis justos aos homens, mas interiormente estais cheios de hipocrisia e de iniquidade.",
+      "reflexao": "Jesus revela que a verdadeira justiça não é aquela que os outros veem, mas aquela que Deus vê no secreto do nosso ser. É tempo de refletir: nossas atitudes estão alinhadas com nosso discurso? Somos no secreto aquilo que parecemos ser em público?"
+    },
+    {
+      "numero": "29",
+      "texto": "Ai de vós, escribas e fariseus, hipócritas! Pois que edificais os sepulcros dos profetas, e adornais os monumentos dos justos,",
+      "reflexao": "Eles honravam os profetas do passado, mas rejeitavam a voz profética do presente. Isso nos alerta: muitas vezes é fácil honrar o que já passou, mas difícil aceitar o confronto, a correção e o chamado de Deus hoje. O orgulho espiritual impede o arrependimento."
+    },
+    {
+      "numero": "30",
+      "texto": "E dizeis: Se existíssemos nos dias de nossos pais, nunca nos associaríamos com eles no sangue dos profetas.",
+      "reflexao": "Eles se julgavam melhores do que seus antepassados, mas estavam cometendo os mesmos erros. Isso nos alerta sobre o perigo da autossuficiência espiritual — achar que estamos imunes ao erro, quando, na verdade, podemos estar repetindo as mesmas falhas do passado."
+    },
+    {
+      "numero": "31",
+      "texto": "Assim, vós mesmos testificais que sois filhos dos que mataram os profetas.",
+      "reflexao": "Jesus mostra que, na prática, eles estavam reproduzindo as mesmas atitudes dos que rejeitaram e mataram os profetas. Isso nos faz refletir: somos filhos de que cultura? De que atitudes? De um sistema religioso que oprime ou de um Reino que liberta e transforma?"
+    },
+    {
+      "numero": "32",
+      "texto": "Enchei vós, pois, a medida de vossos pais.",
+      "reflexao": "Aqui, Jesus deixa claro que, ao rejeitarem a verdade, eles estavam completando o ciclo de rebelião que começou nas gerações anteriores. Isso nos alerta que, se não quebrarmos ciclos de orgulho, religiosidade e resistência à voz de Deus, acabamos perpetuando condenação sobre nossas próprias vidas."
+    },
+    {
+      "numero": "33",
+      "texto": "Serpentes, raça de víboras! Como escapareis da condenação do inferno?",
+      "reflexao": "Palavras duras, mas carregadas de amor e alerta. Jesus mostra que, sem arrependimento, não há saída, não há escape. Isso nos leva a refletir: o amor de Deus nos confronta, porque Ele quer nos livrar da condenação, nos chamar à vida e ao arrependimento verdadeiro."
+    },
+    {
+      "numero": "34",
+      "texto": "Portanto, eis que eu vos envio profetas, sábios e escribas; e a alguns deles matareis e crucificareis, e a outros deles açoitareis nas vossas sinagogas, e os perseguireis de cidade em cidade;",
+      "reflexao": "Mesmo sabendo que muitos rejeitariam, Deus continua enviando mensageiros, porque o amor de Deus persiste. Isso nos ensina que, até hoje, Deus continua levantando vozes proféticas, homens e mulheres que anunciam a verdade, mesmo que sejam rejeitados e perseguidos."
+    },
+    {
+      "numero": "35",
+      "texto": "Para que sobre vós caia todo o sangue justo, que foi derramado sobre a terra, desde o sangue de Abel, o justo, até ao sangue de Zacarias, filho de Baraquias, que matastes entre o templo e o altar.",
+      "reflexao": "Jesus mostra que rejeitar a verdade não é um ato isolado, mas parte de uma linha de resistência à justiça desde o princípio da humanidade. Isso nos lembra que há uma responsabilidade espiritual sobre aqueles que, geração após geração, escolhem rejeitar a voz de Deus."
+    },
+    {
+      "numero": "36",
+      "texto": "Em verdade vos digo que todas estas coisas hão de vir sobre esta geração.",
+      "reflexao": "Há um limite para a graça quando a rejeição é constante e deliberada. Isso nos alerta sobre a urgência do arrependimento e do retorno genuíno a Deus. O tempo de buscar ao Senhor é hoje, antes que venha o juízo."
+    },
+    {
+      "numero": "37",
+      "texto": "Jerusalém, Jerusalém, que matas os profetas, e apedrejas os que te são enviados! Quantas vezes quis eu ajuntar os teus filhos, como a galinha ajunta os seus pintinhos debaixo das asas, e não quiseste!",
+      "reflexao": "Esse versículo revela o coração amoroso de Jesus. Mesmo diante da rejeição, Ele expressa um profundo desejo de acolher, proteger e restaurar. Isso nos mostra que o amor de Deus é insistente, paciente e está sempre disponível para quem quiser se render a Ele."
+    },
+    {
+      "numero": "38",
+      "texto": "Eis que a vossa casa vai ficar-vos deserta.",
+      "reflexao": "A rejeição contínua à presença e ao chamado de Deus traz como consequência a desolação espiritual. Onde Deus não é bem-vindo, há vazio, seca e destruição. Isso é um chamado urgente para abrir as portas do coração e deixar Cristo reinar."
+    },
+    {
+      "numero": "39",
+      "texto": "Porque eu vos digo que desde agora me não vereis mais, até que digais: Bendito o que vem em nome do Senhor.",
+      "reflexao": "O tempo da graça tem um limite. Jesus declara que só será reconhecido por aqueles que, em arrependimento, proclamarem Sua soberania e O receberem como Senhor. Isso nos leva à reflexão: ainda há tempo de dizer 'Bendito o que vem em nome do Senhor' e abrir nosso coração à Sua presença transformadora."
+    }
+  ]
+}
