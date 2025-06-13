@@ -72,12 +72,23 @@ function carregarPagina(pagina) {
       .then(data => {
         capitulosDisponiveis = data;
 
+        // Mapeamento de ícones por livro
+        const iconesLivros = {
+          'genesis': 'livros/icone-genesis.png',
+          'exodo': 'livros/icone-exodo.png',
+          'joao': 'livros/icone-joao.png',
+          'mateus': 'livros/icone-mateus.png',
+          'default': 'livros/icone-biblia.png'
+        };
+
         for (const livro in data) {
           const livroFormatado = capitalizeFirstLetter(livro);
+          const icone = iconesLivros[livro] || iconesLivros['default'];
 
           html += `
             <div class="card-livro">
               <button class="botao-livro" onclick="toggleCapitulos('${livro}', this)">
+                <img src="${icone}" alt="${livroFormatado}" class="icone-livro" />
                 ${livroFormatado}
               </button>
               <div class="lista-capitulos" id="capitulos-${livro}">
@@ -91,12 +102,13 @@ function carregarPagina(pagina) {
         }
 
         conteudo.innerHTML = html;
-        aplicarModoEscuroDinamico(); // Garante que o modo escuro seja aplicado aos novos elementos
+        aplicarModoEscuroDinamico();
       })
       .catch(err => {
         console.error('Erro ao carregar índice:', err);
         conteudo.innerHTML = `<p>Erro ao carregar lista de livros.</p>`;
       });
+
   } else if (pagina === 'terco') {
     fetch('terco.html')
       .then(res => res.text())
@@ -728,3 +740,5 @@ function mostrarOverlay(livro, capitulo, numero) {
     overlay.classList.remove('mostrar');
   }, 3000); // 3 segundos
 }
+
+
