@@ -2,7 +2,245 @@
   "livro": "Mateus",
   "capitulo": "5",
   "versiculos": [
-    {"numero": "3", "texto": "Bem-aventurados os pobres em espírito, porque deles é o reino dos céus."},
-    {"numero": "4", "texto": "Bem-aventurados os que choram, porque serão consolados."}
+    {
+      "numero": "1",
+      "texto": "E Jesus, vendo a multidão, subiu ao monte, e, assentando-se, aproximaram-se dele os seus discípulos;",
+      "reflexao": "Jesus viu a multidão, mas falou aos discípulos. Isso nos ensina que, embora Deus olhe para todos com amor, Ele fala de maneira mais profunda àqueles que se aproximam. Subir ao monte é um gesto de quem deseja mais — mais presença, mais palavra, mais transformação."
+    },
+    {
+      "numero": "2",
+      "texto": "E, abrindo a sua boca, os ensinava, dizendo:",
+      "reflexao": "O ensino de Jesus não é apenas informativo, mas formativo. Quando Ele abre a boca, é para revelar vida, sabedoria e verdade eterna. Precisamos cultivar ouvidos sensíveis e corações abertos, porque cada palavra d’Ele é semente de eternidade em nós."
+    },
+    {
+      "numero": "3",
+      "texto": "Bem-aventurados os pobres de espírito, porque deles é o reino dos céus;",
+      "reflexao": "Ser pobre de espírito é reconhecer que dependemos totalmente de Deus. Em um mundo que valoriza autossuficiência, Jesus exalta a humildade. O Reino dos Céus não é para os que se acham fortes, mas para os que sabem que precisam do Pai em tudo."
+    },
+    {
+      "numero": "4",
+      "texto": "Bem-aventurados os que choram, porque eles serão consolados;",
+      "reflexao": "Jesus não ignora as lágrimas — Ele promete consolo. Cada dor vivida com o coração voltado a Deus encontra alívio na presença do Consolador. Em tempos de luto, perda ou angústia, há uma esperança firme: o Senhor enxugará cada lágrima."
+    },
+    {
+      "numero": "5",
+      "texto": "Bem-aventurados os mansos, porque eles herdarão a terra;",
+      "reflexao": "A mansidão não é fraqueza, é força controlada. É a coragem de responder com paz em vez de violência, com calma em vez de caos. Num mundo que valoriza a imposição, Jesus honra os que vivem com serenidade e confiança no tempo e justiça de Deus."
+    },
+    {
+      "numero": "6",
+      "texto": "Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos;",
+      "reflexao": "Quem tem fome e sede de justiça não se conforma com a maldade, nem se acomoda com a indiferença. Jesus promete saciedade aos que buscam o que é justo e verdadeiro. Ele é a própria justiça que satisfaz a alma e transforma o mundo ao nosso redor."
+    },
+    {
+      "numero": "7",
+      "texto": "Bem-aventurados os misericordiosos, porque eles alcançarão misericórdia;",
+      "reflexao": "Quem planta compaixão colhe graça. A misericórdia rompe ciclos de julgamento e constrói pontes onde havia muros. Ao agir com ternura, revelamos o caráter de Deus. E quem vive perdoando, vive cercado de perdão."
+    },
+    {
+      "numero": "8",
+      "texto": "Bem-aventurados os limpos de coração, porque eles verão a Deus;",
+      "reflexao": "Ver Deus é mais do que enxergar com os olhos — é perceber Sua presença em tudo. Isso só é possível com o coração purificado, livre das impurezas que cegam a alma. A pureza não é perfeição, mas sinceridade diante de Deus. É viver com o interior transparente."
+    },
+    {
+      "numero": "9",
+      "texto": "Bem-aventurados os pacificadores, porque eles serão chamados filhos de Deus;",
+      "reflexao": "Ser pacificador é mais do que evitar conflitos — é trazer reconciliação onde há divisão. É agir com sabedoria, coragem e amor. Os filhos de Deus carregam no coração o desejo de semear paz onde há guerra, harmonia onde há ruído. Ser pacificador é revelar o Pai."
+    },
+    {
+      "numero": "10",
+      "texto": "Bem-aventurados os que sofrem perseguição por causa da justiça, porque deles é o reino dos céus;",
+      "reflexao": "Viver de forma justa nem sempre é fácil — muitas vezes atrai oposição. Mas Jesus nos lembra que o Reino pertence aos que permanecem fiéis, mesmo sob pressão. A perseguição por amor à verdade é, aos olhos do céu, uma marca de honra e de herança eterna."
+    },
+    {
+      "numero": "11",
+      "texto": "Bem-aventurados sois vós quando vos injuriarem, e perseguirem, e, mentindo, disserem todo o mal contra vós por minha causa.",
+      "reflexao": "Jesus nos prepara para sermos mal interpretados. Quando vivemos pelo Evangelho, é inevitável sermos confrontados por um mundo que não compreende a luz. Mas há consolo: Ele está conosco. Nenhuma mentira do mundo apaga a verdade que carregamos no coração."
+    },
+    {
+      "numero": "12",
+      "texto": "Exultai e alegrai-vos, porque é grande o vosso galardão nos céus; porque assim perseguiram os profetas que foram antes de vós.",
+      "reflexao": "A alegria que Jesus propõe não vem da aceitação do mundo, mas da certeza do céu. Os profetas também sofreram — e não estavam errados. Quando permanecemos fiéis, mesmo em meio à dor, Deus nos honra. Há uma recompensa que os olhos não veem, mas o coração sente."
+    },
+    {
+      "numero": "13",
+      "texto": "Vós sois o sal da terra; e, se o sal for insípido, com que se há de salgar? Para nada mais presta senão para se lançar fora, e ser pisado pelos homens.",
+      "reflexao": "Ser sal é dar sabor e preservar a essência do que é bom. O cristão que perde sua influência positiva se torna irrelevante. Somos chamados a temperar o mundo com graça, verdade e amor. Sem sal, tudo empalidece — mas com ele, até o ordinário ganha vida."
+    },
+    {
+      "numero": "14",
+      "texto": "Vós sois a luz do mundo; não se pode esconder uma cidade edificada sobre um monte;",
+      "reflexao": "A luz de Cristo em nós não foi feita para ficar escondida. Nosso testemunho é farol em meio à escuridão. Mesmo sem dizer uma palavra, uma vida coerente ilumina caminhos e revela esperança. Não tema brilhar — Deus te posicionou para isso."
+    },
+    {
+      "numero": "15",
+      "texto": "Nem se acende a candeia e se coloca debaixo do alqueire, mas no velador, e dá luz a todos os que estão na casa.",
+      "reflexao": "A luz não é acesa para ser abafada, mas para iluminar. Quando tentamos esconder quem somos em Deus por medo ou vergonha, estamos negando o propósito da nossa fé. Nossa missão é ser luz viva, que alcança os que estão perto e transforma ambientes com a presença de Cristo."
+    },
+    {
+      "numero": "16",
+      "texto": "Assim resplandeça a vossa luz diante dos homens, para que vejam as vossas boas obras e glorifiquem a vosso Pai, que está nos céus.",
+      "reflexao": "A luz que recebemos não é para exibição pessoal, mas para glorificar a Deus. Nossas atitudes devem ser reflexos do caráter de Cristo. Quando nossas obras revelam amor, compaixão e justiça, o mundo vê algo diferente — e isso aponta para o Pai. Brilhar é servir com verdade e humildade."
+    },
+    {
+      "numero": "17",
+      "texto": "Não cuideis que vim destruir a lei ou os profetas: não vim ab-rogar, mas cumprir.",
+      "reflexao": "Jesus não veio anular a Palavra, mas revelar seu pleno significado. Ele cumpre a justiça e mostra que a essência da Lei é o amor. Em um tempo onde muitos querem ajustar a fé ao próprio desejo, Jesus nos convida a viver a verdade com profundidade e integridade."
+    },
+    {
+      "numero": "18",
+      "texto": "Porque em verdade vos digo que, até que o céu e a terra passem, nem um jota ou um til se omitirá da lei, sem que tudo seja cumprido.",
+      "reflexao": "A fidelidade de Deus se manifesta também na precisão da Sua Palavra. Nada do que Ele disse é em vão. Podemos confiar que tudo o que está escrito se cumprirá no tempo certo. Isso nos encoraja a viver com esperança e reverência, sabendo que Deus honra cada detalhe do que prometeu."
+    },
+    {
+      "numero": "19",
+      "texto": "Qualquer, pois, que violar um destes menores mandamentos, e assim ensinar aos homens, será chamado o menor no reino dos céus; aquele, porém, que os cumprir e ensinar será chamado grande no reino dos céus.",
+      "reflexao": "Ser exemplo no Reino é mais do que ensinar — é viver o que se ensina. A coerência entre palavras e ações tem grande valor para Deus. Em um tempo de discursos vazios, a obediência simples e fiel se torna um testemunho poderoso."
+    },
+    {
+      "numero": "20",
+      "texto": "Porque vos digo que, se a vossa justiça não exceder a dos escribas e fariseus, de modo nenhum entrareis no reino dos céus.",
+      "reflexao": "A justiça do Reino é interna, não aparente. Vai além de regras: transforma o coração. Jesus nos alerta que viver de fachada não basta — é preciso uma transformação profunda, que reflita o caráter de Deus em nossas escolhas diárias."
+    },
+    {
+      "numero": "21",
+      "texto": "Ouvistes que foi dito aos antigos: Não matarás; mas qualquer que matar será réu de juízo.",
+      "reflexao": "A Lei condenava o ato. Jesus, porém, revela que o mal começa muito antes da ação — nasce no coração. Matar pode ser físico, mas também emocional: palavras, desprezos, omissões. O Reino de Deus começa dentro de nós. Vigiemos os pensamentos, pois deles fluem as decisões."
+    },
+    {
+      "numero": "22",
+      "texto": "Eu, porém, vos digo que qualquer que, sem motivo, se encolerizar contra seu irmão será réu de juízo; e qualquer que chamar a seu irmão de raca será réu do sinédrio; e qualquer que lhe chamar de louco será réu do fogo do inferno.",
+      "reflexao": "Jesus confronta a raiz da violência: a ira, o desprezo, a ofensa. Palavras carregam poder — podem levantar ou destruir. O Reino nos convida a uma linguagem curada, a um coração livre do ódio e a relacionamentos restaurados. A maturidade espiritual se expressa também na forma como tratamos os outros."
+    },
+    {
+      "numero": "23",
+      "texto": "Portanto, se trouxeres a tua oferta ao altar, e aí te lembrares de que teu irmão tem alguma coisa contra ti,",
+      "reflexao": "A adoração verdadeira passa pela reconciliação. Deus não se agrada de rituais se nosso coração está em conflito. A espiritualidade que ignora o outro é incompleta. Reconciliar-se é mais importante do que oferecer — pois Deus valoriza o amor que busca a paz acima da aparência de devoção."
+    },
+    {
+      "numero": "24",
+      "texto": "Deixa ali diante do altar a tua oferta, e vai reconciliar-te primeiro com teu irmão, e depois vem e apresenta a tua oferta.",
+      "reflexao": "O altar espera, mas o perdão não. Deus nos chama a dar prioridade à restauração dos relacionamentos. Uma fé madura se constrói com humildade, perdão e iniciativa de paz. A verdadeira espiritualidade passa pela coragem de pedir perdão e recomeçar."
+    },
+    {
+      "numero": "25",
+      "texto": "Concilia-te depressa com o teu adversário, enquanto estás no caminho com ele, para que o adversário não te entregue ao juiz, e o juiz à guarda, e te encerrem na prisão.",
+      "reflexao": "Jesus nos aconselha a resolver as questões com sabedoria antes que se agravem. A reconciliação rápida evita grandes dores no futuro. Em tempos de orgulho e ressentimento, o Evangelho nos chama à humildade e ao senso de urgência no perdão. A paz é sempre o melhor caminho."
+    },
+    {
+      "numero": "26",
+      "texto": "Em verdade te digo que de maneira nenhuma sairás dali enquanto não pagares o último ceitil.",
+      "reflexao": "Toda pendência que deixamos para trás precisa ser resolvida. Deus valoriza justiça e reconciliação. Ignorar os acertos necessários pode nos aprisionar emocional, espiritual e até socialmente. Perdoar e acertar dívidas — afetivas, espirituais ou morais — é liberdade."
+    },
+    {
+      "numero": "27",
+      "texto": "Ouvistes que foi dito aos antigos: Não cometerás adultério.",
+      "reflexao": "Jesus começa a revelar a profundidade da santidade. O adultério começa muito antes da ação externa — nasce no desejo não controlado, no olhar que se perde. O Senhor não quer apenas aparência de fidelidade, mas pureza de mente e de coração. A santidade começa no invisível."
+    },
+    {
+      "numero": "28",
+      "texto": "Eu, porém, vos digo que qualquer que atentar numa mulher para a cobiçar, já em seu coração cometeu adultério com ela.",
+      "reflexao": "Jesus nos mostra que pureza vai além do corpo — é uma questão da alma. O olhar que deseja o que não lhe pertence revela um coração desordenado. Em tempos de estímulos constantes, guardar os olhos é proteger o coração. O autocontrole é um fruto do Espírito que gera liberdade verdadeira."
+    },
+    {
+      "numero": "29",
+      "texto": "Portanto, se o teu olho direito te escandalizar, arranca-o e atira-o para longe de ti; pois te é melhor que se perca um dos teus membros do que seja todo o teu corpo lançado no inferno.",
+      "reflexao": "Jesus usa linguagem forte para enfatizar que devemos tratar o pecado com seriedade. O que nos leva a cair deve ser cortado, sem hesitação. Compromissos com a santidade exigem decisões difíceis, mas necessárias. A eternidade vale qualquer renúncia."
+    },
+    {
+      "numero": "30",
+      "texto": "E, se a tua mão direita te escandalizar, corta-a e atira-a para longe de ti; pois te é melhor que se perca um dos teus membros do que seja todo o teu corpo lançado no inferno.",
+      "reflexao": "A radicalidade de Jesus não é sobre mutilar o corpo, mas sobre eliminar o que nos afasta de Deus. Pode ser um hábito, um relacionamento, uma prática oculta. Ele nos chama à integridade, à coragem de sermos santos mesmo que isso custe conforto ou aceitação social."
+    },
+    {
+      "numero": "31",
+      "texto": "Também foi dito: Qualquer que deixar sua mulher, dê-lhe carta de divórcio.",
+      "reflexao": "Na época, o divórcio era banalizado e usado como desculpa para abandonar compromissos. Jesus começa a restaurar a visão sagrada do casamento. A aliança não é descartável. Deus valoriza relações firmadas em amor, respeito e fidelidade — não em conveniência."
+    },
+    {
+      "numero": "32",
+      "texto": "Eu, porém, vos digo que qualquer que repudiar sua mulher, a não ser por causa de prostituição, faz que ela cometa adultério; e qualquer que casar com a repudiada também comete adultério.",
+      "reflexao": "Jesus defende a dignidade das relações e protege o coração humano da dor causada por traições e abandonos. O compromisso no casamento é sério diante de Deus. Ele não nos chama ao fardo, mas à responsabilidade de cultivar o amor com verdade, perdão e permanência."
+    },
+    {
+      "numero": "33",
+      "texto": "Outrossim, ouvistes que foi dito aos antigos: Não perjurarás, mas cumprirás teus juramentos ao Senhor.",
+      "reflexao": "A palavra empenhada tem peso diante de Deus. Ele se agrada da integridade, do falar verdadeiro. Em uma sociedade onde promessas são quebradas facilmente, o cristão é chamado a ser confiável, firme e coerente. Falar a verdade é também uma forma de adorar."
+    },
+    {
+      "numero": "34",
+      "texto": "Eu, porém, vos digo que de maneira nenhuma jureis; nem pelo céu, porque é o trono de Deus;",
+      "reflexao": "Jesus nos convida a viver com tamanha integridade que o juramento se torne desnecessário. Quando nossa palavra é verdadeira, simples e firme, ela carrega peso por si só. Viver com transparência e retidão nos livra de exageros e fortalece a confiança nas relações."
+    },
+    {
+      "numero": "35",
+      "texto": "Nem pela terra, porque é o escabelo de seus pés; nem por Jerusalém, porque é a cidade do grande Rei;",
+      "reflexao": "Jesus revela que tudo pertence a Deus — até as coisas que consideramos humanas ou simbólicas. Ele nos lembra que não precisamos de adornos para validar nossas palavras. A humildade e a verdade caminham juntas. O mundo pode ser enganoso, mas o cristão deve ser autêntico em cada palavra."
+    },
+    {
+      "numero": "36",
+      "texto": "Nem jurarás pela tua cabeça, porque não podes tornar um cabelo branco ou preto.",
+      "reflexao": "Não temos controle sobre o tempo, nem sobre a vida. Jurar pela própria força é ilusão. Reconhecer nossos limites é um passo essencial para viver com fé. Confiamos mais em Deus quando aceitamos que nossa palavra basta, e que Ele governa o que não alcançamos."
+    },
+    {
+      "numero": "37",
+      "texto": "Seja, porém, o vosso falar: Sim, sim; não, não; porque o que passa disto é de procedência maligna.",
+      "reflexao": "Palavras simples e verdadeiras são o reflexo de um coração limpo. Em um tempo de manipulação e discursos vazios, Jesus nos chama à pureza no falar. Dizer 'sim' e viver 'sim'; dizer 'não' e sustentar o 'não'. A honestidade é um testemunho silencioso, mas poderoso."
+    },
+    {
+      "numero": "38",
+      "texto": "Ouvistes que foi dito: Olho por olho, e dente por dente.",
+      "reflexao": "A justiça humana se baseia na reciprocidade da dor. Mas Jesus veio inaugurar uma nova lógica — a do amor que vence o mal com o bem. Ele não ignora a injustiça, mas nos chama a quebrar o ciclo da vingança. A graça vai além da reação: ela escolhe o caminho da redenção."
+    },
+    {
+      "numero": "39",
+      "texto": "Eu, porém, vos digo que não resistais ao mal; mas, se alguém te bater na face direita, oferece-lhe também a outra;",
+      "reflexao": "Jesus nos convida a uma atitude revolucionária: responder à violência com dignidade e não com vingança. Isso não é passividade, mas força interior. Quem sabe perdoar demonstra uma liberdade que o mal não pode roubar. Vencer o mal com o bem é o poder dos filhos de Deus."
+    },
+    {
+      "numero": "40",
+      "texto": "E, ao que quiser pleitear contigo, e tirar-te a túnica, larga-lhe também a capa;",
+      "reflexao": "Abrir mão do que é nosso, quando o amor assim exige, é um gesto de confiança em Deus. Jesus ensina que nossa segurança não está nos bens, mas no Pai que tudo vê. Às vezes, perder aos olhos humanos é vencer no Reino, porque revela que somos guiados por valores eternos."
+    },
+    {
+      "numero": "41",
+      "texto": "E, se qualquer te obrigar a caminhar uma milha, vai com ele duas.",
+      "reflexao": "Essa é a essência do Reino: ir além do que é exigido, por amor. O que é feito por obrigação termina rápido; o que é feito por compaixão transforma. Caminhar a segunda milha é servir sem esperar retorno, é fazer o bem mesmo quando não somos compreendidos."
+    },
+    {
+      "numero": "42",
+      "texto": "Dá a quem te pedir, e não te desvies daquele que quiser que lhe emprestes.",
+      "reflexao": "A generosidade é um reflexo da confiança em Deus como nosso provedor. Quando doamos com liberdade, revelamos um coração desapegado e sensível à necessidade do outro. Mais do que dar coisas, somos chamados a doar presença, escuta e amor sincero."
+    },
+    {
+      "numero": "43",
+      "texto": "Ouvistes que foi dito: Amarás o teu próximo, e odiarás o teu inimigo.",
+      "reflexao": "O amor humano é seletivo, mas o amor divino abraça até quem nos fere. Jesus desmonta a lógica do mundo e propõe o impossível — amar os inimigos. Só com o Espírito Santo conseguimos isso. É assim que o Evangelho se torna visível: amando como Deus ama."
+    },
+    {
+      "numero": "44",
+      "texto": "Eu, porém, vos digo: Amai a vossos inimigos, bendizei os que vos maldizem, fazei bem aos que vos odeiam, e orai pelos que vos maltratam e vos perseguem;",
+      "reflexao": "Essa é uma das ordens mais difíceis — e mais libertadoras. Orar por quem nos persegue é deixar que o amor de Deus vença nosso orgulho. A oração transforma o coração, cura feridas e quebra cadeias de ódio. É o amor prático que revela que somos filhos da luz."
+    },
+    {
+      "numero": "45",
+      "texto": "Para que sejais filhos do vosso Pai que está nos céus; porque faz que o seu sol se levante sobre maus e bons, e a chuva desça sobre justos e injustos.",
+      "reflexao": "Deus ama até os que O rejeitam. Quando escolhemos amar sem distinção, revelamos o DNA do Pai. Essa é a marca dos verdadeiros filhos: amar sem filtros. A graça é escandalosa porque alcança todos. E é nessa graça que somos convidados a viver e agir."
+    },
+    {
+      "numero": "46",
+      "texto": "Pois, se amardes aos que vos amam, que recompensa tereis? Não fazem os publicanos também o mesmo?",
+      "reflexao": "Amar os que nos amam é natural. Amar quem nos fere é sobrenatural. Jesus nos chama a viver de forma extraordinária, não comum. O cristão se destaca não pelo que recebe, mas pelo que escolhe oferecer — especialmente quando custa algo."
+    },
+    {
+      "numero": "47",
+      "texto": "E, se saudardes unicamente aos vossos irmãos, que fazeis de mais? Não fazem os publicanos também assim?",
+      "reflexao": "Somos chamados a ultrapassar a zona de conforto. Amar quem pensa diferente, acolher quem foi rejeitado, saudar o desconhecido — tudo isso revela a luz do Reino. O amor de Deus não se limita à familiaridade, ele se estende até os limites da graça."
+    },
+    {
+      "numero": "48",
+      "texto": "Sede vós, pois, perfeitos, como é perfeito o vosso Pai que está nos céus.",
+      "reflexao": "Jesus nos convida à maturidade espiritual. Essa 'perfeição' não é ausência de falhas, mas plenitude no amor. É sermos completos no desejo de agradar ao Pai, refletindo Seu caráter em nossas atitudes. Quanto mais nos rendemos, mais Ele nos aperfeiçoa."
+    }
   ]
 }
