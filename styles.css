@@ -644,6 +644,8 @@ body.dark-mode {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+
+/* === Estilo base para botões de livro === */
 .card-livro button.botao-livro {
   display: flex;
   align-items: center;
@@ -658,10 +660,15 @@ body.dark-mode {
   cursor: pointer;
   border-radius: 6px;
   transition: background-color 0.3s ease;
+  color: #242424;
 }
 
 .card-livro button.botao-livro:hover {
   background-color: #f0f0f0;
+}
+
+.dark-mode .card-livro button.botao-livro {
+  color: #f0f0f0;
 }
 
 .dark-mode .card-livro button.botao-livro:hover {

@@ -109,6 +109,12 @@ function carregarPagina(pagina) {
         conteudo.innerHTML = `<p>Erro ao carregar lista de livros.</p>`;
       });
 
+      if (document.body.classList.contains('dark-mode')) {
+        document.querySelectorAll('.card-livro button.botao-livro').forEach(el => {
+          el.classList.add('dark-mode');
+        });
+      }
+
   } else if (pagina === 'terco') {
     fetch('terco.html')
       .then(res => res.text())
@@ -289,6 +295,10 @@ function enableDarkMode() {
     el.classList.add('dark-mode');
   });
   document.getElementById('darkModeBtn').innerText = '🌙';
+
+  document.querySelectorAll('.card-livro button.botao-livro').forEach(el => {
+  el.classList.add('dark-mode');
+});
 }
 
 // Desativa modo escuro
@@ -299,6 +309,10 @@ function disableDarkMode() {
     el.classList.remove('dark-mode');
   });
   document.getElementById('darkModeBtn').innerText = '☀️';
+
+  document.querySelectorAll('.card-livro button.botao-livro').forEach(el => {
+  el.classList.remove('dark-mode');
+});
 }
 
 // Alterna entre os modos
