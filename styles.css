@@ -569,3 +569,61 @@ body.dark-mode {
   color: #f0f0f0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
+
+
+
+
+/* === Copiar o versículo para a área de transferência === */
+.botao-copiar {
+  background-color: #005792;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.botao-copiar:hover {
+  background-color: #007acc;
+}
+
+.dark-mode .botao-copiar {
+  background-color: #333;
+  color: #6ec1e4;
+}
+
+.dark-mode .botao-copiar:hover {
+  background-color: #6ec1e4;
+  color: #121212;
+}
+
+
+
+
+/* === Exibir o nome do livro, caítulo e versículo === */
+.overlay-versiculo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+
+.overlay-versiculo.mostrar {
+  visibility: visible;
+  opacity: 1;
+}

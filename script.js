@@ -146,23 +146,26 @@ function carregarCapitulo(livro, numero) {
       let html = `<h2>${data.livro} ${data.capitulo}</h2>`;
       data.versiculos.forEach(v => {
         const temReflexao = v.reflexao ? `
-        <button onclick="mostrarReflexao(this)" class="botao-reflexao">
+          <button onclick="mostrarReflexao(this)" class="botao-reflexao">
             <span class="icone-reflexao">+</span> Mostrar Reflexão
-        </button>
-        <div class="reflexao-oculta">
+          </button>
+          <div class="reflexao-oculta">
             <p class="texto-reflexao">${v.reflexao}</p>
-        </div>
+          </div>
+          <button onclick="copiarVersiculo(event, '${livro}', '${data.capitulo}', '${v.numero}', \`${v.texto}\`, \`${v.reflexao || ''}\`)" class="botao-copiar">
+            📋 Copiar Versículo
+          </button>
         ` : '';
 
         html += `
-          <div class="card">
+          <div class="card" onclick="mostrarOverlay('${data.livro}', '${data.capitulo}', '${v.numero}')">
             <h3>${v.numero}</h3>
             <p>"${v.texto}"</p>
             ${temReflexao}
           </div>
         `;
       });
-
+   
       // Inserir conteúdo
       conteudo.innerHTML = html;
 
@@ -204,22 +207,32 @@ function toggleCapitulos(livro, botao) {
 }
 
 function mostrarReflexao(botao) {
-  const container = botao.querySelector('.icone-reflexao');
-  const estaAberta = container.textContent.trim() === '–';
+  event.stopPropagation(); // Impede propagação para o card
 
-  // Fecha todas as outras reflexões
+  const icone = botao.querySelector('.icone-reflexao');
+  const container = botao.nextElementSibling;
+
+  if (!container || !container.classList.contains('reflexao-oculta')) {
+    console.error("Container da reflexão não encontrado!");
+    return;
+  }
+
+  const estaAberta = icone.textContent.trim() === '–';
+
+  // Fecha outras reflexões abertas
   document.querySelectorAll('.reflexao-oculta').forEach(el => {
     el.classList.remove('mostrar');
     const outrosIcones = el.previousElementSibling?.querySelector('.icone-reflexao');
     if (outrosIcones) outrosIcones.textContent = '+';
   });
 
-  // Alterna o texto do ícone
-  container.textContent = estaAberta ? '+' : '–';
-
-  // Abre ou fecha a reflexão
+  // Abre/reflete a atual
   if (!estaAberta) {
-    botao.nextElementSibling.classList.add('mostrar');
+    icone.textContent = '–';
+    container.classList.add('mostrar');
+  } else {
+    icone.textContent = '+';
+    container.classList.remove('mostrar');
   }
 }
 
@@ -668,4 +681,50 @@ function ocultarTexto(event) {
   if (texto) {
     texto.classList.remove('show');
   }
+}
+
+
+// Função para copiar texto do versículo + reflexão
+function copiarVersiculo(event, livro, capitulo, numero, texto, reflexao) {
+  event.stopPropagation();
+
+  // Força capitalização correta
+    const livroCorrigido = corrigirNomeLivro(livro);
+
+  const textoParaCopiar = `${livroCorrigido} ${capitulo}:${numero}\n"${texto}"\n\nReflexão:\n${reflexao}`;
+
+  navigator.clipboard.writeText(textoParaCopiar)
+    .then(() => {
+      alert("Versículo copiado com sucesso!");
+    })
+    .catch(err => {
+      console.error('Erro ao copiar:', err);
+      alert("Erro ao copiar o versículo.");
+    });
+}
+
+function corrigirNomeLivro(nome) {
+  const correcoes = {
+    'joao': 'João',
+    'genesis': 'Gênesis',
+    'exodo': 'Êxodo',
+    'mateus': 'Mateus'
+  };
+
+  return correcoes[nome.toLowerCase()] || nome;
+}
+
+
+function mostrarOverlay(livro, capitulo, numero) {
+  const overlay = document.getElementById("overlayVersiculo");
+  if (!overlay) return;
+
+  // Exibir overlay
+  overlay.textContent = `${livro} ${capitulo}:${numero}`;
+  overlay.classList.add('mostrar');
+
+  // Ocultar após 3 segundos
+  setTimeout(() => {
+    overlay.classList.remove('mostrar');
+  }, 3000); // 3 segundos
 }
