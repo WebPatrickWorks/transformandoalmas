@@ -78,6 +78,8 @@ function carregarPagina(pagina) {
           'exodo': 'livros/icone-exodo.png',
           'joao': 'livros/icone-joao.png',
           'mateus': 'livros/icone-mateus.png',
+          'marcos': 'livros/icone-marcos.png',
+          'lucas': 'livros/icone-lucas.png',
           'default': 'livros/icone-biblia.png'
         };
 
@@ -183,6 +185,35 @@ function carregarCapitulo(livro, numero) {
           </div>
         `;
       });
+
+      // Após montar todo o HTML dos versículos
+      const livroCorrigido = corrigirNomeLivro(livro);
+      html += `
+        <div class="card">
+          <p><em>Fim do capítulo ${numero} de ${livroCorrigido}</em></p>
+      `;
+
+      // Verifica se há próximo capítulo
+      const indiceAtual = capitulosDisponiveis[livro].indexOf(parseInt(numero));
+      const proximoIndice = indiceAtual + 1;
+
+      if (capitulosDisponiveis[livro][proximoIndice]) {
+        html += `
+          <button onclick="carregarProximoCapitulo('${livro}', ${parseInt(numero)})" class="botao-proximo">
+            ⬆️ Próximo Capítulo
+          </button>
+        `;
+      } else {
+        html += `
+          <p>Este é o último capítulo disponível.</p>
+          <button onclick="carregarPagina('biblia')" class="botao-reiniciar">
+            Voltar aos livros
+          </button>
+        `;
+      }
+
+      html += `</div>`;
+
    
       // Inserir conteúdo
       conteudo.innerHTML = html;
@@ -734,7 +765,9 @@ function corrigirNomeLivro(nome) {
     'joao': 'João',
     'genesis': 'Gênesis',
     'exodo': 'Êxodo',
-    'mateus': 'Mateus'
+    'mateus': 'Mateus',
+    'marcos': 'Marcos',
+    'lucas': 'Lucas'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
@@ -755,4 +788,27 @@ function mostrarOverlay(livro, capitulo, numero) {
   }, 3000); // 3 segundos
 }
 
+function carregarProximoCapitulo(livro, numero) {
+  // Rola para o topo suavemente
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 
+  // Verifica se há próximo capítulo
+  const indiceAtual = capitulosDisponiveis[livro].indexOf(numero);
+  const proximoIndice = indiceAtual + 1;
+
+  if (capitulosDisponiveis[livro] && capitulosDisponiveis[livro][proximoIndice]) {
+    const proximoNumero = capitulosDisponiveis[livro][proximoIndice];
+    carregarCapitulo(livro, proximoNumero);
+  } else {
+    document.getElementById("conteudo").innerHTML = `
+      <div class="card">
+        <h2>${capitalizeFirstLetter(livro)} ${capitulosDisponiveis[livro][indiceAtual]}</h2>
+        <p><em>Este é o último capítulo disponível.</em></p>
+        <button onclick="carregarPagina('biblia')" class="botao-reiniciar">Voltar aos livros</button>
+      </div>
+    `;
+  }
+}

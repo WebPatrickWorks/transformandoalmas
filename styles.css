@@ -674,3 +674,35 @@ body.dark-mode {
 .dark-mode .card-livro button.botao-livro:hover {
   background-color: #2a2a2a;
 }
+
+
+
+/*-- Botão para o próximo capítulo -- */
+.botao-proximo {
+  background-color: #005792;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.botao-proximo:hover {
+  background-color: #007acc;
+}
+
+.dark-mode .botao-proximo {
+  background-color: #333;
+  color: #6ec1e4;
+}
+
+.dark-mode .botao-proximo:hover {
+  background-color: #6ec1e4;
+  color: #121212;
+}
