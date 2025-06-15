@@ -80,6 +80,7 @@ function carregarPagina(pagina) {
           'mateus': 'livros/icone-mateus.png',
           'marcos': 'livros/icone-marcos.png',
           'lucas': 'livros/icone-lucas.png',
+          'romanos': 'livros/icone-romanos.png',
           'default': 'livros/icone-biblia.png'
         };
 
@@ -90,6 +91,7 @@ function carregarPagina(pagina) {
           'mateus': 'Um evangelho que apresenta Jesus como o Messias prometido, cumpridor das profecias, Rei e Salvador de toda a humanidade. Suas palavras revelam um Cristo que ensina com autoridade, conduzindo seus discípulos no caminho da verdade, da justiça e do amor. Em cada ensinamento, há um chamado ao arrependimento, à transformação de vida e à construção de um Reino onde prevalecem a misericórdia, a fé e a esperança.',
           'marcos': 'Um evangelho que revela Jesus em ação, com poder, autoridade e compaixão. Suas páginas nos conduzem a testemunhar um Cristo que cura, liberta, restaura e enfrenta o mal com amor e entrega. De forma direta e intensa, Marcos nos mostra que o Filho de Deus não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos, trazendo uma mensagem viva de esperança, salvação e transformação.',
           'atos': 'Um relato poderoso que revela a continuidade da missão de Jesus através dos apóstolos, conduzidos e fortalecidos pelo Espírito Santo. Suas páginas transbordam fé, coragem e transformação, mostrando como o evangelho rompe barreiras, alcança nações e toca corações. É a história viva de uma igreja que nasce, cresce e se espalha, levando esperança, amor e salvação a todos os povos, cumprindo o chamado de Deus para a humanidade.',
+          'romanos': 'Uma carta que revela, de forma majestosa e transformadora, a profundidade da graça, da justiça e do amor de Deus. Suas palavras nos conduzem a compreender que todos carecem da glória de Deus, mas que, pela fé em Jesus Cristo, somos justificados, perdoados e reconciliados. Romanos é um chamado à verdadeira transformação da mente e do coração, revelando que a salvação não é mérito humano, mas um presente divino que restaura, liberta e conduz à vida eterna.'
           // Adicione conforme os livros que você tem no índice
         };
 
@@ -783,7 +785,8 @@ function corrigirNomeLivro(nome) {
     'mateus': 'Mateus',
     'marcos': 'Marcos',
     'lucas': 'Lucas',
-    'atos': 'Atos'
+    'atos': 'Atos',
+    'romanos': 'Romanos'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
