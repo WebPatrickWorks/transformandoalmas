@@ -74,7 +74,7 @@ function carregarPagina(pagina) {
 
         // Mapeamento de ícones por livro
         const iconesLivros = {
-          'genesis': 'livros/icone-genesis.png',
+          'atos': 'livros/icone-atos.png',
           'exodo': 'livros/icone-exodo.png',
           'joao': 'livros/icone-joao.png',
           'mateus': 'livros/icone-mateus.png',
@@ -83,15 +83,30 @@ function carregarPagina(pagina) {
           'default': 'livros/icone-biblia.png'
         };
 
+        // Mapeamento de descrições por livro
+        const descricoesLivros = {
+          'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
+          'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
+          'mateus': 'Um evangelho que apresenta Jesus como o Messias prometido, cumpridor das profecias, Rei e Salvador de toda a humanidade. Suas palavras revelam um Cristo que ensina com autoridade, conduzindo seus discípulos no caminho da verdade, da justiça e do amor. Em cada ensinamento, há um chamado ao arrependimento, à transformação de vida e à construção de um Reino onde prevalecem a misericórdia, a fé e a esperança.',
+          'marcos': 'Um evangelho que revela Jesus em ação, com poder, autoridade e compaixão. Suas páginas nos conduzem a testemunhar um Cristo que cura, liberta, restaura e enfrenta o mal com amor e entrega. De forma direta e intensa, Marcos nos mostra que o Filho de Deus não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos, trazendo uma mensagem viva de esperança, salvação e transformação.',
+          'atos': 'Um relato poderoso que revela a continuidade da missão de Jesus através dos apóstolos, conduzidos e fortalecidos pelo Espírito Santo. Suas páginas transbordam fé, coragem e transformação, mostrando como o evangelho rompe barreiras, alcança nações e toca corações. É a história viva de uma igreja que nasce, cresce e se espalha, levando esperança, amor e salvação a todos os povos, cumprindo o chamado de Deus para a humanidade.',
+          // Adicione conforme os livros que você tem no índice
+        };
+
         for (const livro in data) {
-          const livroFormatado = capitalizeFirstLetter(livro);
+          const livroFormatado1 = capitalizeFirstLetter(livro);
+          const livroFormatado = corrigirNomeLivro(livroFormatado1);
           const icone = iconesLivros[livro] || iconesLivros['default'];
+          const descricao = descricoesLivros[livro] || 'Livro bíblico';
 
           html += `
             <div class="card-livro">
               <button class="botao-livro" onclick="toggleCapitulos('${livro}', this)">
                 <img src="${icone}" alt="${livroFormatado}" class="icone-livro" />
-                ${livroFormatado}
+                <div class="nome-e-descricao">
+                  <div class="nome-livro">${livroFormatado}</div>
+                  <div class="descricao-livro">${descricao}</div>
+                </div>
               </button>
               <div class="lista-capitulos" id="capitulos-${livro}">
           `;
@@ -767,7 +782,8 @@ function corrigirNomeLivro(nome) {
     'exodo': 'Êxodo',
     'mateus': 'Mateus',
     'marcos': 'Marcos',
-    'lucas': 'Lucas'
+    'lucas': 'Lucas',
+    'atos': 'Atos'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
