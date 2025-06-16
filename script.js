@@ -95,7 +95,8 @@ function carregarPagina(pagina) {
           'tito': 'livros/icone-tito.png',
           'filemom': 'livros/icone-filemom.png',
           'hebreus': 'livros/icone-hebreus.png',
-          'tiago': 'livros/icone-tiago.png'
+          'tiago': 'livros/icone-tiago.png',
+          'pedro': 'livros/icone-1pedro.png'
         };
 
         // Mapeamento de descrições por livro
@@ -119,7 +120,8 @@ function carregarPagina(pagina) {
           'tito': 'Escrito pelo apóstolo Paulo a seu fiel colaborador e filho na fé, Tito, este livro é um guia prático para a organização e fortalecimento da igreja. Suas palavras ensinam sobre a importância de líderes comprometidos, vida exemplar, sã doutrina e boas obras. É um chamado à vivência de uma fé que transforma, onde a graça de Deus não apenas salva, mas também educa, molda e conduz a uma vida de retidão, amor e testemunho diante do mundo.',
           'filemom': 'Escrito pelo apóstolo Paulo durante sua prisão em Roma, esta carta curta, porém profundamente rica, é um testemunho vivo da transformação que o evangelho gera nas relações humanas. Paulo escreve a Filemom, um cristão influente e líder de uma igreja que se reunia em sua casa, para interceder em favor de Onésimo, um escravo que havia fugido e, de alguma forma, encontrou Paulo na prisão. Ali, Onésimo foi alcançado pela fé em Cristo e se tornou um irmão na fé. A carta revela o coração pastoral e amoroso de Paulo, que não apenas pede a Filemom que perdoe Onésimo, mas também que o receba não mais como escravo, mas como irmão amado em Cristo, igual perante Deus. É uma mensagem poderosa sobre reconciliação, perdão, restauração e a quebra das barreiras sociais e culturais à luz do amor cristão.',
           'hebreus': 'De autoria incerta, mas tradicionalmente associado a um líder influente da igreja primitiva, este livro é uma declaração majestosa da supremacia de Cristo. Suas palavras revelam que Jesus é o perfeito sumo sacerdote, mediador da nova aliança, aquele que supera a antiga lei, os sacrifícios e o sacerdócio levítico. Hebreus nos conduz a compreender que, por meio de seu sacrifício, Cristo abriu um caminho novo e vivo até Deus, oferecendo redenção completa, esperança firme e uma fé que nos sustenta, mesmo em meio às lutas. É um chamado à perseverança, à confiança plena e à certeza de que, em Cristo, temos tudo o que precisamos.',
-          'tiago': 'Escrito por Tiago, irmão de Jesus e líder da igreja em Jerusalém, este livro é um chamado prático e direto à vivência da fé verdadeira. Suas palavras nos lembram que a fé sem obras é morta e que a verdadeira espiritualidade se reflete em atitudes de amor, justiça, domínio próprio e cuidado com o próximo. É um convite a uma vida coerente, onde palavras e ações caminham juntas, onde a fé se traduz em serviço, compaixão e retidão, mostrando que quem anda com Deus reflete sua luz em cada detalhe da vida.'
+          'tiago': 'Escrito por Tiago, irmão de Jesus e líder da igreja em Jerusalém, este livro é um chamado prático e direto à vivência da fé verdadeira. Suas palavras nos lembram que a fé sem obras é morta e que a verdadeira espiritualidade se reflete em atitudes de amor, justiça, domínio próprio e cuidado com o próximo. É um convite a uma vida coerente, onde palavras e ações caminham juntas, onde a fé se traduz em serviço, compaixão e retidão, mostrando que quem anda com Deus reflete sua luz em cada detalhe da vida.',
+          '1pedro': 'Escrito pelo apóstolo Pedro, este livro é uma mensagem de encorajamento e esperança para cristãos que enfrentavam perseguições, dores e desafios por causa da fé. Suas palavras fortalecem os corações, lembrando que, mesmo em meio ao sofrimento, somos peregrinos neste mundo, chamados a viver em santidade, amor e firmeza, confiando na promessa de uma herança eterna e incorruptível. É um convite a permanecer firme, com os olhos em Cristo, sabendo que, após as provações, Deus nos restaurará, fortalecerá e nos conduzirá à sua glória.'
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -829,7 +831,8 @@ function corrigirNomeLivro(nome) {
     'tito': 'Tito',
     'filemom': 'Filemom',
     'hebreus': 'Hebreus',
-    'tiago': 'Tiago'
+    'tiago': 'Tiago',
+    '1pedro': '1a Carta de Pedro'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
