@@ -91,7 +91,9 @@ function carregarPagina(pagina) {
           '1tessalonicenses': 'livros/icone-1tessalonicenses.png',
           '2tessalonicenses': 'livros/icone-2tessalonicenses.png',
           '1timoteo': 'livros/icone-1timoteo.png',
-          '2timoteo': 'livros/icone-2timoteo.png'
+          '2timoteo': 'livros/icone-2timoteo.png',
+          'tito': 'livros/icone-tito.png',
+          'filemom': 'livros/icone-filemom.png'
         };
 
         // Mapeamento de descrições por livro
@@ -111,7 +113,9 @@ function carregarPagina(pagina) {
           '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.',
           '2tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro traz consolo, correção e esperança para uma igreja ansiosa e, por vezes, confusa sobre a volta de Cristo. Suas palavras reafirmam que, embora o sofrimento e as dificuldades sejam reais, Deus é justo e fiel, e no tempo certo trará justiça e redenção. É um chamado à perseverança, à firmeza na fé e à confiança no Senhor, que virá no tempo determinado, trazendo vitória e restauração aos que nele esperam.',
           '1timoteo': 'Escrito pelo apóstolo Paulo a seu amado filho na fé, Timóteo, este livro é um verdadeiro manual de orientação para a liderança cristã e para a vida da igreja. Suas palavras trazem conselhos preciosos sobre conduta, oração, ensino, liderança e santidade. É um chamado para preservar a sã doutrina, viver com integridade e ser exemplo na fé, no amor e na pureza, lembrando que o serviço a Deus deve ser exercido com zelo, responsabilidade e total dependência do Senhor.',
-          '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.'
+          '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.',
+          'tito': 'Escrito pelo apóstolo Paulo a seu fiel colaborador e filho na fé, Tito, este livro é um guia prático para a organização e fortalecimento da igreja. Suas palavras ensinam sobre a importância de líderes comprometidos, vida exemplar, sã doutrina e boas obras. É um chamado à vivência de uma fé que transforma, onde a graça de Deus não apenas salva, mas também educa, molda e conduz a uma vida de retidão, amor e testemunho diante do mundo.',
+          'filemom': 'Escrito pelo apóstolo Paulo durante sua prisão em Roma, esta carta curta, porém profundamente rica, é um testemunho vivo da transformação que o evangelho gera nas relações humanas. Paulo escreve a Filemom, um cristão influente e líder de uma igreja que se reunia em sua casa, para interceder em favor de Onésimo, um escravo que havia fugido e, de alguma forma, encontrou Paulo na prisão. Ali, Onésimo foi alcançado pela fé em Cristo e se tornou um irmão na fé. A carta revela o coração pastoral e amoroso de Paulo, que não apenas pede a Filemom que perdoe Onésimo, mas também que o receba não mais como escravo, mas como irmão amado em Cristo, igual perante Deus. É uma mensagem poderosa sobre reconciliação, perdão, restauração e a quebra das barreiras sociais e culturais à luz do amor cristão.'
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -817,7 +821,9 @@ function corrigirNomeLivro(nome) {
     '1tessalonicenses': '1a Carta aos Tessalonicenses',
     '2tessalonicenses': '2a Carta aos Tessalonicenses',
     '1timoteo': '1a Carta a Timóteo',
-    '2timoteo': '2a Carta a Timóteo'
+    '2timoteo': '2a Carta a Timóteo',
+    'tito': 'Tito',
+    'filemom': 'Filemom'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
