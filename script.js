@@ -86,7 +86,8 @@ function carregarPagina(pagina) {
           '2corintios': 'livros/icone-2corintios.png',
           'galatas': 'livros/icone-galatas.png',
           'efesios': 'livros/icone-efesios.png',
-          'filipenses': 'livros/icone-filipenses.png'
+          'filipenses': 'livros/icone-filipenses.png',
+          'colossenses': 'livros/icone-colossenses.png'
         };
 
         // Mapeamento de descrições por livro
@@ -101,7 +102,8 @@ function carregarPagina(pagina) {
           '2corintios': 'Uma carta que transborda humanidade, amor e restauração. Aqui, o apóstolo Paulo revela seu coração ferido, mas cheio de fé, ao enfrentar críticas, perseguições e desafios no ministério. Suas palavras são um testemunho de que, mesmo em meio às fraquezas, dores e tribulações, a graça de Deus é suficiente, e o poder do Senhor se aperfeiçoa na nossa fraqueza. É um chamado à perseverança, à reconciliação e à confiança plena naquele que consola, fortalece e nunca nos abandona.',
           'galatas': 'Escrito pelo apóstolo Paulo, esta carta é um clamor apaixonado pela verdadeira liberdade que há em Cristo. Suas palavras confrontam qualquer tentativa de substituir a graça por regras, tradições ou méritos humanos. Aqui, Paulo defende com firmeza que a salvação vem unicamente pela fé, e não pelas obras da lei, e que, em Cristo, somos libertos do jugo da religiosidade para viver guiados pelo Espírito. É uma mensagem poderosa que nos lembra que fomos chamados à liberdade, à filiação divina e a uma vida marcada pelo amor, pela fé e pela graça.',
           'efesios': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este é um dos textos mais profundos sobre a identidade e a missão da igreja. Suas palavras revelam que, em Cristo, fomos escolhidos, redimidos e selados pelo Espírito Santo. Efésios nos conduz a entender que somos parte de um corpo, unidos em amor, chamados a viver em santidade, unidade e plenitude. É uma carta que exalta a graça, fortalece a fé e nos lembra que somos obras-primas de Deus, criados para viver em boas obras e refletir sua luz no mundo.',
-          'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.'
+          'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.',
+          'colossenses': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este livro exalta a supremacia, a soberania e a suficiência de Cristo sobre todas as coisas. Suas palavras nos conduzem a entender que, em Jesus, habita toda a plenitude de Deus, e que nele encontramos redenção, perdão e vida abundante. É um chamado à maturidade espiritual, à firmeza na fé e a viver uma vida transformada, onde Cristo seja o centro, a razão e o sustento de tudo.'
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -802,7 +804,8 @@ function corrigirNomeLivro(nome) {
     '2corintios': '2a Carta aos Coríntios',
     'galatas': 'Gálatas',
     'efesios': 'Efésios',
-    'filipenses': 'Filipenses'
+    'filipenses': 'Filipenses',
+    'colossenses': 'Colossenses'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
