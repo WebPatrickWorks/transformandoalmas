@@ -96,7 +96,7 @@ function carregarPagina(pagina) {
           'filemom': 'livros/icone-filemom.png',
           'hebreus': 'livros/icone-hebreus.png',
           'tiago': 'livros/icone-tiago.png',
-          'pedro': 'livros/icone-1pedro.png'
+          '1pedro': 'livros/icone-1pedro.png'
         };
 
         // Mapeamento de descrições por livro
