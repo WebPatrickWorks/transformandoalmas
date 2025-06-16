@@ -89,7 +89,9 @@ function carregarPagina(pagina) {
           'filipenses': 'livros/icone-filipenses.png',
           'colossenses': 'livros/icone-colossenses.png',
           '1tessalonicenses': 'livros/icone-1tessalonicenses.png',
-          '2tessalonicenses': 'livros/icone-2tessalonicenses.png'
+          '2tessalonicenses': 'livros/icone-2tessalonicenses.png',
+          '1timoteo': 'livros/icone-1timoteo.png',
+          '2timoteo': 'livros/icone-2timoteo.png'
         };
 
         // Mapeamento de descrições por livro
@@ -107,7 +109,9 @@ function carregarPagina(pagina) {
           'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.',
           'colossenses': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este livro exalta a supremacia, a soberania e a suficiência de Cristo sobre todas as coisas. Suas palavras nos conduzem a entender que, em Jesus, habita toda a plenitude de Deus, e que nele encontramos redenção, perdão e vida abundante. É um chamado à maturidade espiritual, à firmeza na fé e a viver uma vida transformada, onde Cristo seja o centro, a razão e o sustento de tudo.',
           '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.',
-          '2tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro traz consolo, correção e esperança para uma igreja ansiosa e, por vezes, confusa sobre a volta de Cristo. Suas palavras reafirmam que, embora o sofrimento e as dificuldades sejam reais, Deus é justo e fiel, e no tempo certo trará justiça e redenção. É um chamado à perseverança, à firmeza na fé e à confiança no Senhor, que virá no tempo determinado, trazendo vitória e restauração aos que nele esperam.'
+          '2tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro traz consolo, correção e esperança para uma igreja ansiosa e, por vezes, confusa sobre a volta de Cristo. Suas palavras reafirmam que, embora o sofrimento e as dificuldades sejam reais, Deus é justo e fiel, e no tempo certo trará justiça e redenção. É um chamado à perseverança, à firmeza na fé e à confiança no Senhor, que virá no tempo determinado, trazendo vitória e restauração aos que nele esperam.',
+          '1timoteo': 'Escrito pelo apóstolo Paulo a seu amado filho na fé, Timóteo, este livro é um verdadeiro manual de orientação para a liderança cristã e para a vida da igreja. Suas palavras trazem conselhos preciosos sobre conduta, oração, ensino, liderança e santidade. É um chamado para preservar a sã doutrina, viver com integridade e ser exemplo na fé, no amor e na pureza, lembrando que o serviço a Deus deve ser exercido com zelo, responsabilidade e total dependência do Senhor.',
+          '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.'
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -811,7 +815,9 @@ function corrigirNomeLivro(nome) {
     'filipenses': 'Filipenses',
     'colossenses': 'Colossenses',
     '1tessalonicenses': '1a Carta aos Tessalonicenses',
-    '2tessalonicenses': '2a Carta aos Tessalonicenses'
+    '2tessalonicenses': '2a Carta aos Tessalonicenses',
+    '1timoteo': '1a Carta a Timóteo',
+    '2timoteo': '2a Carta a Timóteo'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
