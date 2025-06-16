@@ -95,6 +95,7 @@ function carregarPagina(pagina) {
           'tito': 'livros/icone-tito.png',
           'filemom': 'livros/icone-filemom.png',
           'hebreus': 'livros/icone-hebreus.png',
+          'tiago': 'livros/icone-tiago.png'
         };
 
         // Mapeamento de descrições por livro
@@ -117,7 +118,8 @@ function carregarPagina(pagina) {
           '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.',
           'tito': 'Escrito pelo apóstolo Paulo a seu fiel colaborador e filho na fé, Tito, este livro é um guia prático para a organização e fortalecimento da igreja. Suas palavras ensinam sobre a importância de líderes comprometidos, vida exemplar, sã doutrina e boas obras. É um chamado à vivência de uma fé que transforma, onde a graça de Deus não apenas salva, mas também educa, molda e conduz a uma vida de retidão, amor e testemunho diante do mundo.',
           'filemom': 'Escrito pelo apóstolo Paulo durante sua prisão em Roma, esta carta curta, porém profundamente rica, é um testemunho vivo da transformação que o evangelho gera nas relações humanas. Paulo escreve a Filemom, um cristão influente e líder de uma igreja que se reunia em sua casa, para interceder em favor de Onésimo, um escravo que havia fugido e, de alguma forma, encontrou Paulo na prisão. Ali, Onésimo foi alcançado pela fé em Cristo e se tornou um irmão na fé. A carta revela o coração pastoral e amoroso de Paulo, que não apenas pede a Filemom que perdoe Onésimo, mas também que o receba não mais como escravo, mas como irmão amado em Cristo, igual perante Deus. É uma mensagem poderosa sobre reconciliação, perdão, restauração e a quebra das barreiras sociais e culturais à luz do amor cristão.',
-          'hebreus': 'De autoria incerta, mas tradicionalmente associado a um líder influente da igreja primitiva, este livro é uma declaração majestosa da supremacia de Cristo. Suas palavras revelam que Jesus é o perfeito sumo sacerdote, mediador da nova aliança, aquele que supera a antiga lei, os sacrifícios e o sacerdócio levítico. Hebreus nos conduz a compreender que, por meio de seu sacrifício, Cristo abriu um caminho novo e vivo até Deus, oferecendo redenção completa, esperança firme e uma fé que nos sustenta, mesmo em meio às lutas. É um chamado à perseverança, à confiança plena e à certeza de que, em Cristo, temos tudo o que precisamos.'
+          'hebreus': 'De autoria incerta, mas tradicionalmente associado a um líder influente da igreja primitiva, este livro é uma declaração majestosa da supremacia de Cristo. Suas palavras revelam que Jesus é o perfeito sumo sacerdote, mediador da nova aliança, aquele que supera a antiga lei, os sacrifícios e o sacerdócio levítico. Hebreus nos conduz a compreender que, por meio de seu sacrifício, Cristo abriu um caminho novo e vivo até Deus, oferecendo redenção completa, esperança firme e uma fé que nos sustenta, mesmo em meio às lutas. É um chamado à perseverança, à confiança plena e à certeza de que, em Cristo, temos tudo o que precisamos.',
+          'tiago': 'Escrito por Tiago, irmão de Jesus e líder da igreja em Jerusalém, este livro é um chamado prático e direto à vivência da fé verdadeira. Suas palavras nos lembram que a fé sem obras é morta e que a verdadeira espiritualidade se reflete em atitudes de amor, justiça, domínio próprio e cuidado com o próximo. É um convite a uma vida coerente, onde palavras e ações caminham juntas, onde a fé se traduz em serviço, compaixão e retidão, mostrando que quem anda com Deus reflete sua luz em cada detalhe da vida.'
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -826,7 +828,8 @@ function corrigirNomeLivro(nome) {
     '2timoteo': '2a Carta a Timóteo',
     'tito': 'Tito',
     'filemom': 'Filemom',
-    'hebreus': 'Hebreus'
+    'hebreus': 'Hebreus',
+    'tiago': 'Tiago'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
