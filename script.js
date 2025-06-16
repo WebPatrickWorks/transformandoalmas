@@ -88,7 +88,8 @@ function carregarPagina(pagina) {
           'efesios': 'livros/icone-efesios.png',
           'filipenses': 'livros/icone-filipenses.png',
           'colossenses': 'livros/icone-colossenses.png',
-          '1tessalonicenses': 'livros/icone-tessalonicenses.png'
+          '1tessalonicenses': 'livros/icone-1tessalonicenses.png',
+          '2tessalonicenses': 'livros/icone-2tessalonicenses.png'
         };
 
         // Mapeamento de descrições por livro
@@ -105,7 +106,8 @@ function carregarPagina(pagina) {
           'efesios': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este é um dos textos mais profundos sobre a identidade e a missão da igreja. Suas palavras revelam que, em Cristo, fomos escolhidos, redimidos e selados pelo Espírito Santo. Efésios nos conduz a entender que somos parte de um corpo, unidos em amor, chamados a viver em santidade, unidade e plenitude. É uma carta que exalta a graça, fortalece a fé e nos lembra que somos obras-primas de Deus, criados para viver em boas obras e refletir sua luz no mundo.',
           'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.',
           'colossenses': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este livro exalta a supremacia, a soberania e a suficiência de Cristo sobre todas as coisas. Suas palavras nos conduzem a entender que, em Jesus, habita toda a plenitude de Deus, e que nele encontramos redenção, perdão e vida abundante. É um chamado à maturidade espiritual, à firmeza na fé e a viver uma vida transformada, onde Cristo seja o centro, a razão e o sustento de tudo.',
-          '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.'
+          '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.',
+          '2tessalonicenses': ''
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -808,7 +810,8 @@ function corrigirNomeLivro(nome) {
     'efesios': 'Efésios',
     'filipenses': 'Filipenses',
     'colossenses': 'Colossenses',
-    '1tessalonicenses': '1a Carta aos Tessalonicenses'
+    '1tessalonicenses': '1a Carta aos Tessalonicenses',
+    '2tessalonicenses': '2a Carta aos Tessalonicenses'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
