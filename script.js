@@ -100,7 +100,8 @@ function carregarPagina(pagina) {
           '2pedro': 'livros/icone-2pedro.png',
           '1joao': 'livros/icone-joao.png',
           '2joao': 'livros/icone-joao.png',
-          '3joao': 'livros/icone-joao.png'
+          '3joao': 'livros/icone-joao.png',
+          'judas': 'livros/icone-judas.png'
         };
 
         // Mapeamento de descrições por livro
@@ -130,6 +131,8 @@ function carregarPagina(pagina) {
           '1joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, já em seus últimos anos de vida, esta carta é uma declaração viva sobre o amor, a verdade e a fé. Suas palavras nos convidam a compreender que Deus é amor, e que viver em comunhão com Ele significa andar na luz, praticar a verdade e amar de forma genuína. É uma exortação clara contra o pecado, contra os falsos ensinamentos e contra uma fé apenas teórica, lembrando que quem permanece em Cristo reflete esse amor em atitudes, palavras e ações. Um chamado poderoso à certeza da salvação, à comunhão com Deus e à prática do amor como prova da verdadeira vida cristã.',
           '2joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora breve, carrega uma mensagem profunda sobre a importância de permanecer na verdade e no amor. Dirigida a uma senhora eleita e aos seus filhos — que pode representar uma igreja e seus membros —, João exorta os cristãos a viverem firmes na doutrina de Cristo, cuidando para não serem enganados por falsos mestres. Suas palavras são um chamado à fidelidade, ao amor que se expressa na obediência, e à proteção da fé, lembrando que andar na verdade é essencial para quem deseja permanecer em comunhão com Deus.',
           '3joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora curta, reflete de forma poderosa o cuidado com a verdade, a comunhão e o amor no convívio cristão. Endereçada a Gaio, um irmão amado e fiel, João o elogia por sua hospitalidade e amor pelos missionários, ao mesmo tempo em que repreende atitudes de orgulho e divisão dentro da igreja, representadas por Diótrefes, e exalta o bom testemunho de Demétrio. Suas palavras nos ensinam que a verdadeira fé se expressa em amor prático, em apoio à obra de Deus e na busca constante por viver segundo a verdade.',
+          'judas': 'Escrita por Judas, irmão de Tiago e meio-irmão de Jesus, esta carta é um forte chamado à vigilância, à defesa da fé e à perseverança no caminho da verdade. Suas palavras, curtas, mas intensas, alertam contra falsos mestres, imoralidade, distorções da graça e apostasia. É um apelo urgente para que os cristãos se mantenham firmes no amor de Deus, fortalecidos na fé e na oração, lembrando que, mesmo em meio ao caos espiritual, Deus é poderoso para guardar, proteger e conduzir seus filhos irrepreensíveis até o dia da glória. Uma carta que ecoa coragem, esperança e fidelidade.',
+          'apocalipse': ''
 
           // Adicione conforme os livros que você tem no índice
         };
@@ -844,7 +847,9 @@ function corrigirNomeLivro(nome) {
     '2pedro': '2a Carta de Pedro',
     '1joao': '1a Carta de João',
     '2joao': '2a Carta de João',
-    '3joao': '3a Carta de João'
+    '3joao': '3a Carta de João',
+    'judas': 'Judas',
+    'apocalipse': 'Apocalipse'
   };
 
   return correcoes[nome.toLowerCase()] || nome;
