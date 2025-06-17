@@ -101,7 +101,8 @@ function carregarPagina(pagina) {
           '1joao': 'livros/icone-joao.png',
           '2joao': 'livros/icone-joao.png',
           '3joao': 'livros/icone-joao.png',
-          'judas': 'livros/icone-judas.png'
+          'judas': 'livros/icone-judas.png',
+          'apocalipse': 'livros/icone-apocalipse.png'
         };
 
         // Mapeamento de descrições por livro
@@ -132,7 +133,7 @@ function carregarPagina(pagina) {
           '2joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora breve, carrega uma mensagem profunda sobre a importância de permanecer na verdade e no amor. Dirigida a uma senhora eleita e aos seus filhos — que pode representar uma igreja e seus membros —, João exorta os cristãos a viverem firmes na doutrina de Cristo, cuidando para não serem enganados por falsos mestres. Suas palavras são um chamado à fidelidade, ao amor que se expressa na obediência, e à proteção da fé, lembrando que andar na verdade é essencial para quem deseja permanecer em comunhão com Deus.',
           '3joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora curta, reflete de forma poderosa o cuidado com a verdade, a comunhão e o amor no convívio cristão. Endereçada a Gaio, um irmão amado e fiel, João o elogia por sua hospitalidade e amor pelos missionários, ao mesmo tempo em que repreende atitudes de orgulho e divisão dentro da igreja, representadas por Diótrefes, e exalta o bom testemunho de Demétrio. Suas palavras nos ensinam que a verdadeira fé se expressa em amor prático, em apoio à obra de Deus e na busca constante por viver segundo a verdade.',
           'judas': 'Escrita por Judas, irmão de Tiago e meio-irmão de Jesus, esta carta é um forte chamado à vigilância, à defesa da fé e à perseverança no caminho da verdade. Suas palavras, curtas, mas intensas, alertam contra falsos mestres, imoralidade, distorções da graça e apostasia. É um apelo urgente para que os cristãos se mantenham firmes no amor de Deus, fortalecidos na fé e na oração, lembrando que, mesmo em meio ao caos espiritual, Deus é poderoso para guardar, proteger e conduzir seus filhos irrepreensíveis até o dia da glória. Uma carta que ecoa coragem, esperança e fidelidade.',
-          'apocalipse': ''
+          'apocalipse': 'Escrito pelo apóstolo João, discípulo amado de Jesus, enquanto estava exilado na ilha de Patmos, este livro é uma poderosa revelação sobre os últimos dias, a vitória final de Cristo e a consumação do plano de Deus. Suas visões, cheias de símbolos e profundos significados, revelam a luta entre o bem e o mal, o juízo sobre a maldade, a perseverança dos fiéis e, sobretudo, a gloriosa esperança da nova Jerusalém, onde não haverá mais dor, nem lágrimas, nem morte. É uma mensagem de alerta, consolo e esperança, que nos lembra que, no fim, Jesus reina soberano, e a vitória pertence aos que permanecem fiéis até o fim.'
 
           // Adicione conforme os livros que você tem no índice
         };
