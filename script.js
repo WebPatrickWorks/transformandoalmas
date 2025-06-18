@@ -65,118 +65,14 @@ function carregarPagina(pagina) {
         document.getElementById("conteudo").innerHTML = `<p>Erro ao carregar a página de testemunho.</p>`;
       });
   } else if (pagina === 'biblia') {
-    html = `<h2>Livros da Bíblia</h2>`;
-
-    fetch('indice-capitulos.json')
-      .then(res => res.json())
-      .then(data => {
-        capitulosDisponiveis = data;
-
-        // Mapeamento de ícones por livro
-        const iconesLivros = {
-          'default': 'livros/icone-biblia.png',
-          'exodo': 'livros/icone-exodo.png',
-          'joao': 'livros/icone-joao.png',
-          'mateus': 'livros/icone-mateus.png',
-          'marcos': 'livros/icone-marcos.png',
-          'lucas': 'livros/icone-lucas.png',
-          'romanos': 'livros/icone-romanos.png',
-          'atos': 'livros/icone-atos.png',
-          '1corintios': 'livros/icone-1corintios.png',
-          '2corintios': 'livros/icone-2corintios.png',
-          'galatas': 'livros/icone-galatas.png',
-          'efesios': 'livros/icone-efesios.png',
-          'filipenses': 'livros/icone-filipenses.png',
-          'colossenses': 'livros/icone-colossenses.png',
-          '1tessalonicenses': 'livros/icone-1tessalonicenses.png',
-          '2tessalonicenses': 'livros/icone-2tessalonicenses.png',
-          '1timoteo': 'livros/icone-1timoteo.png',
-          '2timoteo': 'livros/icone-2timoteo.png',
-          'tito': 'livros/icone-tito.png',
-          'filemom': 'livros/icone-filemom.png',
-          'hebreus': 'livros/icone-hebreus.png',
-          'tiago': 'livros/icone-tiago.png',
-          '1pedro': 'livros/icone-1pedro.png',
-          '2pedro': 'livros/icone-2pedro.png',
-          '1joao': 'livros/icone-joao.png',
-          '2joao': 'livros/icone-joao.png',
-          '3joao': 'livros/icone-joao.png',
-          'judas': 'livros/icone-judas.png',
-          'apocalipse': 'livros/icone-apocalipse.png'
-        };
-
-        // Mapeamento de descrições por livro
-        const descricoesLivros = {
-          'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
-          'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
-          'mateus': 'Um evangelho que apresenta Jesus como o Messias prometido, cumpridor das profecias, Rei e Salvador de toda a humanidade. Suas palavras revelam um Cristo que ensina com autoridade, conduzindo seus discípulos no caminho da verdade, da justiça e do amor. Em cada ensinamento, há um chamado ao arrependimento, à transformação de vida e à construção de um Reino onde prevalecem a misericórdia, a fé e a esperança.',
-          'marcos': 'Um evangelho que revela Jesus em ação, com poder, autoridade e compaixão. Suas páginas nos conduzem a testemunhar um Cristo que cura, liberta, restaura e enfrenta o mal com amor e entrega. De forma direta e intensa, Marcos nos mostra que o Filho de Deus não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos, trazendo uma mensagem viva de esperança, salvação e transformação.',
-          'atos': 'Escrito por Lucas, o mesmo autor do Evangelho segundo Lucas. Ele era médico e companheiro de viagem do apóstolo Paulo. Este livro é um relato inspirador sobre o nascimento e a expansão da igreja cristã. Suas páginas revelam como, guiados pelo Espírito Santo, os apóstolos e discípulos romperam barreiras, enfrentaram perseguições e levaram a mensagem de Jesus a todas as nações. Atos nos mostra que a obra de Deus não se limita a templos ou fronteiras, mas se realiza no coração de quem crê, vive e anuncia o evangelho com fé, coragem e amor.',
-          'romanos': 'Uma carta que revela, de forma majestosa e transformadora, a profundidade da graça, da justiça e do amor de Deus. Suas palavras nos conduzem a compreender que todos carecem da glória de Deus, mas que, pela fé em Jesus Cristo, somos justificados, perdoados e reconciliados. Romanos é um chamado à verdadeira transformação da mente e do coração, revelando que a salvação não é mérito humano, mas um presente divino que restaura, liberta e conduz à vida eterna.',
-          '1corintios': 'Uma carta que toca profundamente o coração, revelando os desafios e as fragilidades humanas diante da fé. Suas palavras são um chamado à unidade, ao amor e à pureza espiritual, mostrando que, acima de todo conhecimento e dons, o amor é o caminho mais excelente. Aqui, aprendemos que a verdadeira igreja é edificada na humildade, no serviço e na renúncia, sendo guiada pela graça e pela presença viva de Cristo no meio de seu povo.',
-          '2corintios': 'Uma carta que transborda humanidade, amor e restauração. Aqui, o apóstolo Paulo revela seu coração ferido, mas cheio de fé, ao enfrentar críticas, perseguições e desafios no ministério. Suas palavras são um testemunho de que, mesmo em meio às fraquezas, dores e tribulações, a graça de Deus é suficiente, e o poder do Senhor se aperfeiçoa na nossa fraqueza. É um chamado à perseverança, à reconciliação e à confiança plena naquele que consola, fortalece e nunca nos abandona.',
-          'galatas': 'Escrito pelo apóstolo Paulo, esta carta é um clamor apaixonado pela verdadeira liberdade que há em Cristo. Suas palavras confrontam qualquer tentativa de substituir a graça por regras, tradições ou méritos humanos. Aqui, Paulo defende com firmeza que a salvação vem unicamente pela fé, e não pelas obras da lei, e que, em Cristo, somos libertos do jugo da religiosidade para viver guiados pelo Espírito. É uma mensagem poderosa que nos lembra que fomos chamados à liberdade, à filiação divina e a uma vida marcada pelo amor, pela fé e pela graça.',
-          'efesios': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este é um dos textos mais profundos sobre a identidade e a missão da igreja. Suas palavras revelam que, em Cristo, fomos escolhidos, redimidos e selados pelo Espírito Santo. Efésios nos conduz a entender que somos parte de um corpo, unidos em amor, chamados a viver em santidade, unidade e plenitude. É uma carta que exalta a graça, fortalece a fé e nos lembra que somos obras-primas de Deus, criados para viver em boas obras e refletir sua luz no mundo.',
-          'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.',
-          'colossenses': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este livro exalta a supremacia, a soberania e a suficiência de Cristo sobre todas as coisas. Suas palavras nos conduzem a entender que, em Jesus, habita toda a plenitude de Deus, e que nele encontramos redenção, perdão e vida abundante. É um chamado à maturidade espiritual, à firmeza na fé e a viver uma vida transformada, onde Cristo seja o centro, a razão e o sustento de tudo.',
-          '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.',
-          '2tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro traz consolo, correção e esperança para uma igreja ansiosa e, por vezes, confusa sobre a volta de Cristo. Suas palavras reafirmam que, embora o sofrimento e as dificuldades sejam reais, Deus é justo e fiel, e no tempo certo trará justiça e redenção. É um chamado à perseverança, à firmeza na fé e à confiança no Senhor, que virá no tempo determinado, trazendo vitória e restauração aos que nele esperam.',
-          '1timoteo': 'Escrito pelo apóstolo Paulo a seu amado filho na fé, Timóteo, este livro é um verdadeiro manual de orientação para a liderança cristã e para a vida da igreja. Suas palavras trazem conselhos preciosos sobre conduta, oração, ensino, liderança e santidade. É um chamado para preservar a sã doutrina, viver com integridade e ser exemplo na fé, no amor e na pureza, lembrando que o serviço a Deus deve ser exercido com zelo, responsabilidade e total dependência do Senhor.',
-          '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.',
-          'tito': 'Escrito pelo apóstolo Paulo a seu fiel colaborador e filho na fé, Tito, este livro é um guia prático para a organização e fortalecimento da igreja. Suas palavras ensinam sobre a importância de líderes comprometidos, vida exemplar, sã doutrina e boas obras. É um chamado à vivência de uma fé que transforma, onde a graça de Deus não apenas salva, mas também educa, molda e conduz a uma vida de retidão, amor e testemunho diante do mundo.',
-          'filemom': 'Escrito pelo apóstolo Paulo durante sua prisão em Roma, esta carta curta, porém profundamente rica, é um testemunho vivo da transformação que o evangelho gera nas relações humanas. Paulo escreve a Filemom, um cristão influente e líder de uma igreja que se reunia em sua casa, para interceder em favor de Onésimo, um escravo que havia fugido e, de alguma forma, encontrou Paulo na prisão. Ali, Onésimo foi alcançado pela fé em Cristo e se tornou um irmão na fé. A carta revela o coração pastoral e amoroso de Paulo, que não apenas pede a Filemom que perdoe Onésimo, mas também que o receba não mais como escravo, mas como irmão amado em Cristo, igual perante Deus. É uma mensagem poderosa sobre reconciliação, perdão, restauração e a quebra das barreiras sociais e culturais à luz do amor cristão.',
-          'hebreus': 'De autoria incerta, mas tradicionalmente associado a um líder influente da igreja primitiva, este livro é uma declaração majestosa da supremacia de Cristo. Suas palavras revelam que Jesus é o perfeito sumo sacerdote, mediador da nova aliança, aquele que supera a antiga lei, os sacrifícios e o sacerdócio levítico. Hebreus nos conduz a compreender que, por meio de seu sacrifício, Cristo abriu um caminho novo e vivo até Deus, oferecendo redenção completa, esperança firme e uma fé que nos sustenta, mesmo em meio às lutas. É um chamado à perseverança, à confiança plena e à certeza de que, em Cristo, temos tudo o que precisamos.',
-          'tiago': 'Escrito por Tiago, irmão de Jesus e líder da igreja em Jerusalém, este livro é um chamado prático e direto à vivência da fé verdadeira. Suas palavras nos lembram que a fé sem obras é morta e que a verdadeira espiritualidade se reflete em atitudes de amor, justiça, domínio próprio e cuidado com o próximo. É um convite a uma vida coerente, onde palavras e ações caminham juntas, onde a fé se traduz em serviço, compaixão e retidão, mostrando que quem anda com Deus reflete sua luz em cada detalhe da vida.',
-          '1pedro': 'Escrito pelo apóstolo Pedro, este livro é uma mensagem de encorajamento e esperança para cristãos que enfrentavam perseguições, dores e desafios por causa da fé. Suas palavras fortalecem os corações, lembrando que, mesmo em meio ao sofrimento, somos peregrinos neste mundo, chamados a viver em santidade, amor e firmeza, confiando na promessa de uma herança eterna e incorruptível. É um convite a permanecer firme, com os olhos em Cristo, sabendo que, após as provações, Deus nos restaurará, fortalecerá e nos conduzirá à sua glória.',
-          '2pedro': 'Escrito pelo apóstolo Pedro, pouco antes de sua morte, este livro carrega um tom de alerta, amor e firmeza. Suas palavras exortam os cristãos a permanecerem firmes na verdade, crescendo no conhecimento de Deus e resistindo aos falsos mestres que distorcem o evangelho. É um chamado à santidade, à vigilância e à perseverança, lembrando que, embora os dias sejam desafiadores, a promessa da volta de Cristo permanece viva e certa. Pedro nos convida a viver com fé, esperança e expectativa, aguardando os novos céus e a nova terra, onde habita a justiça.',
-          '1joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, já em seus últimos anos de vida, esta carta é uma declaração viva sobre o amor, a verdade e a fé. Suas palavras nos convidam a compreender que Deus é amor, e que viver em comunhão com Ele significa andar na luz, praticar a verdade e amar de forma genuína. É uma exortação clara contra o pecado, contra os falsos ensinamentos e contra uma fé apenas teórica, lembrando que quem permanece em Cristo reflete esse amor em atitudes, palavras e ações. Um chamado poderoso à certeza da salvação, à comunhão com Deus e à prática do amor como prova da verdadeira vida cristã.',
-          '2joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora breve, carrega uma mensagem profunda sobre a importância de permanecer na verdade e no amor. Dirigida a uma senhora eleita e aos seus filhos — que pode representar uma igreja e seus membros —, João exorta os cristãos a viverem firmes na doutrina de Cristo, cuidando para não serem enganados por falsos mestres. Suas palavras são um chamado à fidelidade, ao amor que se expressa na obediência, e à proteção da fé, lembrando que andar na verdade é essencial para quem deseja permanecer em comunhão com Deus.',
-          '3joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora curta, reflete de forma poderosa o cuidado com a verdade, a comunhão e o amor no convívio cristão. Endereçada a Gaio, um irmão amado e fiel, João o elogia por sua hospitalidade e amor pelos missionários, ao mesmo tempo em que repreende atitudes de orgulho e divisão dentro da igreja, representadas por Diótrefes, e exalta o bom testemunho de Demétrio. Suas palavras nos ensinam que a verdadeira fé se expressa em amor prático, em apoio à obra de Deus e na busca constante por viver segundo a verdade.',
-          'judas': 'Escrita por Judas, irmão de Tiago e meio-irmão de Jesus, esta carta é um forte chamado à vigilância, à defesa da fé e à perseverança no caminho da verdade. Suas palavras, curtas, mas intensas, alertam contra falsos mestres, imoralidade, distorções da graça e apostasia. É um apelo urgente para que os cristãos se mantenham firmes no amor de Deus, fortalecidos na fé e na oração, lembrando que, mesmo em meio ao caos espiritual, Deus é poderoso para guardar, proteger e conduzir seus filhos irrepreensíveis até o dia da glória. Uma carta que ecoa coragem, esperança e fidelidade.',
-          'apocalipse': 'Escrito pelo apóstolo João, discípulo amado de Jesus, enquanto estava exilado na ilha de Patmos, este livro é uma poderosa revelação sobre os últimos dias, a vitória final de Cristo e a consumação do plano de Deus. Suas visões, cheias de símbolos e profundos significados, revelam a luta entre o bem e o mal, o juízo sobre a maldade, a perseverança dos fiéis e, sobretudo, a gloriosa esperança da nova Jerusalém, onde não haverá mais dor, nem lágrimas, nem morte. É uma mensagem de alerta, consolo e esperança, que nos lembra que, no fim, Jesus reina soberano, e a vitória pertence aos que permanecem fiéis até o fim.'
-
-          // Adicione conforme os livros que você tem no índice
-        };
-
-        for (const livro in data) {
-          const livroFormatado1 = capitalizeFirstLetter(livro);
-          const livroFormatado = corrigirNomeLivro(livroFormatado1);
-          const icone = iconesLivros[livro] || iconesLivros['default'];
-          const descricao = descricoesLivros[livro] || 'Livro bíblico';
-
-          html += `
-            <div class="card-livro">
-              <button class="botao-livro" onclick="toggleCapitulos('${livro}', this)">
-                <img src="${icone}" alt="${livroFormatado}" class="icone-livro" />
-                <div class="nome-e-descricao">
-                  <div class="nome-livro">${livroFormatado}</div>
-                  <div class="descricao-livro">${descricao}</div>
-                </div>
-              </button>
-              <div class="lista-capitulos" id="capitulos-${livro}">
-          `;
-
-          data[livro].forEach(num => {
-            html += `<button onclick="carregarCapitulo('${livro}', ${num})">Capítulo ${num}</button>`;
-          });
-
-          html += `</div></div>`;
-        }
-
-        conteudo.innerHTML = html;
-        aplicarModoEscuroDinamico();
-      })
-      .catch(err => {
-        console.error('Erro ao carregar índice:', err);
-        conteudo.innerHTML = `<p>Erro ao carregar lista de livros.</p>`;
-      });
-
-      if (document.body.classList.contains('dark-mode')) {
-        document.querySelectorAll('.card-livro button.botao-livro').forEach(el => {
-          el.classList.add('dark-mode');
-        });
-      }
-
+    html = `<h2>Bíblia</h2>`;
+    html += `
+      <div class="testamentos">
+        <button onclick="listarTestamento('velhoTestamento')">Velho Testamento</button>
+        <button onclick="listarTestamento('novoTestamento')">Novo Testamento</button>
+      </div>
+    `;
+    conteudo.innerHTML = html;
   } else if (pagina === 'terco') {
     fetch('terco.html')
       .then(res => res.text())
@@ -192,6 +88,126 @@ function carregarPagina(pagina) {
 
   conteudo.innerHTML = html || '';
   aplicarModoEscuroDinamico();
+}
+
+function listarTestamento(testamento) {
+  const conteudo = document.getElementById("conteudo");
+  fetch('indice-capitulos.json')
+    .then(res => res.json())
+    .then(data => {
+
+
+      // Mapeamento de ícones por livro
+      const iconesLivros = {
+        'default': 'livros/icone-biblia.png',
+        'salmos': 'livros/icone-salmos.png',
+
+        'exodo': 'livros/icone-exodo.png',
+        'joao': 'livros/icone-joao.png',
+        'mateus': 'livros/icone-mateus.png',
+        'marcos': 'livros/icone-marcos.png',
+        'lucas': 'livros/icone-lucas.png',
+        'romanos': 'livros/icone-romanos.png',
+        'atos': 'livros/icone-atos.png',
+        '1corintios': 'livros/icone-1corintios.png',
+        '2corintios': 'livros/icone-2corintios.png',
+        'galatas': 'livros/icone-galatas.png',
+        'efesios': 'livros/icone-efesios.png',
+        'filipenses': 'livros/icone-filipenses.png',
+        'colossenses': 'livros/icone-colossenses.png',
+        '1tessalonicenses': 'livros/icone-1tessalonicenses.png',
+        '2tessalonicenses': 'livros/icone-2tessalonicenses.png',
+        '1timoteo': 'livros/icone-1timoteo.png',
+        '2timoteo': 'livros/icone-2timoteo.png',
+        'tito': 'livros/icone-tito.png',
+        'filemom': 'livros/icone-filemom.png',
+        'hebreus': 'livros/icone-hebreus.png',
+        'tiago': 'livros/icone-tiago.png',
+        '1pedro': 'livros/icone-1pedro.png',
+        '2pedro': 'livros/icone-2pedro.png',
+        '1joao': 'livros/icone-joao.png',
+        '2joao': 'livros/icone-joao.png',
+        '3joao': 'livros/icone-joao.png',
+        'judas': 'livros/icone-judas.png',
+        'apocalipse': 'livros/icone-apocalipse.png'
+      };
+
+      // Mapeamento de descrições por livro
+      const descricoesLivros = {
+        'salmos': 'Salmos é uma coletânea de 150 poemas e cânticos que expressam orações, louvores, súplicas e ações de graças a Deus. Escrito por diversos autores, entre eles Davi — responsável por grande parte dos salmos —, além de Asafe, os filhos de Corá, Salomão, Moisés e outros. O livro reflete as mais profundas experiências humanas diante de Deus, abordando temas como confiança, arrependimento, justiça, adoração e esperança. É uma fonte de conforto espiritual, fortalecimento da fé e expressão da devoção, sendo até hoje um dos livros mais lidos e orados da Bíblia.',
+
+
+        'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
+        'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
+        'mateus': 'Um evangelho que apresenta Jesus como o Messias prometido, cumpridor das profecias, Rei e Salvador de toda a humanidade. Suas palavras revelam um Cristo que ensina com autoridade, conduzindo seus discípulos no caminho da verdade, da justiça e do amor. Em cada ensinamento, há um chamado ao arrependimento, à transformação de vida e à construção de um Reino onde prevalecem a misericórdia, a fé e a esperança.',
+        'marcos': 'Um evangelho que revela Jesus em ação, com poder, autoridade e compaixão. Suas páginas nos conduzem a testemunhar um Cristo que cura, liberta, restaura e enfrenta o mal com amor e entrega. De forma direta e intensa, Marcos nos mostra que o Filho de Deus não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos, trazendo uma mensagem viva de esperança, salvação e transformação.',
+        'atos': 'Escrito por Lucas, o mesmo autor do Evangelho segundo Lucas. Ele era médico e companheiro de viagem do apóstolo Paulo. Este livro é um relato inspirador sobre o nascimento e a expansão da igreja cristã. Suas páginas revelam como, guiados pelo Espírito Santo, os apóstolos e discípulos romperam barreiras, enfrentaram perseguições e levaram a mensagem de Jesus a todas as nações. Atos nos mostra que a obra de Deus não se limita a templos ou fronteiras, mas se realiza no coração de quem crê, vive e anuncia o evangelho com fé, coragem e amor.',
+        'romanos': 'Uma carta que revela, de forma majestosa e transformadora, a profundidade da graça, da justiça e do amor de Deus. Suas palavras nos conduzem a compreender que todos carecem da glória de Deus, mas que, pela fé em Jesus Cristo, somos justificados, perdoados e reconciliados. Romanos é um chamado à verdadeira transformação da mente e do coração, revelando que a salvação não é mérito humano, mas um presente divino que restaura, liberta e conduz à vida eterna.',
+        '1corintios': 'Uma carta que toca profundamente o coração, revelando os desafios e as fragilidades humanas diante da fé. Suas palavras são um chamado à unidade, ao amor e à pureza espiritual, mostrando que, acima de todo conhecimento e dons, o amor é o caminho mais excelente. Aqui, aprendemos que a verdadeira igreja é edificada na humildade, no serviço e na renúncia, sendo guiada pela graça e pela presença viva de Cristo no meio de seu povo.',
+        '2corintios': 'Uma carta que transborda humanidade, amor e restauração. Aqui, o apóstolo Paulo revela seu coração ferido, mas cheio de fé, ao enfrentar críticas, perseguições e desafios no ministério. Suas palavras são um testemunho de que, mesmo em meio às fraquezas, dores e tribulações, a graça de Deus é suficiente, e o poder do Senhor se aperfeiçoa na nossa fraqueza. É um chamado à perseverança, à reconciliação e à confiança plena naquele que consola, fortalece e nunca nos abandona.',
+        'galatas': 'Escrito pelo apóstolo Paulo, esta carta é um clamor apaixonado pela verdadeira liberdade que há em Cristo. Suas palavras confrontam qualquer tentativa de substituir a graça por regras, tradições ou méritos humanos. Aqui, Paulo defende com firmeza que a salvação vem unicamente pela fé, e não pelas obras da lei, e que, em Cristo, somos libertos do jugo da religiosidade para viver guiados pelo Espírito. É uma mensagem poderosa que nos lembra que fomos chamados à liberdade, à filiação divina e a uma vida marcada pelo amor, pela fé e pela graça.',
+        'efesios': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este é um dos textos mais profundos sobre a identidade e a missão da igreja. Suas palavras revelam que, em Cristo, fomos escolhidos, redimidos e selados pelo Espírito Santo. Efésios nos conduz a entender que somos parte de um corpo, unidos em amor, chamados a viver em santidade, unidade e plenitude. É uma carta que exalta a graça, fortalece a fé e nos lembra que somos obras-primas de Deus, criados para viver em boas obras e refletir sua luz no mundo.',
+        'filipenses': 'Escrito pelo apóstolo Paulo enquanto estava preso em Roma, este livro transborda gratidão, amor e alegria, mesmo em meio às adversidades. Suas palavras nos ensinam que a verdadeira alegria não está nas circunstâncias, mas em viver uma vida centrada em Cristo. É uma carta que fortalece a fé, inspira a perseverança e nos lembra que tudo podemos naquele que nos fortalece. Um convite à humildade, ao serviço e à confiança plena no Deus que supre, guarda e conduz.',
+        'colossenses': 'Escrito pelo apóstolo Paulo, enquanto estava preso em Roma, este livro exalta a supremacia, a soberania e a suficiência de Cristo sobre todas as coisas. Suas palavras nos conduzem a entender que, em Jesus, habita toda a plenitude de Deus, e que nele encontramos redenção, perdão e vida abundante. É um chamado à maturidade espiritual, à firmeza na fé e a viver uma vida transformada, onde Cristo seja o centro, a razão e o sustento de tudo.',
+        '1tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro transborda encorajamento, fé e esperança. Suas palavras fortalecem uma igreja jovem que, mesmo em meio a perseguições, permaneceu firme no amor e na esperança em Cristo. É uma carta que consola, anima e aponta para a bendita esperança da volta de Jesus, lembrando que viver em santidade, amor e vigilância é o caminho para quem aguarda, com fé, o reencontro com o Senhor.',
+        '2tessalonicenses': 'Escrito pelo apóstolo Paulo, juntamente com Silvano (Silas) e Timóteo, este livro traz consolo, correção e esperança para uma igreja ansiosa e, por vezes, confusa sobre a volta de Cristo. Suas palavras reafirmam que, embora o sofrimento e as dificuldades sejam reais, Deus é justo e fiel, e no tempo certo trará justiça e redenção. É um chamado à perseverança, à firmeza na fé e à confiança no Senhor, que virá no tempo determinado, trazendo vitória e restauração aos que nele esperam.',
+        '1timoteo': 'Escrito pelo apóstolo Paulo a seu amado filho na fé, Timóteo, este livro é um verdadeiro manual de orientação para a liderança cristã e para a vida da igreja. Suas palavras trazem conselhos preciosos sobre conduta, oração, ensino, liderança e santidade. É um chamado para preservar a sã doutrina, viver com integridade e ser exemplo na fé, no amor e na pureza, lembrando que o serviço a Deus deve ser exercido com zelo, responsabilidade e total dependência do Senhor.',
+        '2timoteo': 'Escrito pelo apóstolo Paulo, em seus últimos dias de vida, esta carta carrega um tom profundamente pessoal, emocionante e cheio de amor. De uma prisão em Roma, Paulo encoraja seu filho na fé, Timóteo, a permanecer firme, corajoso e fiel ao chamado, mesmo em meio às adversidades. Suas palavras são um legado de fé, coragem e esperança, lembrando que a coroa da justiça aguarda aqueles que combatem o bom combate, guardam a fé e permanecem fiéis até o fim.',
+        'tito': 'Escrito pelo apóstolo Paulo a seu fiel colaborador e filho na fé, Tito, este livro é um guia prático para a organização e fortalecimento da igreja. Suas palavras ensinam sobre a importância de líderes comprometidos, vida exemplar, sã doutrina e boas obras. É um chamado à vivência de uma fé que transforma, onde a graça de Deus não apenas salva, mas também educa, molda e conduz a uma vida de retidão, amor e testemunho diante do mundo.',
+        'filemom': 'Escrito pelo apóstolo Paulo durante sua prisão em Roma, esta carta curta, porém profundamente rica, é um testemunho vivo da transformação que o evangelho gera nas relações humanas. Paulo escreve a Filemom, um cristão influente e líder de uma igreja que se reunia em sua casa, para interceder em favor de Onésimo, um escravo que havia fugido e, de alguma forma, encontrou Paulo na prisão. Ali, Onésimo foi alcançado pela fé em Cristo e se tornou um irmão na fé. A carta revela o coração pastoral e amoroso de Paulo, que não apenas pede a Filemom que perdoe Onésimo, mas também que o receba não mais como escravo, mas como irmão amado em Cristo, igual perante Deus. É uma mensagem poderosa sobre reconciliação, perdão, restauração e a quebra das barreiras sociais e culturais à luz do amor cristão.',
+        'hebreus': 'De autoria incerta, mas tradicionalmente associado a um líder influente da igreja primitiva, este livro é uma declaração majestosa da supremacia de Cristo. Suas palavras revelam que Jesus é o perfeito sumo sacerdote, mediador da nova aliança, aquele que supera a antiga lei, os sacrifícios e o sacerdócio levítico. Hebreus nos conduz a compreender que, por meio de seu sacrifício, Cristo abriu um caminho novo e vivo até Deus, oferecendo redenção completa, esperança firme e uma fé que nos sustenta, mesmo em meio às lutas. É um chamado à perseverança, à confiança plena e à certeza de que, em Cristo, temos tudo o que precisamos.',
+        'tiago': 'Escrito por Tiago, irmão de Jesus e líder da igreja em Jerusalém, este livro é um chamado prático e direto à vivência da fé verdadeira. Suas palavras nos lembram que a fé sem obras é morta e que a verdadeira espiritualidade se reflete em atitudes de amor, justiça, domínio próprio e cuidado com o próximo. É um convite a uma vida coerente, onde palavras e ações caminham juntas, onde a fé se traduz em serviço, compaixão e retidão, mostrando que quem anda com Deus reflete sua luz em cada detalhe da vida.',
+        '1pedro': 'Escrito pelo apóstolo Pedro, este livro é uma mensagem de encorajamento e esperança para cristãos que enfrentavam perseguições, dores e desafios por causa da fé. Suas palavras fortalecem os corações, lembrando que, mesmo em meio ao sofrimento, somos peregrinos neste mundo, chamados a viver em santidade, amor e firmeza, confiando na promessa de uma herança eterna e incorruptível. É um convite a permanecer firme, com os olhos em Cristo, sabendo que, após as provações, Deus nos restaurará, fortalecerá e nos conduzirá à sua glória.',
+        '2pedro': 'Escrito pelo apóstolo Pedro, pouco antes de sua morte, este livro carrega um tom de alerta, amor e firmeza. Suas palavras exortam os cristãos a permanecerem firmes na verdade, crescendo no conhecimento de Deus e resistindo aos falsos mestres que distorcem o evangelho. É um chamado à santidade, à vigilância e à perseverança, lembrando que, embora os dias sejam desafiadores, a promessa da volta de Cristo permanece viva e certa. Pedro nos convida a viver com fé, esperança e expectativa, aguardando os novos céus e a nova terra, onde habita a justiça.',
+        '1joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, já em seus últimos anos de vida, esta carta é uma declaração viva sobre o amor, a verdade e a fé. Suas palavras nos convidam a compreender que Deus é amor, e que viver em comunhão com Ele significa andar na luz, praticar a verdade e amar de forma genuína. É uma exortação clara contra o pecado, contra os falsos ensinamentos e contra uma fé apenas teórica, lembrando que quem permanece em Cristo reflete esse amor em atitudes, palavras e ações. Um chamado poderoso à certeza da salvação, à comunhão com Deus e à prática do amor como prova da verdadeira vida cristã.',
+        '2joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora breve, carrega uma mensagem profunda sobre a importância de permanecer na verdade e no amor. Dirigida a uma senhora eleita e aos seus filhos — que pode representar uma igreja e seus membros —, João exorta os cristãos a viverem firmes na doutrina de Cristo, cuidando para não serem enganados por falsos mestres. Suas palavras são um chamado à fidelidade, ao amor que se expressa na obediência, e à proteção da fé, lembrando que andar na verdade é essencial para quem deseja permanecer em comunhão com Deus.',
+        '3joao': 'Escrita pelo apóstolo João, discípulo amado de Jesus, esta carta, embora curta, reflete de forma poderosa o cuidado com a verdade, a comunhão e o amor no convívio cristão. Endereçada a Gaio, um irmão amado e fiel, João o elogia por sua hospitalidade e amor pelos missionários, ao mesmo tempo em que repreende atitudes de orgulho e divisão dentro da igreja, representadas por Diótrefes, e exalta o bom testemunho de Demétrio. Suas palavras nos ensinam que a verdadeira fé se expressa em amor prático, em apoio à obra de Deus e na busca constante por viver segundo a verdade.',
+        'judas': 'Escrita por Judas, irmão de Tiago e meio-irmão de Jesus, esta carta é um forte chamado à vigilância, à defesa da fé e à perseverança no caminho da verdade. Suas palavras, curtas, mas intensas, alertam contra falsos mestres, imoralidade, distorções da graça e apostasia. É um apelo urgente para que os cristãos se mantenham firmes no amor de Deus, fortalecidos na fé e na oração, lembrando que, mesmo em meio ao caos espiritual, Deus é poderoso para guardar, proteger e conduzir seus filhos irrepreensíveis até o dia da glória. Uma carta que ecoa coragem, esperança e fidelidade.',
+        'apocalipse': 'Escrito pelo apóstolo João, discípulo amado de Jesus, enquanto estava exilado na ilha de Patmos, este livro é uma poderosa revelação sobre os últimos dias, a vitória final de Cristo e a consumação do plano de Deus. Suas visões, cheias de símbolos e profundos significados, revelam a luta entre o bem e o mal, o juízo sobre a maldade, a perseverança dos fiéis e, sobretudo, a gloriosa esperança da nova Jerusalém, onde não haverá mais dor, nem lágrimas, nem morte. É uma mensagem de alerta, consolo e esperança, que nos lembra que, no fim, Jesus reina soberano, e a vitória pertence aos que permanecem fiéis até o fim.'
+
+        // Adicione conforme os livros que você tem no índice
+      };
+
+      capitulosDisponiveis = data[testamento];
+      const testamentoData = data[testamento];
+
+      let html = `<h2>${testamento === 'velhoTestamento' ? 'Velho Testamento' : 'Novo Testamento'}</h2>`;
+      html += `<div class="livros-testamento">`;
+
+      for (const livro in testamentoData) {
+        const livroFormatado1 = capitalizeFirstLetter(livro);
+        const livroFormatado = corrigirNomeLivro(livroFormatado1);
+        const icone = iconesLivros[livro] || iconesLivros['default'];
+        const descricao = descricoesLivros[livro] || 'Livro bíblico';
+
+        html += `
+          <div class="card-livro">
+            <button class="botao-livro" onclick="toggleCapitulos('${livro}', this)">
+              <img src="${icone}" alt="${livroFormatado}" class="icone-livro" />
+              <div class="nome-e-descricao">
+                <div class="nome-livro">${livroFormatado}</div>
+                <div class="descricao-livro">${descricao}</div>
+              </div>
+            </button>
+            <div class="lista-capitulos" id="capitulos-${livro}">
+        `;
+
+        testamentoData[livro].forEach(num => {
+          html += `<button onclick="carregarCapitulo('${livro}', ${num})">Capítulo ${num}</button>`;
+        });
+
+        html += `</div></div></div>`;
+
+        
+      }
+
+      conteudo.innerHTML = html;
+      aplicarModoEscuroDinamico();
+    })
+    .catch(err => {
+      console.error('Erro ao carregar índice:', err);
+      conteudo.innerHTML = `<p>Erro ao carregar lista de livros.</p>`;
+    });
 }
 
 // Função para listar capítulos de um livro
@@ -822,9 +838,9 @@ function copiarVersiculo(event, livro, capitulo, numero, texto, reflexao) {
 
 function corrigirNomeLivro(nome) {
   const correcoes = {
+    'salmos': 'Salmos',
+
     'joao': 'João',
-    'genesis': 'Gênesis',
-    'exodo': 'Êxodo',
     'mateus': 'Mateus',
     'marcos': 'Marcos',
     'lucas': 'Lucas',
