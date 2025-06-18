@@ -1,0 +1,886 @@
+{
+  "livro": "Salmos",
+  "capitulo": "119",
+  "versiculos": [
+    {
+      "numero": "1",
+      "texto": "Como são felizes os que andam em caminhos irrepreensíveis, que vivem conforme a lei do Senhor!",
+      "reflexao": "A verdadeira felicidade está em viver segundo os princípios de Deus. No mundo em que as pessoas buscam alegria em coisas passageiras, Deus nos lembra que a plenitude está em andar nos Seus caminhos. Viver a Palavra é viver em paz, mesmo quando tudo parece desabar."
+    },
+    {
+      "numero": "2",
+      "texto": "Como são felizes os que obedecem aos seus estatutos e de todo o coração o buscam!",
+      "reflexao": "Buscar a Deus de todo o coração não é uma obrigação, é um privilégio que transforma vidas. Quando colocamos o Senhor no centro, nossa alma encontra direção, sentido e uma alegria que não depende das circunstâncias."
+    },
+    {
+      "numero": "3",
+      "texto": "Não praticam o mal e andam nos caminhos do Senhor.",
+      "reflexao": "O compromisso com Deus nos afasta das práticas que ferem a nós mesmos e aos outros. Quem anda nos caminhos do Senhor escolhe diariamente a luz em vez da escuridão, mesmo quando isso exige renúncia e coragem."
+    },
+    {
+      "numero": "4",
+      "texto": "Tu mesmo ordenaste os teus preceitos para que sejam fielmente obedecidos.",
+      "reflexao": "Deus não nos dá regras para nos limitar, mas para nos proteger e nos conduzir à vida plena. Seus mandamentos são bússola em meio às tempestades da vida, nos mostrando o caminho seguro da paz e da esperança."
+    },
+    {
+      "numero": "5",
+      "texto": "Quem dera fossem firmados os meus caminhos na obediência aos teus decretos!",
+      "reflexao": "O salmista expressa um desejo que também habita em nós: permanecer firmes no caminho de Deus. É um convite à reflexão diária sobre onde temos colocado nossos passos e quais escolhas temos feito. Que o nosso coração deseje, acima de tudo, agradar a Deus."
+    },
+    {
+      "numero": "6",
+      "texto": "Então não ficaria decepcionado ao considerar todos os teus mandamentos.",
+      "reflexao": "Quando escolhemos viver segundo os princípios do Senhor, evitamos frustrações que vêm de escolhas precipitadas ou sem direção. A Palavra nos livra das armadilhas do caminho e das decepções que o mundo insiste em oferecer."
+    },
+    {
+      "numero": "7",
+      "texto": "Eu te louvarei de coração sincero quando aprender as tuas justas ordenanças.",
+      "reflexao": "O louvor sincero nasce do entendimento da justiça e da bondade de Deus. Quanto mais conhecemos a Sua Palavra, mais o nosso coração transborda em gratidão, pois vemos que Seus caminhos são perfeitos e conduzem à vida abundante."
+    },
+    {
+      "numero": "8",
+      "texto": "Obedecerei aos teus decretos; nunca me abandones!",
+      "reflexao": "Esse clamor revela nossa total dependência de Deus. É um reconhecimento de que, sem a presença do Senhor, nossa caminhada perde o sentido. Obedecer não é peso, é expressão de amor e desejo por permanecer na presença dEle."
+    },
+    {
+      "numero": "9",
+      "texto": "Como pode o jovem manter pura a sua conduta? Vivendo de acordo com a tua palavra.",
+      "reflexao": "Num mundo cheio de propostas vazias, a Palavra de Deus é o caminho seguro para qualquer pessoa, especialmente para os jovens. Ela preserva o coração, dá discernimento e protege das escolhas que podem gerar feridas profundas na alma."
+    },
+    {
+      "numero": "10",
+      "texto": "Eu te busco de todo o coração; não permitas que eu me desvie dos teus mandamentos.",
+      "reflexao": "Buscar a Deus de todo o coração é uma decisão diária. É se lançar em Sua presença, reconhecendo que só Ele tem o poder de nos sustentar e nos livrar dos desvios do caminho. Esse é um clamor que deve ecoar em nosso interior constantemente."
+    },
+    {
+      "numero": "11",
+      "texto": "Guardei no coração a tua palavra para não pecar contra ti.",
+      "reflexao": "A Palavra no coração é escudo contra o erro, é força nas tentações e refúgio nas tribulações. Memorizar, meditar e viver a Palavra nos torna mais fortes e sensíveis à voz de Deus em meio ao barulho do mundo."
+    },
+    {
+      "numero": "12",
+      "texto": "Bendito sejas, Senhor! Ensina-me os teus decretos.",
+      "reflexao": "Reconhecer que Deus é bendito e pedir por ensino revela humildade e sede por transformação. Aprender de Deus não é apenas adquirir conhecimento, mas ser moldado por Ele, dia após dia, em amor, caráter e santidade."
+    },
+    {
+      "numero": "13",
+      "texto": "Com os lábios repito todas as leis que decretaste.",
+      "reflexao": "Falar da Palavra é uma forma de fortalecer nossa fé e testemunhar ao mundo sobre quem Deus é. Quando verbalizamos a verdade de Deus, ela se fortalece dentro de nós e toca aqueles que nos ouvem."
+    },
+    {
+      "numero": "14",
+      "texto": "Regozijo-me em seguir os teus testemunhos como em grande riqueza.",
+      "reflexao": "O verdadeiro tesouro não está nas riquezas deste mundo, mas em viver segundo os testemunhos do Senhor. Quem encontra prazer na obediência a Deus descobre uma alegria que dinheiro algum pode comprar — paz, segurança e propósito."
+    },
+    {
+      "numero": "15",
+      "texto": "Meditarei nos teus preceitos e darei atenção às tuas veredas.",
+      "reflexao": "Meditar na Palavra é mais do que ler — é refletir, absorver, praticar. Esse exercício nos conduz a uma vida de discernimento, onde nossos passos são guiados não pelos ventos da vida, mas pela direção amorosa de Deus."
+    },
+    {
+      "numero": "16",
+      "texto": "Terei prazer nos teus decretos; não me esquecerei da tua palavra.",
+      "reflexao": "Prazer na Palavra é sinal de um coração alinhado com Deus. Lembrar-se dela nos momentos bons e ruins nos fortalece, nos consola e nos direciona a viver com mais amor, sabedoria e fé."
+    },
+    {
+      "numero": "17",
+      "texto": "Trata com bondade o teu servo para que eu viva e obedeça à tua palavra.",
+      "reflexao": "O pedido por bondade revela nossa dependência total do cuidado de Deus. A vida ganha sentido quando é vivida em obediência, e essa obediência nasce da consciência de que tudo vem da misericórdia do Pai."
+    },
+    {
+      "numero": "18",
+      "texto": "Abre os meus olhos para que eu veja as maravilhas da tua lei.",
+      "reflexao": "Quantas vezes olhamos, mas não enxergamos! Este clamor deve ser constante: que Deus abra nossos olhos espirituais para contemplarmos as riquezas da Sua Palavra, que são fonte de vida, sabedoria e transformação."
+    },
+    {
+      "numero": "19",
+      "texto": "Sou peregrino na terra; não escondas de mim os teus mandamentos.",
+      "reflexao": "Neste mundo passageiro, somos peregrinos. Precisamos da direção de Deus para não nos perdermos no caminho. Seus mandamentos são o mapa seguro que nos conduz ao destino eterno e nos guarda das distrações do percurso."
+    },
+    {
+      "numero": "20",
+      "texto": "A minha alma consome-se de perene desejo das tuas ordenanças.",
+      "reflexao": "Ter fome e sede pela Palavra de Deus é sinal de um coração vivo espiritualmente. Quando nossa alma anseia pelos ensinamentos do Senhor, encontramos sentido, força e plenitude, mesmo em meio às lutas da vida."
+    },
+    {
+      "numero": "21",
+      "texto": "Tu repreendes os arrogantes; malditos os que se desviam dos teus mandamentos.",
+      "reflexao": "A arrogância fecha os ouvidos e endurece o coração. Quem despreza os mandamentos de Deus colhe consequências amargas. Este versículo nos alerta a cultivar a humildade, pois é na dependência de Deus que encontramos vida verdadeira."
+    },
+    {
+      "numero": "22",
+      "texto": "Livra-me da afronta e do desprezo, pois obedeço aos teus testemunhos.",
+      "reflexao": "Viver segundo a Palavra nem sempre será compreendido pelo mundo. Haverá zombarias e rejeições, mas Deus é nosso refúgio. Ele nos honra diante dos que nos desprezam, porque valoriza um coração fiel."
+    },
+    {
+      "numero": "23",
+      "texto": "Mesmo que os poderosos se reúnam para conspirar contra mim, ainda assim teu servo meditará nos teus decretos.",
+      "reflexao": "Diante das injustiças e das pressões, o salmista escolhe não se abalar. Isso nos ensina que, em tempos de adversidade, devemos permanecer firmes, mantendo nossos olhos e coração na Palavra, que nos sustenta e fortalece."
+    },
+    {
+      "numero": "24",
+      "texto": "Os teus testemunhos são o meu prazer; são eles os meus conselheiros.",
+      "reflexao": "Quando escolhemos a Palavra como nosso guia, encontramos conselhos seguros e direção certa. Ela se torna fonte de alegria e sabedoria, mesmo quando tudo ao redor é confuso e incerto."
+    },
+    {
+      "numero": "25",
+      "texto": "Estou por terra, completamente abatido; preserva a minha vida conforme a tua palavra.",
+      "reflexao": "Quantas vezes nos sentimos assim: abatidos, sem forças, prostrados. Mas é na Palavra que encontramos renovação. Ela levanta quem está caído, consola quem está aflito e fortalece quem está fraco."
+    },
+    {
+      "numero": "26",
+      "texto": "A ti relatei os meus caminhos, e tu me respondeste; ensina-me os teus decretos.",
+      "reflexao": "Deus nos ouve. Quando abrimos nosso coração, Ele responde. E, mais que respostas momentâneas, Ele deseja nos ensinar a viver de acordo com Seus caminhos, que são eternos e perfeitos."
+    },
+    {
+      "numero": "27",
+      "texto": "Faz-me discernir o propósito dos teus preceitos; então meditarei nas tuas maravilhas.",
+      "reflexao": "Pedir discernimento é reconhecer que não sabemos tudo e que dependemos de Deus. Quando compreendemos o propósito dos Seus mandamentos, nossa fé se fortalece e passamos a admirar ainda mais as maravilhas do Senhor em nossa vida."
+    },
+    {
+      "numero": "28",
+      "texto": "A minha alma se consome de tristeza; fortalece-me conforme a tua palavra.",
+      "reflexao": "Quando o peso da tristeza parece insuportável, é na Palavra que encontramos força. Deus nos ergue, consola e restaura nossas emoções, dando-nos coragem para seguir e esperança para continuar."
+    },
+    {
+      "numero": "29",
+      "texto": "Desvia-me dos caminhos enganosos; por tua graça, ensina-me a tua lei.",
+      "reflexao": "O mundo oferece muitos atalhos sedutores, mas que nos afastam da verdade. Clamar pela graça de Deus para permanecer no caminho certo é demonstração de sabedoria e amor por uma vida íntegra e abençoada."
+    },
+    {
+      "numero": "30",
+      "texto": "Escolhi o caminho da fidelidade; decidi seguir as tuas ordenanças.",
+      "reflexao": "Viver com Deus é uma escolha diária. É decidir, mesmo diante das dificuldades, permanecer fiel aos Seus princípios. Essa decisão transforma nosso caráter e define o rumo da nossa vida."
+    },
+    {
+      "numero": "31",
+      "texto": "Apeguei-me aos teus testemunhos, Senhor; não permitas que eu fique decepcionado.",
+      "reflexao": "Quem se apega à Palavra nunca será decepcionado por Deus. Mesmo que as circunstâncias sejam difíceis, o Senhor honra aqueles que confiam nEle, sustentando-os e guiando-os com amor."
+    },
+    {
+      "numero": "32",
+      "texto": "Corro pelo caminho que os teus mandamentos apontam, pois me deste maior entendimento.",
+      "reflexao": "Quando entendemos a vontade de Deus, não caminhamos mais — corremos! A obediência deixa de ser peso e se torna alegria, pois sabemos que cada passo dado segundo Sua vontade nos conduz à vida e à paz."
+    },
+    {
+      "numero": "33",
+      "texto": "Ensina-me, Senhor, o caminho dos teus decretos, e a eles obedecerei até o fim.",
+      "reflexao": "O verdadeiro discípulo é aquele que deseja aprender e obedecer até o fim. Essa oração revela um coração disposto, que entende que a jornada com Deus não tem fim — é para toda a vida, até a eternidade."
+    },
+    {
+      "numero": "34",
+      "texto": "Dá-me entendimento, para que eu guarde a tua lei e a ela obedeça de todo o coração.",
+      "reflexao": "A obediência que agrada a Deus nasce do entendimento. Quando compreendemos o valor e o propósito da Sua lei, nosso coração se enche de vontade de viver segundo ela, não por obrigação, mas por amor."
+    },
+    {
+      "numero": "35",
+      "texto": "Guia-me pelos caminhos dos teus mandamentos, pois neles encontro satisfação.",
+      "reflexao": "Quem experimenta a beleza dos caminhos de Deus encontra neles satisfação verdadeira. Enquanto o mundo busca alegria em coisas passageiras, nós encontramos paz e contentamento na fidelidade à Palavra."
+    },
+    {
+      "numero": "36",
+      "texto": "Inclina o meu coração para os teus estatutos, e não para a ganância.",
+      "reflexao": "Vivemos em um mundo onde a ganância e o materialismo tentam dominar os corações. Este versículo é um clamor por libertação desse sistema, pedindo que nosso coração deseje mais a Deus do que qualquer bem terreno."
+    },
+    {
+      "numero": "37",
+      "texto": "Desvia os meus olhos das coisas inúteis; faze-me viver nos caminhos que traçaste.",
+      "reflexao": "Os olhos são portas da alma. Precisamos pedir que Deus nos ajude a não fixar nossos olhos no que é fútil, passageiro e vazio, mas sim naquilo que edifica, fortalece e conduz à vida eterna."
+    },
+    {
+      "numero": "38",
+      "texto": "Cumpre a tua promessa ao teu servo, para que sejas temido.",
+      "reflexao": "Deus é fiel para cumprir Suas promessas. Quando testemunhamos Seu agir, nosso coração se enche de reverência e temor santo. Viver as promessas de Deus é viver debaixo de Sua proteção e cuidado constante."
+    },
+    {
+      "numero": "39",
+      "texto": "Livra-me da afronta que me apavora, pois as tuas ordenanças são boas.",
+      "reflexao": "O temor de ser envergonhado desaparece quando confiamos na bondade dos mandamentos do Senhor. Eles são nosso escudo contra as acusações, as críticas e as mentiras do mundo."
+    },
+    {
+      "numero": "40",
+      "texto": "Como anseio pelos teus preceitos! Preserva a minha vida por tua justiça.",
+      "reflexao": "O verdadeiro anseio do coração deve ser pela Palavra de Deus. É nela que encontramos vida, propósito e segurança. Que nosso desejo por Deus seja maior que qualquer desejo terreno."
+    },
+    {
+      "numero": "41",
+      "texto": "Que o teu amor alcance-me, Senhor, e a tua salvação, segundo a tua promessa;",
+      "reflexao": "Nos momentos de fraqueza, clamamos pela misericórdia e pelo livramento do Senhor. E podemos ter certeza: Ele é fiel para cumprir Suas promessas e socorrer aqueles que confiam nEle."
+    },
+    {
+      "numero": "42",
+      "texto": "então poderei responder aos que me afrontam, pois confio na tua palavra.",
+      "reflexao": "A Palavra de Deus é nosso escudo contra acusações e afrontas. Quando confiamos nela, temos respostas firmes e seguras, não baseadas na nossa força, mas na fidelidade do Senhor."
+    },
+    {
+      "numero": "43",
+      "texto": "Nunca tires da minha boca a palavra da verdade, pois nas tuas ordenanças coloquei a minha esperança.",
+      "reflexao": "Em meio a um mundo onde a mentira se tornou comum, clamamos para que Deus preserve em nós a verdade. Nossa esperança não está nas circunstâncias, mas nas promessas eternas do Senhor."
+    },
+    {
+      "numero": "44",
+      "texto": "Obedecerei constantemente à tua lei, para todo o sempre.",
+      "reflexao": "A obediência não é algo momentâneo, mas uma decisão para a vida inteira. Quem escolhe viver segundo a Palavra experimenta segurança, paz e propósito eternos."
+    },
+    {
+      "numero": "45",
+      "texto": "Andarei em verdadeira liberdade, pois tenho buscado os teus preceitos.",
+      "reflexao": "A verdadeira liberdade não está em fazer tudo o que queremos, mas em viver de acordo com a vontade de Deus. É nesse caminho que encontramos paz, segurança e plenitude."
+    },
+    {
+      "numero": "46",
+      "texto": "Falarei dos teus testemunhos diante dos reis, e não ficarei envergonhado.",
+      "reflexao": "Quem vive segundo a Palavra não tem do que se envergonhar. Ela nos dá ousadia para testemunhar, até mesmo diante dos poderosos, sobre a verdade e o amor de Deus."
+    },
+    {
+      "numero": "47",
+      "texto": "Tenho prazer nos teus mandamentos; eu os amo.",
+      "reflexao": "Amar os mandamentos é amar a Deus. Quando a obediência deixa de ser um peso e se torna prazer, nossa vida se transforma, e encontramos verdadeira satisfação na presença do Senhor."
+    },
+    {
+      "numero": "48",
+      "texto": "Aos teus mandamentos, que amo, levanto as minhas mãos e medito nos teus decretos.",
+      "reflexao": "Levantar as mãos simboliza entrega, adoração e dependência. Meditar na Palavra fortalece nosso espírito, renova nossa mente e nos aproxima cada vez mais do coração de Deus."
+    },
+    {
+      "numero": "49",
+      "texto": "Lembra-te da tua palavra ao teu servo, pela qual me deste esperança.",
+      "reflexao": "Quando nos sentimos desanimados, podemos clamar: 'Senhor, lembra-te da tua promessa'. Deus não esquece. Sua Palavra é fonte constante de esperança e renovação para quem crê."
+    },
+    {
+      "numero": "50",
+      "texto": "Este é o meu consolo no meu sofrimento: a tua promessa dá-me vida.",
+      "reflexao": "Quando tudo parece desabar, é na Palavra que encontramos consolo verdadeiro. As promessas de Deus revivem nossa alma, trazem esperança e força para continuar mesmo em meio à dor."
+    },
+    {
+      "numero": "51",
+      "texto": "Os arrogantes zombam de mim sem cessar, mas eu não me desvio da tua lei.",
+      "reflexao": "Ser fiel a Deus muitas vezes atrai zombarias e desprezo. Mas quem se firma na Palavra permanece inabalável, pois sabe que o que Deus pensa vale infinitamente mais do que a opinião dos homens."
+    },
+    {
+      "numero": "52",
+      "texto": "Lembro-me, Senhor, das tuas ordenanças de tempos antigos e nelas encontro consolo.",
+      "reflexao": "As promessas de Deus são eternas. Quando olhamos para tudo o que Ele já fez no passado, encontramos força e consolo para confiar que Ele continua sendo o mesmo hoje e sempre."
+    },
+    {
+      "numero": "53",
+      "texto": "Fui tomado de ira tremenda por causa dos ímpios, que rejeitam a tua lei.",
+      "reflexao": "O zelo pela justiça de Deus deve queimar em nosso coração. Diante de um mundo que rejeita a verdade, nosso papel é permanecer firmes, orando e sendo luz, sem permitir que a maldade endureça nosso amor."
+    },
+    {
+      "numero": "54",
+      "texto": "Os teus decretos são o tema da minha canção na casa em que vivo.",
+      "reflexao": "Quando a Palavra de Deus se torna nossa canção, ela transforma o ambiente da nossa casa, do nosso trabalho e da nossa vida. Quem canta as verdades do Senhor vive em constante gratidão e esperança."
+    },
+    {
+      "numero": "55",
+      "texto": "De noite lembro-me do teu nome, Senhor, e obedeço à tua lei.",
+      "reflexao": "Até nas horas silenciosas da noite, Deus está presente. Lembrar-se dEle e meditar em Sua Palavra traz paz, segurança e direção, mesmo quando tudo ao redor parece incerto."
+    },
+    {
+      "numero": "56",
+      "texto": "Esta tem sido a minha prática: obedecer aos teus preceitos.",
+      "reflexao": "A obediência constante gera frutos de paz, sabedoria e bênçãos. Que essa também seja a nossa prática diária: viver para agradar a Deus e honrar Sua Palavra."
+    },
+    {
+      "numero": "57",
+      "texto": "Tu és a minha herança, Senhor; prometi obedecer às tuas palavras.",
+      "reflexao": "O maior tesouro que podemos ter é o próprio Deus. Quando entendemos isso, nossa vida muda, e obedecer à Sua Palavra deixa de ser um dever e passa a ser um privilégio precioso."
+    },
+    {
+      "numero": "58",
+      "texto": "De todo o coração busquei o teu favor; tem misericórdia de mim, conforme a tua promessa.",
+      "reflexao": "Buscar a Deus de todo o coração é se lançar em Seus braços, confiando na Sua misericórdia e no Seu amor. Ele nunca despreza um coração sincero e quebrantado."
+    },
+    {
+      "numero": "59",
+      "texto": "Refleti nos meus caminhos e voltei os meus passos para os teus testemunhos.",
+      "reflexao": "Avaliar nossos passos é essencial. Muitas vezes, precisamos parar, refletir e decidir voltar ao caminho do Senhor, que é o único que conduz à vida verdadeira e plena."
+    },
+    {
+      "numero": "60",
+      "texto": "Eu me apresso, e não hesito em obedecer aos teus mandamentos.",
+      "reflexao": "Não devemos adiar nossa obediência a Deus. Cada dia longe dos Seus caminhos é um dia perdido. Obedecer com prontidão é escolher viver no centro da Sua vontade, onde há paz e segurança."
+    },
+    {
+      "numero": "61",
+      "texto": "Embora os laços dos ímpios queiram prender-me, não me esqueço da tua lei.",
+      "reflexao": "Mesmo quando somos cercados por dificuldades e armadilhas, lembrar da Palavra nos mantém firmes. Ela é nossa âncora, nossa defesa e nossa fonte de esperança em meio às tribulações."
+    },
+    {
+      "numero": "62",
+      "texto": "À meia-noite me levanto para dar-te graças pelas tuas justas ordenanças.",
+      "reflexao": "O amor e a gratidão a Deus transcendem o tempo. Até no meio da noite, podemos erguer nossa voz em gratidão, reconhecendo que Seus decretos são justos e Sua fidelidade dura para sempre."
+    },
+    {
+      "numero": "63",
+      "texto": "Sou amigo de todos os que te temem e obedecem aos teus preceitos.",
+      "reflexao": "A comunhão com aqueles que amam e temem a Deus fortalece nossa caminhada. Estar cercado de pessoas que buscam viver segundo a Palavra é bênção, edificação e proteção para nossa fé."
+    },
+    {
+      "numero": "64",
+      "texto": "A terra está cheia do teu amor, Senhor; ensina-me os teus decretos.",
+      "reflexao": "Mesmo em meio às dores do mundo, o amor de Deus preenche a terra. Quem tem olhos espirituais percebe que a Sua bondade se manifesta diariamente. Que esse amor nos inspire a buscar mais dos Seus ensinamentos."
+    },
+    {
+      "numero": "65",
+      "texto": "Trata com bondade o teu servo, Senhor, conforme a tua promessa.",
+      "reflexao": "Deus é bom e fiel. Podemos confiar que Sua bondade nos acompanha, não porque merecemos, mas porque Ele cumpre cada uma de Suas promessas àqueles que O amam e seguem Sua Palavra."
+    },
+    {
+      "numero": "66",
+      "texto": "Ensina-me o bom senso e o conhecimento, pois confio nos teus mandamentos.",
+      "reflexao": "Num mundo cheio de opiniões, precisamos de bom senso e sabedoria, que vêm da Palavra. Quem confia nos mandamentos de Deus desenvolve discernimento para tomar decisões corretas e viver em retidão."
+    },
+    {
+      "numero": "67",
+      "texto": "Antes de ser castigado eu andava desviado, mas agora obedeço à tua palavra.",
+      "reflexao": "Muitas vezes é no sofrimento que despertamos para a necessidade de Deus. As adversidades podem ser instrumentos para nos trazer de volta ao caminho da vida, despertando em nós um desejo profundo pela obediência."
+    },
+    {
+      "numero": "68",
+      "texto": "Tu és bom, e o que fazes é bom; ensina-me os teus decretos.",
+      "reflexao": "Deus é a própria essência da bondade. Tudo o que Ele faz é perfeito, mesmo quando não entendemos. Aprender os Seus decretos é viver alinhado com essa bondade, desfrutando de paz e propósito."
+    },
+    {
+      "numero": "69",
+      "texto": "Os arrogantes mancharam meu nome com mentiras, mas eu obedeço aos teus preceitos de todo o coração.",
+      "reflexao": "As mentiras e calúnias dos homens não podem nos afastar de Deus. Permanecer fiel à Sua Palavra, mesmo quando somos injustiçados, é confiar que Ele é nosso defensor e restaurador da nossa honra."
+    },
+    {
+      "numero": "70",
+      "texto": "O coração deles é insensível, eu, porém, tenho prazer na tua lei.",
+      "reflexao": "Enquanto muitos endurecem seus corações para Deus, quem ama a Sua lei encontra alegria, leveza e direção. A Palavra é fonte de prazer para quem tem o coração sensível à voz do Senhor."
+    },
+    {
+      "numero": "71",
+      "texto": "Foi bom para mim ter sido castigado, para que aprendesse os teus decretos.",
+      "reflexao": "As lutas que enfrentamos muitas vezes nos aproximam de Deus. O sofrimento, quando vivido na presença do Senhor, nos ensina, molda nosso caráter e nos leva a valorizar ainda mais a Sua Palavra."
+    },
+    {
+      "numero": "72",
+      "texto": "Para mim vale mais a lei que decretaste do que milhares de peças de prata e ouro.",
+      "reflexao": "Nada neste mundo se compara ao valor da Palavra de Deus. Riquezas materiais passam, mas quem guarda os ensinamentos do Senhor possui um tesouro eterno, que enriquece a alma e dá sentido à vida."
+    },
+    {
+      "numero": "73",
+      "texto": "As tuas mãos me fizeram e me formaram; dá-me entendimento para aprender os teus mandamentos.",
+      "reflexao": "O Deus que nos criou também deseja nos ensinar. Somos obra de Suas mãos, e Ele tem prazer em nos dar entendimento para que vivamos segundo Seus princípios, desfrutando de uma vida plena e abençoada."
+    },
+    {
+      "numero": "74",
+      "texto": "Quando os que te temem me virem, se alegrarão, pois na tua palavra coloquei a minha esperança.",
+      "reflexao": "A nossa esperança em Deus não é apenas um testemunho pessoal, mas também uma fonte de inspiração para outros. Quem vive firmado na Palavra transmite fé, coragem e alegria aos que também temem ao Senhor."
+    },
+    {
+      "numero": "75",
+      "texto": "Sei, Senhor, que as tuas ordenanças são justas, e que com fidelidade me castigaste.",
+      "reflexao": "Deus é justo em tudo o que faz, inclusive na correção. O amor dEle se manifesta também quando nos disciplina, pois deseja nos aperfeiçoar, moldando nosso caráter à imagem de Cristo."
+    },
+    {
+      "numero": "76",
+      "texto": "Seja o teu amor o meu consolo, conforme a tua promessa ao teu servo.",
+      "reflexao": "O amor de Deus é o maior consolo que existe. Quando tudo falha, quando as dores chegam, podemos descansar na certeza de que Seu amor nos envolve, nos sustenta e jamais nos abandona."
+    },
+    {
+      "numero": "77",
+      "texto": "Alcance-me a tua misericórdia para que eu tenha vida, porque a tua lei é o meu prazer.",
+      "reflexao": "Viver na dependência da misericórdia de Deus é reconhecer que tudo vem dEle. Quem ama a Palavra encontra nela prazer, alimento para a alma e força para caminhar, mesmo em dias difíceis."
+    },
+    {
+      "numero": "78",
+      "texto": "Sejam humilhados os arrogantes, pois me prejudicaram sem motivo; mas eu meditarei nos teus preceitos.",
+      "reflexao": "Em vez de buscar vingança, o salmista escolhe meditar na Palavra. Essa é uma lição poderosa: quando enfrentamos injustiças, encontramos paz, direção e conforto na presença e nos ensinamentos de Deus."
+    },
+    {
+      "numero": "79",
+      "texto": "Reúnam-se comigo os que te temem, aqueles que entendem os teus estatutos.",
+      "reflexao": "Caminhar junto de pessoas que temem a Deus fortalece nossa fé. A comunhão com os irmãos nos ajuda a crescer, a perseverar e a manter nosso foco naquilo que realmente importa: viver para agradar ao Senhor."
+    },
+    {
+      "numero": "80",
+      "texto": "Seja o meu coração íntegro para com os teus decretos, para que eu não seja humilhado.",
+      "reflexao": "A integridade diante de Deus é o nosso maior escudo. Quando nosso coração está alinhado com a Sua vontade, não precisamos temer a humilhação, pois sabemos que Ele nos sustenta e honra aqueles que O buscam com sinceridade."
+    },
+    {
+      "numero": "81",
+      "texto": "A minha alma desfalece aguardando a tua salvação, porém ponho a minha esperança na tua palavra.",
+      "reflexao": "Mesmo quando a alma se sente cansada e abatida, a esperança na Palavra nos mantém firmes. O Senhor nunca falha. Quem espera nEle jamais será decepcionado, pois Suas promessas são verdadeiras e fiéis."
+    },
+    {
+      "numero": "82",
+      "texto": "Os meus olhos fraquejam de tanto esperar pela tua promessa, e pergunto: 'Quando me consolarás?'",
+      "reflexao": "Existem momentos em que parece que a resposta de Deus não chega. Mas até nesses dias, Ele está trabalhando. A demora nunca é descaso, mas parte de um plano perfeito que no tempo certo se revela como consolo, resposta e vitória."
+    },
+    {
+      "numero": "83",
+      "texto": "Embora eu seja como uma vasilha inútil, não me esqueço dos teus decretos.",
+      "reflexao": "Mesmo quando nos sentimos fracos, quebrados ou sem valor, Deus não nos rejeita. A nossa força está em não esquecer da Sua Palavra, que nos restaura, renova e dá novo sentido à nossa existência."
+    },
+    {
+      "numero": "84",
+      "texto": "Até quando o teu servo deverá esperar? Quando castigarás os meus perseguidores?",
+      "reflexao": "Há momentos em que parece que a justiça demora. Mas esse clamor nos lembra que podemos apresentar nossas dores e questionamentos a Deus, certos de que Ele vê, ouve e age no tempo certo."
+    },
+    {
+      "numero": "85",
+      "texto": "Cavaram armadilhas contra mim os arrogantes, os que não seguem a tua lei.",
+      "reflexao": "A fidelidade a Deus não nos livra dos ataques, mas nos protege do mal. Mesmo quando preparam armadilhas contra nós, o Senhor é quem nos guarda e nos livra do laço do inimigo."
+    },
+    {
+      "numero": "86",
+      "texto": "Todos os teus mandamentos merecem confiança; ajuda-me, pois sou perseguido sem motivo.",
+      "reflexao": "Em meio à perseguição e à injustiça, encontramos na Palavra a certeza de que Deus é justo e fiel. Ele nunca abandona aqueles que confiam e vivem segundo os Seus ensinamentos."
+    },
+    {
+      "numero": "87",
+      "texto": "Quase acabaram com a minha vida na terra, mas não abandonei os teus preceitos.",
+      "reflexao": "Mesmo diante da ameaça de morte, o salmista permanece firme na Palavra. Isso nos ensina que não importa o quão difícil seja a batalha, permanecer fiel a Deus é sempre o melhor caminho."
+    },
+    {
+      "numero": "88",
+      "texto": "Preserva a minha vida pelo teu amor, e obedecerei aos testemunhos que decretaste.",
+      "reflexao": "O amor de Deus é fonte de vida e proteção. Quem se refugia nEle encontra forças para continuar e escolhe viver em obediência, reconhecendo que tudo vem do Senhor."
+    },
+    {
+      "numero": "89",
+      "texto": "A tua palavra, Senhor, para sempre está firmada nos céus.",
+      "reflexao": "As palavras dos homens passam, mas a Palavra de Deus permanece para sempre. Ela é imutável, eterna e segura. Quem firma sua vida nela nunca será abalado."
+    },
+    {
+      "numero": "90",
+      "texto": "A tua fidelidade é constante por todas as gerações; estabeleceste a terra, que firme permanece.",
+      "reflexao": "De geração em geração, Deus permanece fiel. Assim como Ele sustenta a terra, também sustenta nossa vida. Podemos descansar na certeza de que Sua fidelidade nunca falha."
+    },
+    {
+      "numero": "91",
+      "texto": "Conforme as tuas ordens, tudo permanece até hoje, pois tudo está a teu serviço.",
+      "reflexao": "Tudo no universo obedece à ordem de Deus. Isso nos mostra que Ele está no controle absoluto de todas as coisas. Confiar nEle é confiar em quem governa o céu, a terra e nossas vidas com perfeição."
+    },
+    {
+      "numero": "92",
+      "texto": "Se a tua lei não fosse o meu prazer, o sofrimento já me teria destruído.",
+      "reflexao": "É a Palavra que sustenta nos dias de dor. Quando o sofrimento aperta, ela nos consola, nos dá esperança e nos impede de sermos consumidos pela tristeza."
+    },
+    {
+      "numero": "93",
+      "texto": "Jamais me esquecerei dos teus preceitos, pois é por meio deles que preservas a minha vida.",
+      "reflexao": "A Palavra de Deus não é apenas um livro, é fonte de vida. Quem guarda os ensinamentos do Senhor encontra direção, força e proteção, mesmo nas maiores adversidades."
+    },
+    {
+      "numero": "94",
+      "texto": "Salva-me, pois a ti pertenço, e busco os teus preceitos!",
+      "reflexao": "Declarar que pertencemos a Deus é reconhecer que nossa vida está em Suas mãos. Ele nos guarda, nos salva e nos conduz quando escolhemos buscar e viver segundo Sua vontade."
+    },
+    {
+      "numero": "95",
+      "texto": "Os ímpios estão à espreita para destruir-me, mas eu considero os teus testemunhos.",
+      "reflexao": "Mesmo cercados pelo mal, encontramos segurança quando meditamos na Palavra. Ela nos fortalece e nos dá discernimento para não cairmos nas ciladas que nos são armadas."
+    },
+    {
+      "numero": "96",
+      "texto": "Tenho constatado que toda perfeição tem limite; mas não há limite para o teu mandamento.",
+      "reflexao": "Tudo neste mundo tem um fim, uma limitação. Mas a Palavra de Deus é infinita em sabedoria, amor e direção. Ela nunca se esgota, nunca falha e nunca perde sua relevância."
+    },
+    {
+      "numero": "97",
+      "texto": "Como eu amo a tua lei! Medito nela o dia inteiro.",
+      "reflexao": "Amar a Palavra é amar a própria presença de Deus. Quando ela ocupa nosso pensamento, nosso coração se enche de paz, sabedoria e força para enfrentar qualquer desafio do dia."
+    },
+    {
+      "numero": "98",
+      "texto": "Os teus mandamentos me tornam mais sábio que os meus inimigos, pois estão sempre comigo.",
+      "reflexao": "A sabedoria que vem da Palavra supera qualquer astúcia humana. Quem anda com Deus é capacitado a vencer desafios e superar adversidades, não pela força, mas pela direção que vem do alto."
+    },
+    {
+      "numero": "99",
+      "texto": "Tenho mais discernimento que todos os meus mestres, pois medito nos teus testemunhos.",
+      "reflexao": "O verdadeiro discernimento não vem apenas dos livros ou da experiência humana, mas de um coração que medita na Palavra de Deus. Ela ilumina, orienta e transforma."
+    },
+    {
+      "numero": "100",
+      "texto": "Tenho mais entendimento que os anciãos, pois obedeço aos teus preceitos.",
+      "reflexao": "A obediência gera sabedoria. Mais do que idade ou experiência, quem vive segundo a Palavra desenvolve um entendimento profundo, pois aprende diretamente da fonte da verdade: Deus."
+    },
+    {
+      "numero": "101",
+      "texto": "Afasto os pés de todo caminho mau para obedecer à tua palavra.",
+      "reflexao": "A Palavra é nosso guia para fugir do mal. Quem se firma nos ensinamentos do Senhor escolhe diariamente se desviar do que é errado, buscando uma vida de retidão, paz e integridade."
+    },
+    {
+      "numero": "102",
+      "texto": "Não me afasto das tuas ordenanças, pois tu mesmo me ensinas.",
+      "reflexao": "Quando permitimos que Deus nos ensine, permanecemos firmes no caminho certo. É Ele quem nos instrui, orienta e fortalece para que não desviemos nem para a direita nem para a esquerda."
+    },
+    {
+      "numero": "103",
+      "texto": "Como são doces para o meu paladar as tuas palavras! Mais que o mel para a minha boca!",
+      "reflexao": "A Palavra de Deus é fonte de prazer, consolo e alegria. Ela adoça a alma, cura feridas, traz esperança e nos enche de um amor que só quem experimenta consegue compreender."
+    },
+    {
+      "numero": "104",
+      "texto": "Ganho entendimento por meio dos teus preceitos; por isso, odeio todo caminho de falsidade.",
+      "reflexao": "O entendimento que vem da Palavra gera em nós repulsa pelo engano, pela mentira e pelo mal. Quem ama a verdade não se conforma com a injustiça, mas escolhe viver de forma íntegra e agradável a Deus."
+    },
+    {
+      "numero": "105",
+      "texto": "A tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho.",
+      "reflexao": "A Palavra de Deus é como uma luz que nos guia na escuridão. Quando tudo parece incerto, ela nos mostra o caminho seguro, protegendo-nos dos perigos e das escolhas erradas."
+    },
+    {
+      "numero": "106",
+      "texto": "Prometi sob juramento e o cumprirei: vou obedecer às tuas justas ordenanças.",
+      "reflexao": "Obedecer à Palavra é um compromisso sério que traz bênçãos para quem decide viver segundo os princípios do Senhor. Essa decisão transforma nossa jornada e fortalece nossa fé."
+    },
+    {
+      "numero": "107",
+      "texto": "Passei por muito sofrimento; preserva, Senhor, a minha vida conforme a tua promessa.",
+      "reflexao": "Nos momentos de dor e sofrimento, podemos clamar pela vida que vem da promessa de Deus. Ele é fiel para nos sustentar, renovar nossas forças e nos fazer prosseguir com esperança."
+    },
+    {
+      "numero": "108",
+      "texto": "Aceita, Senhor, a oferta de louvor dos meus lábios, e ensina-me as tuas ordenanças.",
+      "reflexao": "Nosso louvor, mesmo em meio às lutas, é agradável a Deus. E quando buscamos aprender mais dos Seus caminhos, Ele se alegra e responde, guiando-nos com amor e sabedoria."
+    },
+    {
+      "numero": "109",
+      "texto": "A minha vida está sempre em perigo, mas não me esqueço da tua lei.",
+      "reflexao": "Mesmo cercados de ameaças, é a Palavra que nos mantém firmes. Ela traz segurança espiritual e emocional, mostrando que nossa vida está nas mãos de Deus, e não nas circunstâncias."
+    },
+    {
+      "numero": "110",
+      "texto": "Os ímpios preparam uma armadilha contra mim, mas não me desvio dos teus preceitos.",
+      "reflexao": "As armadilhas do inimigo não têm poder sobre quem se mantém fiel à Palavra. É nela que encontramos discernimento para perceber os perigos e força para permanecer no caminho certo."
+    },
+    {
+      "numero": "111",
+      "texto": "Os teus testemunhos são a minha herança permanente; são a alegria do meu coração.",
+      "reflexao": "Nada é mais precioso que viver segundo a Palavra de Deus. Ela é nosso maior tesouro, nossa herança eterna e a fonte de verdadeira alegria, paz e plenitude."
+    },
+    {
+      "numero": "112",
+      "texto": "Dispus o meu coração para cumprir os teus decretos até o fim.",
+      "reflexao": "Decidir seguir a Deus é um compromisso que exige perseverança. Quem escolhe viver de acordo com os decretos do Senhor até o fim experimenta uma vida guiada pela verdade e repleta de sentido."
+    },
+    {
+      "numero": "113",
+      "texto": "Odeio os que são inconstantes, mas amo a tua lei.",
+      "reflexao": "A inconstância gera confusão, mas a Palavra traz estabilidade e segurança. Quem ama a lei do Senhor escolhe a fidelidade e a integridade, rejeitando os caminhos tortuosos e falsos."
+    },
+    {
+      "numero": "114",
+      "texto": "Tu és o meu abrigo e o meu escudo; e na tua palavra coloquei a minha esperança.",
+      "reflexao": "Deus é nosso refúgio seguro. Em meio às tempestades da vida, nos escondemos debaixo de Suas asas e encontramos segurança, paz e esperança na Sua Palavra fiel."
+    },
+    {
+      "numero": "115",
+      "texto": "Afastem-se de mim os que praticam o mal! Quero obedecer aos mandamentos do meu Deus.",
+      "reflexao": "Para permanecer firme, muitas vezes é necessário se afastar das más influências. Priorizar a presença de Deus e Seus mandamentos é escolher o caminho da vida, da paz e da bênção."
+    },
+    {
+      "numero": "116",
+      "texto": "Sustenta-me segundo a tua promessa, e eu viverei; não permitas que se frustrem as minhas esperanças.",
+      "reflexao": "A esperança em Deus nunca será motivo de vergonha. Quem se apoia em Suas promessas vive sustentado pelo Seu amor e fidelidade, mesmo quando tudo parece desabar."
+    },
+    {
+      "numero": "117",
+      "texto": "Ampara-me, e estarei seguro; sempre estarei atento aos teus decretos.",
+      "reflexao": "Quando nos apoiamos em Deus, encontramos segurança verdadeira. Ele nos ampara, nos fortalece e nos dá condições de permanecer atentos e firmes em Sua Palavra."
+    },
+    {
+      "numero": "118",
+      "texto": "Tu rejeitas todos os que se desviam dos teus decretos, pois seus planos enganosos são inúteis.",
+      "reflexao": "Os caminhos do engano podem até parecer atraentes, mas são vazios e sem valor diante de Deus. Somente quem permanece na verdade encontra vida, paz e segurança eterna."
+    },
+    {
+      "numero": "119",
+      "texto": "Tu destróis como refugo todos os ímpios da terra; por isso amo os teus testemunhos.",
+      "reflexao": "A justiça de Deus é perfeita. Enquanto os ímpios são descartados como escória, aqueles que amam Sua Palavra são guardados, protegidos e elevados em honra diante do Senhor."
+    },
+    {
+      "numero": "120",
+      "texto": "O meu corpo estremece diante de ti; as tuas ordenanças enchem-me de temor.",
+      "reflexao": "O verdadeiro temor do Senhor gera reverência, respeito e amor. Quem compreende a grandeza de Deus vive com o coração sensível, desejoso de agradá-Lo em tudo."
+    },
+    {
+      "numero": "121",
+      "texto": "Tenho vivido com justiça e retidão; não me abandones nas mãos dos meus opressores.",
+      "reflexao": "Deus vê e honra quem escolhe viver em justiça e retidão. Mesmo quando somos perseguidos ou injustiçados, podemos confiar que Ele não nos abandona, mas luta por nós."
+    },
+    {
+      "numero": "122",
+      "texto": "Garante o bem-estar do teu servo; não permitas que os arrogantes me oprimam.",
+      "reflexao": "Deus é nosso defensor. Podemos orar pedindo que Ele nos proteja da opressão e do orgulho dos homens. Ele cuida dos Seus filhos e garante o bem-estar daqueles que O servem."
+    },
+    {
+      "numero": "123",
+      "texto": "Os meus olhos fraquejam, aguardando a tua salvação e o cumprimento da tua justiça.",
+      "reflexao": "Às vezes, a espera é longa, mas a justiça de Deus nunca falha. Mesmo quando nossos olhos se cansam de esperar, podemos descansar na certeza de que Ele cumpre Suas promessas no tempo certo."
+    },
+    {
+      "numero": "124",
+      "texto": "Trata o teu servo conforme o teu amor leal e ensina-me os teus decretos.",
+      "reflexao": "Tudo o que pedimos a Deus deve estar alinhado ao Seu amor e à Sua vontade. Ao sermos ensinados por Ele, nossa vida ganha direção, paz e um propósito eterno."
+    },
+    {
+      "numero": "125",
+      "texto": "Sou teu servo; dá-me discernimento para compreender os teus testemunhos.",
+      "reflexao": "Discernimento é um presente precioso de Deus. Quando pedimos entendimento da Sua Palavra, Ele nos capacita a viver de forma sábia, alinhada aos Seus propósitos, protegidos do engano e fortalecidos na fé."
+    },
+    {
+      "numero": "126",
+      "texto": "Já é tempo de intervires, Senhor, pois a tua lei está sendo desrespeitada.",
+      "reflexao": "Quando vemos a injustiça se multiplicando, podemos clamar pela intervenção de Deus. Ele é justo e não fica indiferente àqueles que desonram Seus princípios."
+    },
+    {
+      "numero": "127",
+      "texto": "Eu amo os teus mandamentos mais do que o ouro, mais do que o ouro puro.",
+      "reflexao": "Nada neste mundo tem mais valor do que a Palavra de Deus. Ela é um tesouro eterno que enriquece a alma, traz paz e dá sentido à vida."
+    },
+    {
+      "numero": "128",
+      "texto": "Por isso considero justos os teus preceitos e odeio todo caminho de falsidade.",
+      "reflexao": "A verdade da Palavra molda nosso caráter e nos faz rejeitar a mentira, o engano e todo caminho que desagrada a Deus. Viver na verdade é escolher o caminho da vida e da luz."
+    },
+    {
+      "numero": "129",
+      "texto": "Os teus testemunhos são maravilhosos; por isso, eu lhes obedeço.",
+      "reflexao": "A Palavra do Senhor é cheia de maravilhas. Quando obedecemos a ela, experimentamos transformação, paz e a manifestação do amor de Deus em cada detalhe da vida."
+    },
+    {
+      "numero": "130",
+      "texto": "A explicação das tuas palavras ilumina e dá discernimento aos inexperientes.",
+      "reflexao": "Mesmo os mais simples, quando mergulham na Palavra, recebem luz, sabedoria e direção. Ela tem poder para transformar vidas e gerar discernimento onde antes havia confusão."
+    },
+    {
+      "numero": "131",
+      "texto": "Abro a boca e suspiro, ansiando por teus mandamentos.",
+      "reflexao": "Que possamos ansiar pela presença de Deus e pelos Seus ensinamentos da mesma forma que ansiamos por ar. A Palavra sacia a alma sedenta e traz vida verdadeira."
+    },
+    {
+      "numero": "132",
+      "texto": "Volta-te para mim e tem misericórdia de mim, como sempre fazes aos que amam o teu nome.",
+      "reflexao": "Deus é um Pai amoroso que se volta para aqueles que O buscam. Sua misericórdia é renovada a cada manhã, e Ele nunca rejeita um coração sincero que clama por Seu amor."
+    },
+    {
+      "numero": "133",
+      "texto": "Dirige os meus passos, conforme a tua palavra; não permitas que nenhum pecado me domine.",
+      "reflexao": "Quem se deixa guiar pela Palavra encontra proteção contra o pecado. Ela é bússola segura, que nos impede de sermos dominados pelas tentações e pelos enganos deste mundo."
+    },
+    {
+      "numero": "134",
+      "texto": "Resgata-me da opressão dos homens, para que eu obedeça aos teus preceitos.",
+      "reflexao": "Quando clamamos pelo livramento de Deus, podemos viver livres da opressão, do medo e das pressões externas. Assim, nosso coração fica livre para obedecer e servir ao Senhor com alegria."
+    },
+    {
+      "numero": "135",
+      "texto": "Faze resplandecer o teu rosto sobre o teu servo e ensina-me os teus decretos.",
+      "reflexao": "O favor de Deus é luz sobre nossa vida. Quando Ele faz resplandecer Seu rosto sobre nós, recebemos graça, paz e entendimento para viver segundo a Sua vontade."
+    },
+    {
+      "numero": "136",
+      "texto": "Rios de lágrimas correm dos meus olhos, porque a tua lei não é obedecida.",
+      "reflexao": "O amor pela Palavra gera em nós tristeza ao vermos o mundo ignorando os caminhos de Deus. Esse lamento nos move a orar, interceder e viver como luz em meio às trevas."
+    },
+    {
+      "numero": "137",
+      "texto": "Justo és, Senhor, e retas são as tuas ordenanças.",
+      "reflexao": "Deus é a definição perfeita de justiça. Suas ordenanças são justas, verdadeiras e sempre conduzem à vida. Confiar nEle é confiar em quem nunca erra e nunca falha."
+    },
+    {
+      "numero": "138",
+      "texto": "Ordenaste os teus testemunhos com justiça; dignos são de inteira confiança!",
+      "reflexao": "A Palavra de Deus é absolutamente confiável. Ela nunca nos engana, nunca nos decepciona. Quem se apoia nela encontra segurança eterna e direção para cada passo."
+    },
+    {
+      "numero": "139",
+      "texto": "O zelo que tenho por ti me consome, pois os meus adversários se esquecem das tuas palavras.",
+      "reflexao": "O amor e o zelo por Deus nos impulsionam a viver para agradá-Lo, mesmo quando vemos muitos se afastando dos Seus caminhos. Ser fiel é ser luz em meio à indiferença espiritual."
+    },
+    {
+      "numero": "140",
+      "texto": "A tua palavra foi plenamente comprovada, e por isso o teu servo a ama.",
+      "reflexao": "Quem experimenta a fidelidade da Palavra passa a amá-la cada vez mais. Deus nunca falha. Tudo o que Ele prometeu é verdadeiro e se cumpre no tempo certo."
+    },
+    {
+      "numero": "141",
+      "texto": "Sou pequeno e desprezado, mas não me esqueço dos teus preceitos.",
+      "reflexao": "Mesmo que o mundo não nos valorize, Deus nos vê e cuida de nós. A verdadeira grandeza está em viver segundo a Palavra, pois é ela que nos sustenta e dá valor eterno à nossa vida."
+    },
+    {
+      "numero": "142",
+      "texto": "A tua justiça é eterna, e a tua lei é a verdade.",
+      "reflexao": "Tudo muda, tudo passa, mas a justiça de Deus permanece para sempre. Sua Palavra é a verdade que não muda, que liberta, consola e transforma qualquer vida que se rende a ela."
+    },
+    {
+      "numero": "143",
+      "texto": "Angústia e sofrimento se apoderaram de mim, mas os teus mandamentos são o meu prazer.",
+      "reflexao": "Mesmo em meio às dores e aflições, quem ama a Palavra encontra nela prazer, consolo e força. Ela é fonte de esperança, mesmo quando tudo parece desabar ao redor."
+    },
+    {
+      "numero": "144",
+      "texto": "Os teus testemunhos são eternamente justos; dá-me entendimento para que eu tenha vida.",
+      "reflexao": "Entender a Palavra de Deus é receber vida abundante. Ela é fonte de sabedoria, luz para o caminho e alívio para a alma sedenta de sentido e paz."
+    },
+    {
+      "numero": "145",
+      "texto": "Eu clamo de todo o coração: responde-me, Senhor, e obedecerei aos teus testemunhos.",
+      "reflexao": "O Senhor ouve o clamor sincero. Quem busca a Deus de todo o coração encontra resposta, direção e força para obedecer e permanecer no caminho da verdade."
+    },
+    {
+      "numero": "146",
+      "texto": "Clamo a ti: salva-me, e obedecerei aos teus estatutos.",
+      "reflexao": "O clamor por salvação é sempre atendido por Deus. Ele se inclina para ouvir aqueles que desejam viver segundo a Sua vontade, salvando, restaurando e fortalecendo."
+    },
+    {
+      "numero": "147",
+      "texto": "Antes do amanhecer me levanto e clamo por socorro; na tua palavra coloquei a minha esperança.",
+      "reflexao": "Buscar a Deus logo pela manhã é declarar que dependemos dEle desde o primeiro momento do dia. Quem coloca a esperança na Palavra começa e termina o dia fortalecido pela presença do Senhor."
+    },
+    {
+      "numero": "148",
+      "texto": "Fico acordado nas vigílias da noite, para meditar nas tuas promessas.",
+      "reflexao": "A meditação na Palavra traz paz até nos momentos de insônia ou ansiedade. Ela preenche nossa mente e nosso coração com esperança, conforto e direção mesmo nas horas silenciosas da noite."
+    },
+    {
+      "numero": "149",
+      "texto": "Ouve a minha voz pelo teu amor leal; faze-me viver, Senhor, conforme as tuas ordenanças.",
+      "reflexao": "O amor de Deus é a nossa garantia de que Ele ouve nossas orações. A vida plena vem de caminhar segundo Suas ordenanças, que são expressão do Seu cuidado e da Sua fidelidade."
+    },
+    {
+      "numero": "150",
+      "texto": "Os meus perseguidores aproximam-se com más intenções; mas estão distantes da tua lei.",
+      "reflexao": "Mesmo quando o mal se aproxima, sabemos que Deus está mais perto ainda. Afastar-se da Palavra leva ao engano, mas quem permanece nela encontra proteção, sabedoria e vitória."
+    },
+    {
+      "numero": "151",
+      "texto": "Tu, Senhor, estás perto, e todos os teus mandamentos são verdadeiros.",
+      "reflexao": "Deus não é um Deus distante. Ele está perto, especialmente daqueles que O buscam. Sua presença e Suas palavras verdadeiras nos cercam de segurança e paz em todo tempo."
+    },
+    {
+      "numero": "152",
+      "texto": "Há muito aprendi dos teus testemunhos que os estabeleceste para sempre.",
+      "reflexao": "A Palavra de Deus é eterna. Ela não muda com as épocas, com as opiniões ou com os modismos. Quem vive segundo ela está firmado em algo que jamais será abalado."
+    },
+    {
+      "numero": "153",
+      "texto": "Olha para o meu sofrimento e livra-me, pois não me esqueço da tua lei.",
+      "reflexao": "Deus vê nossa dor. Quem permanece fiel à Sua Palavra, mesmo em meio ao sofrimento, pode clamar e confiar que o livramento vem, porque Ele é um Deus que cuida e responde."
+    },
+    {
+      "numero": "154",
+      "texto": "Defende a minha causa e resgata-me; preserva a minha vida conforme a tua promessa.",
+      "reflexao": "Deus é nosso advogado, nosso defensor. Ele luta por nós, resgata-nos do perigo e, segundo Suas promessas, preserva nossa vida, trazendo socorro e vitória."
+    },
+    {
+      "numero": "155",
+      "texto": "A salvação está longe dos ímpios, pois eles não buscam os teus decretos.",
+      "reflexao": "Aqueles que rejeitam a Palavra se afastam também da salvação. Mas quem busca os decretos do Senhor encontra vida, proteção e redenção eterna."
+    },
+    {
+      "numero": "156",
+      "texto": "Grande é a tua compaixão, Senhor; preserva a minha vida conforme as tuas leis.",
+      "reflexao": "A compaixão de Deus não tem limites. É por esse amor infinito que podemos viver, ser restaurados, protegidos e fortalecidos, sempre de acordo com a Sua Palavra fiel e verdadeira."
+    },
+    {
+      "numero": "157",
+      "texto": "Muitos são os meus perseguidores e os meus adversários, mas não me desvio dos teus testemunhos.",
+      "reflexao": "Mesmo diante da oposição, quem se firma na Palavra permanece inabalável. O mundo pode se levantar, mas Deus sustenta os que andam nos Seus caminhos."
+    },
+    {
+      "numero": "158",
+      "texto": "Com tristeza vejo os infiéis, que não obedecem à tua palavra.",
+      "reflexao": "Ver pessoas rejeitando a verdade do Senhor gera dor no coração de quem ama a Deus. Isso deve nos mover a interceder, a testemunhar e a viver de forma que reflita a luz de Cristo."
+    },
+    {
+      "numero": "159",
+      "texto": "Vê como amo os teus preceitos! Dá-me vida, Senhor, conforme o teu amor leal.",
+      "reflexao": "Amar a Palavra é amar o próprio Deus. Quando expressamos esse amor, encontramos vida, força e restauração no Seu amor constante e fiel."
+    },
+    {
+      "numero": "160",
+      "texto": "A verdade é a essência da tua palavra, e todas as tuas justas ordenanças são eternas.",
+      "reflexao": "A verdade de Deus não muda. Ela é eterna, imutável e perfeita. Quem firma a vida na Palavra caminha com segurança e certeza, independente das mudanças do mundo."
+    },
+    {
+      "numero": "161",
+      "texto": "Autoridades me perseguem sem motivo, mas é diante da tua palavra que o meu coração treme.",
+      "reflexao": "O temor ao Senhor supera qualquer medo humano. Quando respeitamos a Palavra de Deus acima de tudo, nenhuma perseguição ou afronta nos faz desviar do caminho da verdade."
+    },
+    {
+      "numero": "162",
+      "texto": "Eu me alegro na tua promessa, como alguém que encontra grandes despojos.",
+      "reflexao": "A alegria que vem da Palavra é maior do que qualquer riqueza material. Suas promessas são tesouros que alimentam a alma e sustentam o coração."
+    },
+    {
+      "numero": "163",
+      "texto": "Odeio e detesto a falsidade, mas amo a tua lei.",
+      "reflexao": "Quem ama a Deus rejeita tudo o que é falso, enganoso e contrário à Sua vontade. O amor à Palavra nos conduz por caminhos de integridade, luz e verdade."
+    },
+    {
+      "numero": "164",
+      "texto": "Sete vezes por dia te louvo por causa das tuas justas ordenanças.",
+      "reflexao": "O louvor constante transforma nosso dia. Reconhecer a justiça e a fidelidade de Deus em todo momento nos aproxima dEle e nos fortalece em qualquer circunstância."
+    },
+    {
+      "numero": "165",
+      "texto": "Os que amam a tua lei desfrutam paz, e nada há que os faça tropeçar.",
+      "reflexao": "A verdadeira paz vem da Palavra. Quem ama e vive segundo os princípios de Deus caminha com segurança, sem tropeçar, mesmo quando as tempestades chegam."
+    },
+    {
+      "numero": "166",
+      "texto": "Aguardo a tua salvação, Senhor, e pratico os teus mandamentos.",
+      "reflexao": "Esperar no Senhor é viver em obediência, confiando que Sua salvação e Seu socorro nunca falham. A esperança em Deus traz descanso e segurança ao coração."
+    },
+    {
+      "numero": "167",
+      "texto": "Obedeço aos teus testemunhos; amo-os infinitamente.",
+      "reflexao": "A obediência que agrada a Deus nasce do amor. Quem ama profundamente a Sua Palavra encontra prazer em viver segundo Seus ensinamentos e desfruta de vida abundante."
+    },
+    {
+      "numero": "168",
+      "texto": "Obedeço aos teus preceitos e aos teus testemunhos, pois todos os meus caminhos estão diante de ti.",
+      "reflexao": "Deus vê cada detalhe da nossa vida. Viver em obediência não é religiosidade, é gratidão, é amor, é resposta ao cuidado constante dEle sobre nós."
+    },
+    {
+      "numero": "169",
+      "texto": "Chegue a ti o meu clamor, Senhor; dá-me entendimento conforme a tua palavra.",
+      "reflexao": "Buscar entendimento na Palavra é buscar sabedoria divina. Deus ouve nosso clamor e nos capacita a compreender e viver segundo Seus ensinamentos, que são fonte de vida."
+    },
+    {
+      "numero": "170",
+      "texto": "Chegue a ti a minha súplica; livra-me, conforme a tua promessa.",
+      "reflexao": "Deus é fiel para ouvir nossas súplicas. Podemos confiar que Ele nos livra, sustenta e cumpre cada uma de Suas promessas aos que O buscam com sinceridade."
+    },
+    {
+      "numero": "171",
+      "texto": "Meus lábios transbordarão de louvor, pois me ensinas os teus decretos.",
+      "reflexao": "Quando somos ensinados por Deus, nosso coração transborda em louvor. O aprendizado da Palavra não gera apenas conhecimento, mas gratidão, amor e adoração verdadeira."
+    },
+    {
+      "numero": "172",
+      "texto": "A minha língua cantará a tua palavra, pois todos os teus mandamentos são justos.",
+      "reflexao": "Falar da Palavra é declarar a justiça de Deus. Que nossos lábios sejam instrumentos de louvor, proclamação da verdade e encorajamento para quem nos ouve."
+    },
+    {
+      "numero": "173",
+      "texto": "Esteja a tua mão pronta para ajudar-me, pois escolhi os teus preceitos.",
+      "reflexao": "Deus estende Suas mãos para aqueles que escolhem andar nos Seus caminhos. Quando escolhemos a Palavra, escolhemos também o socorro, a proteção e o cuidado do Senhor."
+    },
+    {
+      "numero": "174",
+      "texto": "Anseio pela tua salvação, Senhor, e a tua lei é o meu prazer.",
+      "reflexao": "Quem ama a Deus encontra na Sua Palavra o verdadeiro prazer. E enquanto aguardamos a salvação, desfrutamos da paz e da alegria que vêm de viver segundo os Seus ensinamentos."
+    },
+    {
+      "numero": "175",
+      "texto": "Permite-me viver para que eu te louve; e que as tuas ordenanças me sustentem.",
+      "reflexao": "Viver é um presente que deve ser usado para louvar a Deus. A Palavra nos sustenta, nos guia e nos dá força para que cada dia seja vivido em adoração e gratidão ao Senhor."
+    },
+    {
+      "numero": "176",
+      "texto": "Andei vagueando como ovelha perdida; vem em busca do teu servo, pois não me esqueço dos teus mandamentos.",
+      "reflexao": "Mesmo quando nos afastamos, Deus vem ao nosso encontro como um bom pastor que busca a ovelha perdida. Sua graça nos alcança, Sua Palavra nos restaura, e Seu amor nos traz de volta para os Seus braços."
+    }
+  ]
+}
