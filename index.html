@@ -10,7 +10,10 @@
 
 <!-- Barra Fixa -->
 <header class="navbar">
-  <h1>TA</h1>
+  <h1>
+    <img src="icone-ta.png" alt="Transformando Almas" style="height: 90px;">
+  </h1>
+
 
   <!-- Botão de modo escuro (móvel) -->
   <button onclick="toggleDarkMode()" id="darkModeBtnMobile" class="dark-mode-btn">☀️</button>
@@ -46,6 +49,22 @@
 
 <!-- Overlay - Mensagem centralizada do Livro, Capítulo e Versículo -->
 <div class="overlay-versiculo" id="overlayVersiculo"></div>
+
+<!-- Modal de Ajuda -->
+
+<div id="modalAjuda" class="modal">
+  <div class="modal-conteudo">
+    <span onclick="fecharAjuda()" class="modal-fechar">&times;</span>
+    <h3>Como usar a busca?</h3>
+    <ul>
+      <li><strong>Buscar todo capítulo:</strong> Ex: <code>João 3</code></li>
+      <li><strong>Buscar intervalo:</strong> Ex: <code>João 5:3-12</code></li>
+      <li><strong>Buscar versículos específicos:</strong> Ex: <code>João 1:1,3,5</code></li>
+      <li><strong>Buscar por palavras:</strong> Digite algo e clique na lupa</li>
+    </ul>
+    <button onclick="fecharAjuda()" class="botao-modal-fechar">Fechar</button>
+  </div>
+</div>
 
 <footer class="rodape">
   <p>© 2025 - Inspirado na Palavra de Deus | Desenvolvido com amor 💙</p>

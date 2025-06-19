@@ -11,10 +11,6 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
 // Função para carregar página principal
 function carregarPagina(pagina) {
   paginaAtual = pagina || 'inicio';
@@ -70,13 +66,15 @@ function carregarPagina(pagina) {
         document.getElementById("conteudo").innerHTML = `<p>Erro ao carregar a página de testemunho.</p>`;
       });
   } else if (pagina === 'biblia') {
-    html = `<h2>Bíblia</h2>`;
+    html = `<h2 style="text-align: center;">Bíblia</h2>`;
     html += `
+      <img src="icone-biblia.png" alt="Bíblia aberta" style="width: 280px; display: block; margin: 10px auto;">
       <div class="testamentos">
         <button onclick="listarTestamento('velhoTestamento')">Velho Testamento</button>
         <button onclick="listarTestamento('novoTestamento')">Novo Testamento</button>
       </div>
     `;
+
     conteudo.innerHTML = html;
   } else if (pagina === 'terco') {
     fetch('terco.html')
@@ -91,7 +89,10 @@ function carregarPagina(pagina) {
       });
   } else if (pagina === 'busca') {
     html = `
-      <h2>Buscar na Bíblia</h2>
+      <h2>
+        <button onclick="abrirAjuda()" class="botao-ajuda" title="Como buscar"><span style="font-size: 15px;">ℹ️</span></button>
+        Buscar na Bíblia
+      </h2>
       <div class="busca-container">
         <div style="position: relative; width: 100%; margin-bottom: 1rem;">
           <input id="campo-busca" class="busca-input" placeholder="Digite uma palavra ou frase..." />
@@ -1001,7 +1002,6 @@ function carregarTodosOsVersiculos() {
 }
 
 
-
 function removerAcentos(str) {
   return str.normalize("NFD").replace(/[\u0300-\u036F]/g, "").toLowerCase();
 }
@@ -1081,6 +1081,15 @@ function buscarVersiculo() {
       }
 
       mensagemDiv.innerHTML = `Resultado${versiculosFiltrados.length > 1 ? 's' : ''} encontrado${versiculosFiltrados.length > 1 ? 's' : ''}:`;
+
+      if (versiculosUnico) {
+        mensagemDiv.innerHTML = `Busca por intervalo: do versículo 1 ao ${versiculosUnico}`;
+      } else if (versiculosLista) {
+        mensagemDiv.innerHTML = `Busca por versículos específicos: ${versiculosLista}`;
+      } else {
+        const nomeCorrigido = corrigirNomeLivro(livroDigitado);
+        mensagemDiv.innerHTML = `Busca por capítulo inteiro: ${nomeCorrigido} ${capitulo}`;
+      }
 
       let html = '';
       versiculosFiltrados.forEach(r => {
@@ -1175,3 +1184,19 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.onclick = function(event) {
+  const modal = document.getElementById("modalAjuda");
+  if (event.target === modal) {
+    fecharAjuda();
+  }
+};
+
+// Abre a modal de ajuda
+function abrirAjuda() {
+  document.getElementById("modalAjuda").style.display = 'block';
+}
+
+// Fecha a modal de ajuda
+function fecharAjuda() {
+  document.getElementById("modalAjuda").style.display = 'none';
+}
