@@ -1104,7 +1104,7 @@ function buscarVersiculo() {
       aplicarModoEscuroDinamico();
     } else {
       // Busca normal por palavras
-      const palavras = termo.toLowerCase().split(/\s+/).filter(p => p.length > 0);
+      const palavras = removerAcentos(termo).toLowerCase().split(/\s+/).filter(p => p.length > 0);
       const buscarVersiculo = document.getElementById("buscarEmVersiculo").checked;
       const buscarReflexao = document.getElementById("buscarEmReflexao").checked;
 
