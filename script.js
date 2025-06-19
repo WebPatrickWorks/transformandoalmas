@@ -3,11 +3,16 @@ let livroSelecionado = null;
 let capitulosDisponiveis = {};
 let reflexoes = [];
 let versiculos = [];
+let todosOsVersiculos = [];
 
 // Carregar página inicial automaticamente
 window.addEventListener('DOMContentLoaded', function () {
   carregarPagina('inicio');
 });
+
+
+
+
 
 
 // Função para carregar página principal
@@ -84,6 +89,29 @@ function carregarPagina(pagina) {
         console.error('Erro ao carregar terço:', err);
         document.getElementById("conteudo").innerHTML = '<p>Erro ao carregar o Terço Virtual.</p>';
       });
+  } else if (pagina === 'busca') {
+    html = `
+      <h2>Buscar na Bíblia</h2>
+      <div class="busca-container">
+        <div style="position: relative; width: 100%; margin-bottom: 1rem;">
+          <input id="campo-busca" class="busca-input" placeholder="Digite uma palavra ou frase..." />
+          <button class="busca-btn-lupa" onclick="buscarVersiculo()">🔍</button>
+        </div>
+
+        <!-- Filtro de busca -->
+        <div class="filtro-busca">
+          <label><input type="checkbox" id="buscarEmVersiculo" checked /> Em versículos</label>
+          <label><input type="checkbox" id="buscarEmReflexao" checked /> Em reflexões</label>
+        </div>
+
+        <!-- Mensagem de busca -->
+        <div id="mensagem-busca" style="margin-top: 1rem; font-style: italic; color: #666;">Digite algo e clique na lupa.</div>
+
+        <!-- Resultados -->
+        <div id="resultados-busca"></div>
+      </div>
+    `;
+    conteudo.innerHTML = html;
   }
 
   conteudo.innerHTML = html || '';
@@ -911,3 +939,239 @@ function carregarProximoCapitulo(livro, numero) {
     `;
   }
 }
+
+
+function carregarTodosOsVersiculos() {
+  return new Promise((resolve, reject) => {
+    const promises = [];
+
+    fetch('indice-capitulos.json')
+      .then(res => res.json())
+      .then(data => {
+        // Salva toda a estrutura para uso futuro
+        capitulosDisponiveis = data;
+
+        // Percorre os testamentos
+        for (const testamento in data) {
+          const livros = data[testamento];
+
+          for (const livro in livros) {
+            const capitulos = livros[livro];
+
+            if (Array.isArray(capitulos)) {
+              capitulos.forEach(c => {
+                const caminho = `capitulos/${livro}${c}.json`;
+                promises.push(
+                  fetch(caminho)
+                    .then(res => res.json())
+                    .then(json => {
+                      json.versiculos.forEach(v => {
+                        todosOsVersiculos.push({
+                          livro: json.livro,
+                          capitulo: json.capitulo,
+                          numero: v.numero,
+                          texto: v.texto,
+                          reflexao: v.reflexao || ''
+                        });
+                      });
+                    })
+                );
+              });
+            } else {
+              console.warn(`"${livro}" não tem capítulos como array`);
+            }
+          }
+        }
+
+        Promise.all(promises)
+          .then(() => {
+            console.log("✅ Todos os versículos foram carregados.");
+            resolve();
+          })
+          .catch(err => {
+            console.error("🔴 Erro ao carregar capítulos:", err);
+            reject(err);
+          });
+      })
+      .catch(err => {
+        console.error("❌ Erro ao carregar índice:", err);
+        reject(err);
+      });
+  });
+}
+
+
+
+function removerAcentos(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036F]/g, "").toLowerCase();
+}
+
+function buscarVersiculo() {
+  const campo = document.getElementById("campo-busca");
+  const termo = campo.value.trim();
+  const resultadosDiv = document.getElementById("resultados-busca");
+  const mensagemDiv = document.getElementById("mensagem-busca");
+
+  if (!termo) {
+    mensagemDiv.innerHTML = 'Por favor, digite algo antes de pesquisar.';
+    resultadosDiv.innerHTML = '';
+    return;
+  }
+
+  resultadosDiv.innerHTML = '';
+  mensagemDiv.innerHTML = 'Buscando...';
+
+  // Regex para:
+  // - "João 1"
+  // - "João 1:3-7"
+  // - "João 1:3,4,7"
+  const regex = /^(\d+\s+\w+|\w+)\s+(\d+)(?:(?:-(\d+))|:(\d+(?:-\d+)?(?:,\d+(?:-\d+)?)*)?)?$/i;
+  const match = removerAcentos(termo).match(regex);
+
+  setTimeout(() => {
+    if (match) {
+      const livroDigitado = removerAcentos(match[1]); // Ex: "joao", "salmo"
+      const capitulo = match[2];                    // Ex: "1", "23"
+      const versiculosUnico = match[3] ? parseInt(match[3]) : null; // Ex: João 3:5-10
+      const versiculosLista = match[4];             // Ex: "5,6,8" ou "5-10,12"
+
+      let versiculosFiltrados = [];
+
+      // Caso 1: João 3 → todos os versículos do capítulo
+      if (!versiculosUnico && !versiculosLista) {
+        versiculosFiltrados = todosOsVersiculos.filter(v => {
+          return removerAcentos(v.livro) === livroDigitado && v.capitulo === capitulo;
+        });
+      }
+
+      // Caso 2: João 3:5-10 → intervalo de versículos
+      else if (versiculosUnico) {
+        const inicio = 1;
+        const fim = parseInt(versiculosUnico);
+        versiculosFiltrados = todosOsVersiculos.filter(v => {
+          const livroMatch = removerAcentos(v.livro) === livroDigitado;
+          const capituloMatch = v.capitulo === capitulo;
+
+          const numero = parseInt(v.numero);
+          return livroMatch && capituloMatch && numero >= inicio && numero <= fim;
+        });
+      }
+
+      // Caso 3: João 3:5,6,8 → versículos específicos
+      else if (versiculosLista) {
+        const versiculosStr = versiculosLista.split(',').map(v => {
+          if (v.includes('-')) {
+            const [inicio, fim] = v.split('-').map(Number);
+            return Array.from({ length: fim - inicio + 1 }, (_, i) => inicio + i);
+          }
+          return [parseInt(v)];
+        }).flat();
+
+        versiculosFiltrados = todosOsVersiculos.filter(v => {
+          const livroMatch = removerAcentos(v.livro) === livroDigitado;
+          const capituloMatch = v.capitulo === capitulo;
+          const numero = parseInt(v.numero);
+          return livroMatch && capituloMatch && versiculosStr.includes(numero);
+        });
+      }
+
+      if (versiculosFiltrados.length === 0) {
+        mensagemDiv.innerHTML = `Nenhum resultado encontrado para "${termo}".`;
+        return;
+      }
+
+      mensagemDiv.innerHTML = `Resultado${versiculosFiltrados.length > 1 ? 's' : ''} encontrado${versiculosFiltrados.length > 1 ? 's' : ''}:`;
+
+      let html = '';
+      versiculosFiltrados.forEach(r => {
+        html += `
+          <div class="card">
+            <h3>${r.livro} ${r.capitulo}:${r.numero}</h3>
+            <p>"${r.texto}"</p>
+            ${r.reflexao ? `
+              <button onclick="mostrarReflexao(this)" class="botao-reflexao">
+                <span class="icone-reflexao">+</span> Mostrar Reflexão
+              </button>
+              <div class="reflexao-oculta">
+                <p class="texto-reflexao">${r.reflexao}</p>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+
+      resultadosDiv.innerHTML = html;
+      aplicarModoEscuroDinamico();
+    } else {
+      // Busca normal por palavras
+      const palavras = termo.toLowerCase().split(/\s+/).filter(p => p.length > 0);
+      const buscarVersiculo = document.getElementById("buscarEmVersiculo").checked;
+      const buscarReflexao = document.getElementById("buscarEmReflexao").checked;
+
+      const resultados = todosOsVersiculos.filter(v => {
+        let resultado = false;
+
+        if (buscarVersiculo) {
+          const textoCompleto = removerAcentos(v.texto);
+          const todasAsPalavrasNoTexto = palavras.every(palavra => textoCompleto.includes(palavra));
+          if (todasAsPalavrasNoTexto) resultado = true;
+        }
+
+        if (buscarReflexao && v.reflexao) {
+          const reflexaoCompleta = removerAcentos(v.reflexao);
+          const todasAsPalavrasNaReflexao = palavras.every(palavra => reflexaoCompleta.includes(palavra));
+          if (todasAsPalavrasNaReflexao) resultado = true;
+        }
+
+        return resultado;
+      });
+
+      if (resultados.length === 0) {
+        mensagemDiv.innerHTML = `Nenhum resultado encontrado para "${termo}".`;
+        return;
+      }
+
+      mensagemDiv.innerHTML = `<strong>${resultados.length}</strong> resultados encontrados.`;
+
+      let html = '';
+      resultados.forEach(r => {
+        html += `
+          <div class="card">
+            <h3>${r.livro} ${r.capitulo}:${r.numero}</h3>
+            <p>"${r.texto}"</p>
+            ${r.reflexao ? `
+              <button onclick="mostrarReflexao(this)" class="botao-reflexao">
+                <span class="icone-reflexao">+</span> Mostrar Reflexão
+              </button>
+              <div class="reflexao-oculta">
+                <p class="texto-reflexao">${r.reflexao}</p>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+
+      resultadosDiv.innerHTML = html;
+      aplicarModoEscuroDinamico();
+
+    }
+  }, 300);
+}
+
+document.getElementById("conteudo").innerHTML = `
+  <p>Carregando todos os versículos para busca...</p>
+`;
+
+window.addEventListener('DOMContentLoaded', function () {
+  checkDarkMode();
+
+  // Carrega todos os versículos pra busca funcionar offline
+  carregarTodosOsVersiculos()
+    .then(() => {
+      console.log("Todos os versículos foram carregados para busca.");
+    })
+    .catch(err => {
+      console.error("Erro ao carregar todos os versículos:", err);
+    });
+});
+

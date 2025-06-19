@@ -779,3 +779,63 @@ body.dark-mode {
   gap: 0.8rem;
 }
 
+
+
+
+/* === Campo de busca === */
+.busca-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.busca-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.busca-input:focus {
+  border-color: #005792;
+  outline: none;
+}
+
+.busca-btn-lupa {
+  background-color: transparent;
+  border: none;
+  color: #005792;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+}
+
+.dark-mode .busca-input {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.dark-mode .busca-btn-lupa {
+  color: #aaa;
+}
+
+.filtro-busca {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtro-busca label {
+  font-size: 0.95rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.dark-mode .filtro-busca label {
+  color: #aaa;
+}
