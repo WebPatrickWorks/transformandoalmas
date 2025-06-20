@@ -101,28 +101,29 @@ body {
 }
 
 .menu-mobile.aberto {
-  max-height: 300px;
+  max-height: none;
 }
 
 /* === Posicionamento responsivo do botão de modo escuro === */
 
 .dark-mode-btn {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
-  color: white;
+  color: rgb(167, 2, 2);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 /* Modo escuro no menu mobile */
 .dark-mode .menu-mobile {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .dark-mode .menu-mobile ul li button:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: none;
 }
+
 
 /* Tela menor que 768px (celular) */
 @media (max-width: 768px) {
@@ -164,6 +165,46 @@ body {
   .texto-reflexao {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  /* === Menu Mobile - Mais espaçado no celular === */
+  .menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento entre os itens */
+    padding-bottom: 1rem; /* Espaço para o degradê */
+  }
+
+  .menu-mobile li {
+    width: 100%;
+  }
+
+  .menu-mobile button {
+    width: 100%;
+    padding: 1rem 1.5rem; /* Mais espaço interno */
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-mobile button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark-mode .menu-mobile {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+
+  .dark-mode .menu-mobile button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
   }
 }
 
