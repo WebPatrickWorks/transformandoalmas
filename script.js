@@ -131,6 +131,7 @@ function listarTestamento(testamento) {
         'default': 'livros/icone-biblia.png',
         'salmos': 'livros/icone-salmos.png',
         'proverbios': 'livros/icone-proverbios.png',
+        'genesis': 'livros/icone-genesis.png',
 
         'exodo': 'livros/icone-exodo.png',
         'joao': 'livros/icone-joao.png',
@@ -166,6 +167,7 @@ function listarTestamento(testamento) {
       const descricoesLivros = {
         'salmos': 'Salmos é uma coletânea de 150 poemas e cânticos que expressam orações, louvores, súplicas e ações de graças a Deus. Escrito por diversos autores, entre eles Davi — responsável por grande parte dos salmos —, além de Asafe, os filhos de Corá, Salomão, Moisés e outros. O livro reflete as mais profundas experiências humanas diante de Deus, abordando temas como confiança, arrependimento, justiça, adoração e esperança. É uma fonte de conforto espiritual, fortalecimento da fé e expressão da devoção, sendo até hoje um dos livros mais lidos e orados da Bíblia.',
         'proverbios': 'Provérbios é um livro de sabedoria que reúne ensinamentos práticos para a vida, abordando temas como justiça, prudência, trabalho, família, honestidade e temor a Deus. A maior parte foi escrita por Salomão, conhecido por sua sabedoria, embora também contenha provérbios de outros sábios como Agur e o rei Lemuel. Seus ensinamentos atravessam gerações, orientando sobre como viver de forma íntegra, sensata e alinhada aos princípios divinos, com a convicção de que o temor do Senhor é o princípio da sabedoria.',
+        'genesis': 'Gênesis é o primeiro livro da Bíblia e narra os princípios de todas as coisas: a criação do mundo, da humanidade e da aliança de Deus com seu povo. Escrito por Moisés, Gênesis apresenta relatos fundamentais como a criação, o pecado original, o dilúvio, a torre de Babel e as histórias dos patriarcas — Abraão, Isaque, Jacó e José. O livro revela como Deus, soberano e amoroso, conduz a história desde o início, estabelecendo promessas que moldariam toda a trajetória do povo de Israel e da humanidade.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -871,6 +873,7 @@ function corrigirNomeLivro(nome) {
   const correcoes = {
     'salmos': 'Salmos',
     'proverbios': 'Provérbios',
+    'genesis': 'Gênesis',
 
     'joao': 'João',
     'mateus': 'Mateus',
