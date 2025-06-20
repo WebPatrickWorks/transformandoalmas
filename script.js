@@ -433,8 +433,8 @@ function enableDarkMode() {
   document.getElementById('darkModeBtn').innerText = '🌙';
 
   document.querySelectorAll('.card-livro button.botao-livro').forEach(el => {
-  el.classList.add('dark-mode');
-});
+    el.classList.add('dark-mode');
+  });
 }
 
 // Desativa modo escuro
