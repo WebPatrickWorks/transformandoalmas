@@ -1,0 +1,171 @@
+{
+  "livro": "Provérbios",
+  "capitulo": "15",
+  "versiculos": [
+    {
+      "numero": "1",
+      "texto": "A resposta calma desvia a fúria, mas a palavra ríspida desperta a ira.",
+      "reflexao": "O tom das nossas palavras tem poder. Uma resposta calma tem o poder de acalmar corações e evitar conflitos. Já a palavra dura, mesmo que esteja certa, gera discussões e separação. Deus nos chama a sermos instrumentos de paz."
+    },
+    {
+      "numero": "2",
+      "texto": "A língua dos sábios torna atraente o conhecimento, mas a boca dos tolos derrama insensatez.",
+      "reflexao": "O sábio sabe como transmitir o conhecimento de forma que edifique e inspire. Já o tolo fala sem pensar, espalhando bobagens, confusão e discórdia. A sabedoria se reflete até na forma de comunicar."
+    },
+    {
+      "numero": "3",
+      "texto": "Os olhos do Senhor estão em todo lugar, observando atentamente os maus e os bons.",
+      "reflexao": "Deus vê tudo. Nada escapa ao Seu olhar. Isso traz conforto aos justos, que sabem que Ele cuida e protege, e também alerta aos que escolhem o caminho do mal, pois nada fica oculto diante dEle."
+    },
+    {
+      "numero": "4",
+      "texto": "A língua que traz cura é árvore de vida, mas a língua enganosa esmaga o espírito.",
+      "reflexao": "Nossas palavras podem ser fonte de cura, esperança e encorajamento, ou podem esmagar, ferir e destruir. Deus nos convida a sermos portadores de palavras que levantam, curam e trazem vida por onde passamos."
+    },
+    {
+      "numero": "5",
+      "texto": "O insensato rejeita a disciplina de seu pai, mas quem aceita a repreensão mostra prudência.",
+      "reflexao": "Aceitar correção é sinal de sabedoria e maturidade. A rejeição da disciplina leva ao erro, ao sofrimento e, muitas vezes, à ruína. Deus disciplina quem ama e nos convida a sermos ensináveis e dispostos a crescer."
+    },
+    {
+      "numero": "6",
+      "texto": "Na casa do justo há grande tesouro, mas os rendimentos dos ímpios lhes trazem inquietação.",
+      "reflexao": "A verdadeira riqueza não está apenas nos bens, mas na paz, na alegria e na presença de Deus no lar. O justo vive em paz. Já os ímpios, mesmo quando prosperam materialmente, vivem inquietos e inseguros."
+    },
+    {
+      "numero": "7",
+      "texto": "Os lábios dos sábios espalham conhecimento, mas o coração dos tolos não é assim.",
+      "reflexao": "O sábio não guarda para si o que sabe. Ele compartilha, orienta, encoraja. Já o tolo não tem o que oferecer, pois vive cheio de insensatez e ignorância, alimentando-se de coisas vazias e sem valor."
+    },
+    {
+      "numero": "8",
+      "texto": "O Senhor detesta o sacrifício dos ímpios, mas a oração dos retos lhe agrada.",
+      "reflexao": "Deus não se impressiona com aparências religiosas. O que Ele deseja é um coração sincero, quebrantado e temente. Oração sincera vale mais que qualquer ritual vazio. Ele se agrada dos que vivem na verdade e na justiça."
+    },
+    {
+      "numero": "9",
+      "texto": "O Senhor detesta o caminho dos ímpios, mas ama quem busca a justiça.",
+      "reflexao": "Deus não apenas rejeita o mal, Ele também se alegra, ama e honra aqueles que vivem na retidão, que buscam fazer o que é certo, que defendem a justiça e vivem segundo Seus princípios."
+    },
+    {
+      "numero": "10",
+      "texto": "Disciplina severa espera quem abandona o caminho; quem odeia a repreensão morrerá.",
+      "reflexao": "Rejeitar a correção é escolher a própria destruição. Deus, em amor, nos disciplina para nos livrar da morte, da dor e do fracasso. Quem não aceita ser moldado caminha rumo ao colapso."
+    },
+    {
+      "numero": "11",
+      "texto": "Até o mundo dos mortos e o abismo estão patentes diante do Senhor, quanto mais os corações dos homens!",
+      "reflexao": "Nada está oculto aos olhos de Deus. Nem as profundezas da terra, nem os pensamentos mais secretos do coração humano. Ele conhece cada intenção, cada desejo e cada sentimento. Com Deus, não existem segredos."
+    },
+    {
+      "numero": "12",
+      "texto": "O zombador não gosta de quem o corrige, nem se junta com os sábios.",
+      "reflexao": "O orgulho do zombador o impede de crescer, de ouvir e de aprender. Ele rejeita quem tenta ajudá-lo e evita quem tem sabedoria, preferindo se cercar de quem apenas reforça seus erros e tolices."
+    },
+    {
+      "numero": "13",
+      "texto": "O coração alegre embeleza o rosto, mas a tristeza abate o espírito.",
+      "reflexao": "A alegria que vem de Deus se reflete até na aparência, na disposição, no olhar e na leveza da vida. Já a tristeza constante, sem esperança, desgasta, adoece e enfraquece a alma. O coração cheio de Deus é fonte de beleza e vida."
+    },
+    {
+      "numero": "14",
+      "texto": "O coração que tem discernimento busca o conhecimento, mas a boca dos tolos se alimenta de insensatez.",
+      "reflexao": "Quem tem sabedoria está sempre disposto a aprender, a crescer, a ouvir. Já o tolo prefere consumir coisas vazias, se alimentar de futilidades, mentiras e conteúdos que nada edificam."
+    },
+    {
+      "numero": "15",
+      "texto": "Todos os dias do oprimido são difíceis, mas o coração bem disposto está sempre em festa.",
+      "reflexao": "O que muda o dia não são apenas as circunstâncias, mas a disposição do coração. Quem vive conectado com Deus, com gratidão e esperança, transforma qualquer dia difícil em oportunidade de celebrar e crescer."
+    },
+    {
+      "numero": "16",
+      "texto": "Melhor é ter pouco com o temor do Senhor do que grande riqueza com inquietação.",
+      "reflexao": "O que vale mais: ter muito e viver angustiado ou ter o essencial com paz, alegria e presença de Deus? A verdadeira riqueza é estar alinhado com Deus, vivendo em contentamento e gratidão, independentemente dos bens materiais."
+    },
+    {
+      "numero": "17",
+      "texto": "Melhor é um prato simples onde há amor do que um banquete onde há ódio.",
+      "reflexao": "O amor é o tempero que transforma qualquer refeição em festa. De nada adianta ter abundância material e viver em conflitos, ressentimentos e ódio. A paz e o amor fazem qualquer lugar se tornar um lar cheio de bênçãos."
+    },
+    {
+      "numero": "18",
+      "texto": "O homem irado provoca brigas, mas quem é paciente acalma a discussão.",
+      "reflexao": "A paciência é uma arma poderosa contra os conflitos. Quem se deixa dominar pela ira espalha contendas. Mas aquele que responde com calma, mansidão e sabedoria tem o poder de apagar incêndios emocionais e restaurar a paz."
+    },
+    {
+      "numero": "19",
+      "texto": "O caminho do preguiçoso é cheio de espinhos, mas a vereda dos justos é uma estrada plana.",
+      "reflexao": "A preguiça torna qualquer caminho mais difícil, cheio de obstáculos, frustração e escassez. Já quem anda com diligência, responsabilidade e justiça encontra um caminho mais leve, organizado e cheio de paz."
+    },
+    {
+      "numero": "20",
+      "texto": "O filho sábio dá alegria a seu pai, mas o insensato despreza sua mãe.",
+      "reflexao": "Nossas atitudes refletem diretamente no coração dos que nos amam. A sabedoria honra os pais, fortalece a família e gera alegria. A insensatez, porém, fere, envergonha e destrói vínculos preciosos."
+    },
+    {
+      "numero": "21",
+      "texto": "A insensatez diverte quem não tem juízo, mas o homem entendido mantém-se no caminho certo.",
+      "reflexao": "Enquanto o tolo acha graça no erro, na maldade e na imprudência, o sábio encontra prazer na retidão, no crescimento e no caminho da verdade. Deus nos convida a escolher o caminho da sabedoria, que gera vida e paz."
+    },
+    {
+      "numero": "22",
+      "texto": "Os planos fracassam por falta de conselho, mas são bem-sucedidos quando há muitos conselheiros.",
+      "reflexao": "Deus nos criou para viver em comunidade, onde aprendemos uns com os outros. Buscar conselhos sábios evita erros, fortalece os projetos e abre portas para grandes conquistas e realizações."
+    },
+    {
+      "numero": "23",
+      "texto": "Dar uma resposta apropriada é motivo de alegria; e como é bom um conselho na hora certa!",
+      "reflexao": "Uma palavra certa, no momento certo, tem poder de transformar corações, restaurar relacionamentos e trazer direção. Deus nos ensina a sermos sensíveis ao tempo e às necessidades das pessoas ao nosso redor."
+    },
+    {
+      "numero": "24",
+      "texto": "O caminho da vida leva para cima quem é sensato, para que ele não desça à sepultura.",
+      "reflexao": "Quem escolhe a sabedoria caminha em direção à vida, à plenitude e à presença de Deus. A sabedoria nos eleva, nos livra da morte espiritual, emocional e até física, conduzindo-nos sempre a um caminho mais alto e seguro."
+    },
+    {
+      "numero": "25",
+      "texto": "O Senhor derruba a casa dos orgulhosos, mas mantém intactos os marcos da propriedade das viúvas.",
+      "reflexao": "Deus se opõe aos soberbos e arrogantes, mas cuida dos humildes, dos vulneráveis e dos que confiam nEle. Ele protege os que são esquecidos pela sociedade e se levanta contra qualquer injustiça."
+    },
+    {
+      "numero": "26",
+      "texto": "O Senhor detesta os pensamentos dos maus, mas se agrada das palavras ditas com bondade.",
+      "reflexao": "Deus não observa apenas as ações, mas também os pensamentos e as intenções. Ele se alegra quando nossas palavras são carregadas de bondade, amor e verdade, e rejeita as intenções perversas e maldosas."
+    },
+    {
+      "numero": "27",
+      "texto": "O avarento põe sua família em apuros, mas quem rejeita o suborno viverá.",
+      "reflexao": "A ganância destrói lares, relacionamentos e até a própria vida. Já quem escolhe viver na honestidade, na simplicidade e na integridade experimenta a verdadeira prosperidade, que vem acompanhada de paz e segurança."
+    },
+    {
+      "numero": "28",
+      "texto": "O coração do justo medita antes de responder, mas a boca dos ímpios jorra o mal.",
+      "reflexao": "O sábio não é precipitado. Ele reflete, ora e escolhe bem as palavras. O ímpio, ao contrário, fala sem pensar, espalhando destruição, ofensas e conflitos. Deus nos chama a sermos prudentes no falar."
+    },
+    {
+      "numero": "29",
+      "texto": "O Senhor está longe dos ímpios, mas ouve a oração dos justos.",
+      "reflexao": "A proximidade com Deus não depende de aparência, mas de um coração alinhado com Sua vontade. Quem vive na justiça tem suas orações ouvidas, enquanto os que persistem no mal se afastam da presença do Senhor."
+    },
+    {
+      "numero": "30",
+      "texto": "O olhar iluminado alegra o coração, e as boas notícias revigoram os ossos.",
+      "reflexao": "Um sorriso, um olhar cheio de vida e uma boa notícia têm poder de curar, de renovar forças e de transformar ambientes. Deus nos convida a sermos mensageiros de esperança e alegria por onde passamos."
+    },
+    {
+      "numero": "31",
+      "texto": "Quem aceita a repreensão que conduz à vida habita entre os sábios.",
+      "reflexao": "Aceitar correção é sinal de sabedoria e maturidade espiritual. Quem rejeita a disciplina se afasta do crescimento. Deus honra aqueles que estão dispostos a ouvir, aprender e se aperfeiçoar diariamente."
+    },
+    {
+      "numero": "32",
+      "texto": "Quem rejeita a disciplina faz pouco caso de si mesmo, mas quem acolhe a repreensão obtém entendimento.",
+      "reflexao": "Rejeitar a correção é se desprezar, é escolher a estagnação e, muitas vezes, a destruição. Quem se permite ser corrigido, amadurece, cresce e recebe de Deus entendimento, direção e bênçãos."
+    },
+    {
+      "numero": "33",
+      "texto": "O temor do Senhor ensina a sabedoria, e a humildade antecede a honra.",
+      "reflexao": "Tudo começa no temor do Senhor, que é reverência, amor e obediência. Quem vive assim adquire sabedoria, e essa sabedoria o conduz ao crescimento e, no tempo certo, à honra. A humildade sempre precede a exaltação feita por Deus."
+    }
+  ]
+}
