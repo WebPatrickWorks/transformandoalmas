@@ -133,8 +133,8 @@ function listarTestamento(testamento) {
         'proverbios': 'livros/icone-proverbios.png',
         'genesis': 'livros/icone-genesis.png',
         'exodo': 'livros/icone-exodo.png',
+        'levitico': 'livros/icone-levitico.png',
 
-        'exodo': 'livros/icone-exodo.png',
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
         'marcos': 'livros/icone-marcos.png',
@@ -170,6 +170,7 @@ function listarTestamento(testamento) {
         'proverbios': 'Provérbios é um livro de sabedoria que reúne ensinamentos práticos para a vida, abordando temas como justiça, prudência, trabalho, família, honestidade e temor a Deus. A maior parte foi escrita por Salomão, conhecido por sua sabedoria, embora também contenha provérbios de outros sábios como Agur e o rei Lemuel. Seus ensinamentos atravessam gerações, orientando sobre como viver de forma íntegra, sensata e alinhada aos princípios divinos, com a convicção de que o temor do Senhor é o princípio da sabedoria.',
         'genesis': 'Gênesis é o primeiro livro da Bíblia e narra os princípios de todas as coisas: a criação do mundo, da humanidade e da aliança de Deus com seu povo. Escrito por Moisés, Gênesis apresenta relatos fundamentais como a criação, o pecado original, o dilúvio, a torre de Babel e as histórias dos patriarcas — Abraão, Isaque, Jacó e José. O livro revela como Deus, soberano e amoroso, conduz a história desde o início, estabelecendo promessas que moldariam toda a trajetória do povo de Israel e da humanidade.',
         'exodo': 'Êxodo é o segundo livro da Bíblia e foi escrito por Moisés. Relata a libertação do povo de Israel da escravidão no Egito, conduzido por Moisés sob a direção de Deus. O livro narra eventos marcantes como as dez pragas, a travessia do Mar Vermelho, a entrega dos Dez Mandamentos no Monte Sinai e a aliança de Deus com o seu povo. Além de revelar o cuidado, a justiça e a fidelidade de Deus, Êxodo estabelece as bases da identidade espiritual, moral e cultural de Israel, destacando a importância da obediência e da adoração ao Deus único.',
+        'levitico': 'Levítico é o terceiro livro da Bíblia, escrito por Moisés, e concentra-se nas leis, rituais e orientações dadas por Deus ao povo de Israel, especialmente aos sacerdotes da tribo de Levi. O livro aborda temas como sacrifícios, pureza, festas sagradas, normas alimentares e princípios de santidade. Seu propósito é ensinar que Deus é santo e que o povo, para se relacionar com Ele, também deve viver em santidade, justiça e reverência, refletindo Sua presença em todas as áreas da vida.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -877,6 +878,7 @@ function corrigirNomeLivro(nome) {
     'proverbios': 'Provérbios',
     'genesis': 'Gênesis',
     'exodo': 'Êxodo',
+    'levitico': 'Levítico',
 
     'joao': 'João',
     'mateus': 'Mateus',
