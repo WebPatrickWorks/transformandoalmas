@@ -134,6 +134,7 @@ function listarTestamento(testamento) {
         'genesis': 'livros/icone-genesis.png',
         'exodo': 'livros/icone-exodo.png',
         'levitico': 'livros/icone-levitico.png',
+        'numeros': 'livros/icone-numeros.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -171,6 +172,7 @@ function listarTestamento(testamento) {
         'genesis': 'Gênesis é o primeiro livro da Bíblia e narra os princípios de todas as coisas: a criação do mundo, da humanidade e da aliança de Deus com seu povo. Escrito por Moisés, Gênesis apresenta relatos fundamentais como a criação, o pecado original, o dilúvio, a torre de Babel e as histórias dos patriarcas — Abraão, Isaque, Jacó e José. O livro revela como Deus, soberano e amoroso, conduz a história desde o início, estabelecendo promessas que moldariam toda a trajetória do povo de Israel e da humanidade.',
         'exodo': 'Êxodo é o segundo livro da Bíblia e foi escrito por Moisés. Relata a libertação do povo de Israel da escravidão no Egito, conduzido por Moisés sob a direção de Deus. O livro narra eventos marcantes como as dez pragas, a travessia do Mar Vermelho, a entrega dos Dez Mandamentos no Monte Sinai e a aliança de Deus com o seu povo. Além de revelar o cuidado, a justiça e a fidelidade de Deus, Êxodo estabelece as bases da identidade espiritual, moral e cultural de Israel, destacando a importância da obediência e da adoração ao Deus único.',
         'levitico': 'Levítico é o terceiro livro da Bíblia, escrito por Moisés, e concentra-se nas leis, rituais e orientações dadas por Deus ao povo de Israel, especialmente aos sacerdotes da tribo de Levi. O livro aborda temas como sacrifícios, pureza, festas sagradas, normas alimentares e princípios de santidade. Seu propósito é ensinar que Deus é santo e que o povo, para se relacionar com Ele, também deve viver em santidade, justiça e reverência, refletindo Sua presença em todas as áreas da vida.',
+        'numeros': 'Números é o quarto livro da Bíblia, escrito por Moisés, e narra a jornada do povo de Israel pelo deserto rumo à Terra Prometida. O nome se refere aos censos realizados para organizar as tribos. O livro combina registros numéricos, leis, relatos de rebeldias, milagres e experiências que revelam tanto a fidelidade de Deus quanto as falhas humanas. Mostra como a obediência conduz à bênção, enquanto a desobediência gera consequências, reafirmando o cuidado e a direção de Deus ao longo da caminhada do Seu povo.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -879,6 +881,7 @@ function corrigirNomeLivro(nome) {
     'genesis': 'Gênesis',
     'exodo': 'Êxodo',
     'levitico': 'Levítico',
+    'numeros': 'Números',
 
     'joao': 'João',
     'mateus': 'Mateus',
