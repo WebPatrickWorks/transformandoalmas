@@ -972,3 +972,40 @@ body.dark-mode {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+/* === Último versículo lido === */
+.versiculo-lido {
+  position: relative;
+}
+
+.versiculo-lido::before {
+  content: '📖';
+  position: absolute;
+  top: -0.5rem;
+  right: -0.8rem;
+  font-size: 1.2rem;
+  color: #6ec1e4;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.dark-mode .versiculo-lido::before {
+  color: #ff9800;
+}
+
+.card-destaque{
+  background-color: #005792;
+  color: white;
+  border-left: none;
+}
+
+.card-destaque h3 {
+  color: white;
+}
+
+.dark-mode .card-destaque {
+  background-color: #333;
+}

@@ -24,6 +24,7 @@ function carregarPagina(pagina) {
       .then(html => {
         document.getElementById("conteudo").innerHTML = html;
         aplicarModoEscuroDinamico();
+        mostrarUltimaLeitura();
       })
       .catch(err => {
         console.error('Erro ao carregar início:', err);
@@ -235,8 +236,6 @@ function listarTestamento(testamento) {
         });
 
         html += `</div></div></div>`;
-
-        
       }
 
       conteudo.innerHTML = html;
@@ -270,6 +269,8 @@ function listarCapitulos(livro) {
 function carregarCapitulo(livro, numero) {
   const conteudo = document.getElementById("conteudo");
   conteudo.innerHTML = `<p>Carregando ${capitalizeFirstLetter(livro)} Capítulo ${numero}...</p>`;
+  //console.warn(`"${livro}" : livro recebido`);
+  //console.warn(`"${numero}" : versículo recebido`);
 
   fetch(`capitulos/${livro}${numero}.json`)
     .then(res => {
@@ -278,7 +279,25 @@ function carregarCapitulo(livro, numero) {
     })
     .then(data => {
       let html = `<h2>${data.livro} (capítulo ${data.capitulo})</h2>`;
+
+      // Verifica se há último versículo salvo
+      const ultimaLeitura = localStorage.getItem('ultimoVersiculo');
+      let ultima = null;
+      if (ultimaLeitura) {
+        try {
+          ultima = JSON.parse(ultimaLeitura);
+        } catch (err) {
+          console.error("Erro ao ler última leitura:", err);
+        }
+      }
+
       data.versiculos.forEach(v => {
+        // Verifica se é o versículo salvo
+        const isUltimoLido = ultima &&
+          ultima.livro === data.livro &&
+          ultima.capitulo === data.capitulo &&
+          ultima.numero === v.numero;
+          
         const temReflexao = v.reflexao ? `
           <button onclick="mostrarReflexao(this)" class="botao-reflexao">
             <span class="icone-reflexao">+</span> Mostrar Reflexão
@@ -292,7 +311,7 @@ function carregarCapitulo(livro, numero) {
         ` : '';
 
         html += `
-          <div class="card" onclick="mostrarOverlay('${data.livro}', '${data.capitulo}', '${v.numero}')">
+          <div class="card${isUltimoLido ? ' versiculo-lido' : ''}" onclick="mostrarOverlay('${data.livro}', '${data.capitulo}', '${v.numero}'); marcarComoLido('${data.livro}', '${data.capitulo}', '${v.numero}', this)">
             <h3>${v.numero}</h3>
             <p>"${v.texto}"</p>
             ${temReflexao}
@@ -915,6 +934,47 @@ function corrigirNomeLivro(nome) {
   return correcoes[nome.toLowerCase()] || nome;
 }
 
+function corrigirNomeLivroParaNomeArquivo(nome) {
+  const correcoes = {
+    'salmos': 'Salmos',
+    'proverbios': 'Provérbios',
+    'genesis': 'Gênesis',
+    'exodo': 'Êxodo',
+    'levitico': 'Levítico',
+    'numeros': 'Números',
+
+    'João': 'joao',
+    'mateus': 'Mateus',
+    'marcos': 'Marcos',
+    'lucas': 'Lucas',
+    'atos': 'Atos',
+    'romanos': 'Romanos',
+    '1corintios': '1a Carta aos Coríntios',
+    '2corintios': '2a Carta aos Coríntios',
+    'galatas': 'Gálatas',
+    'efesios': 'Efésios',
+    'filipenses': 'Filipenses',
+    'colossenses': 'Colossenses',
+    '1tessalonicenses': '1a Carta aos Tessalonicenses',
+    '2tessalonicenses': '2a Carta aos Tessalonicenses',
+    '1timoteo': '1a Carta a Timóteo',
+    '2timoteo': '2a Carta a Timóteo',
+    'tito': 'Tito',
+    'filemom': 'Filemom',
+    'hebreus': 'Hebreus',
+    'tiago': 'Tiago',
+    '1pedro': '1a Carta de Pedro',
+    '2pedro': '2a Carta de Pedro',
+    '1joao': '1a Carta de João',
+    '2joao': '2a Carta de João',
+    '3joao': '3a Carta de João',
+    'judas': 'Judas',
+    'apocalipse': 'Apocalipse'
+  };
+
+  return correcoes[nome] || nome;
+}
+
 
 function mostrarOverlay(livro, capitulo, numero) {
   const overlay = document.getElementById("overlayVersiculo");
@@ -1187,6 +1247,7 @@ document.getElementById("conteudo").innerHTML = `
 
 window.addEventListener('DOMContentLoaded', function () {
   checkDarkMode();
+  carregarUltimaLeitura(); // Marca o último versículo lido
 
   // Carrega todos os versículos pra busca funcionar offline
   carregarTodosOsVersiculos()
@@ -1213,4 +1274,65 @@ function abrirAjuda() {
 // Fecha a modal de ajuda
 function fecharAjuda() {
   document.getElementById("modalAjuda").style.display = 'none';
+}
+
+// Carrega a última marcação do localStorage
+function carregarUltimaLeitura() {
+  const ultima = localStorage.getItem('ultimoVersiculo');
+  if (!ultima) return;
+
+  try {
+    const { livro, capitulo, numero } = JSON.parse(ultima);
+
+    // Remove marcação anterior
+    document.querySelectorAll('.versiculo-lido').forEach(el => {
+      el.classList.remove('versiculo-lido');
+    });
+
+    // Procura e adiciona novamente
+    document.querySelectorAll('.card h3').forEach(h3 => {
+      const texto = h3.textContent.trim();
+      if (texto === `${livro} ${capitulo}:${numero}`) {
+        h3.closest('.card')?.classList.add('versiculo-lido');
+      }
+    });
+  } catch (err) {
+    console.error("Erro ao carregar marcação:", err);
+  }
+}
+
+// Registra o versículo como última leitura
+function marcarComoLido(livro, capitulo, numero) {
+  // Remove marcação anterior
+  document.querySelectorAll('.versiculo-lido').forEach(el => {
+    el.classList.remove('versiculo-lido');
+  });
+
+  // Adiciona à DOM
+  const cardAtual = event.target.closest('.card');
+  if (cardAtual) {
+    cardAtual.classList.add('versiculo-lido');
+
+    // Salva no localStorage
+    localStorage.setItem('ultimoVersiculo', JSON.stringify({ livro, capitulo, numero }));
+  }
+}
+
+function mostrarUltimaLeitura() {
+  const ultima = localStorage.getItem('ultimoVersiculo');
+  if (!ultima) return;
+
+  const { livro, capitulo, numero } = JSON.parse(ultima);
+
+  const conteudo = document.getElementById("conteudo");
+
+  let html = `
+    <div class="card card-destaque">
+      <h3>Última leitura:</h3>
+      <p><strong>${livro} ${capitulo}:${numero}</strong></p>
+    </div>
+  `;
+
+  conteudo.innerHTML = html + conteudo.innerHTML;
+  aplicarModoEscuroDinamico();
 }
