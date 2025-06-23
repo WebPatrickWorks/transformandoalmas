@@ -271,10 +271,15 @@ function listarCapitulos(livro) {
 
 // Função para carregar versículos de um capítulo
 function carregarCapitulo(livro, numero) {
+
+
+  //obterLivrosDoTestamento(`${removerAcentos(livro)}`).then(console.log);
+
+
   const conteudo = document.getElementById("conteudo");
   conteudo.innerHTML = `<p>Carregando ${capitalizeFirstLetter(livro)} Capítulo ${numero}...</p>`;
-  //console.warn(`"${livro}" : livro recebido`);
-  //console.warn(`"${numero}" : versículo recebido`);
+  console.warn(`"${livro}" : livro recebido`);
+  console.warn(`"${numero}" : versículo recebido`);
 
   fetch(`capitulos/${livro}${numero}.json`)
     .then(res => {
@@ -1040,8 +1045,16 @@ function carregarTodosOsVersiculos() {
 }
 
 
-function removerAcentos(str) {
+function removerAcentos1(str) {
   return str.normalize("NFD").replace(/[\u0300-\u036F]/g, "").toLowerCase();
+}
+
+function removerAcentos(str) {
+  return str
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // Remove acentos
+    .replace(/\s+/g, "") // Remove todos os espaços em branco (incluindo quebras de linha)
+    .toLowerCase(); // Converte para minúsculas
 }
 
 function buscarVersiculo() {
@@ -1265,6 +1278,37 @@ function carregarUltimaLeitura() {
   }
 }
 
+
+
+// Função que recebe o nome do livro e retorna os livros e capítulos do respectivo testamento no formato JSON desejado
+async function obterLivrosDoTestamento(nomeLivro) {
+  try {
+    const response = await fetch('indice-capitulos.json');
+    const dados = await response.json();
+
+    const { velhoTestamento, novoTestamento } = dados;
+
+    if (velhoTestamento.hasOwnProperty(nomeLivro.toLowerCase())) {
+      return velhoTestamento;
+    }
+
+    if (novoTestamento.hasOwnProperty(nomeLivro.toLowerCase())) {
+      return novoTestamento;
+    }
+
+    return {
+      erro: 'Livro não encontrado em nenhum dos testamentos.'
+    };
+  } catch (erro) {
+    console.error('Erro ao carregar o arquivo:', erro);
+    return { erro: 'Falha ao carregar o arquivo JSON.' };
+  }
+}
+// Exemplo de uso:
+// obterLivrosDoTestamento('joao').then(console.log);
+
+
+
 // Registra o versículo como última leitura
 function marcarComoLido(livro, capitulo, numero) {
   // Remove marcação anterior
@@ -1282,6 +1326,33 @@ function marcarComoLido(livro, capitulo, numero) {
   }
 }
 
+function mostrarUltimaLeitura1() {
+  const ultima = localStorage.getItem('ultimoVersiculo');
+  if (!ultima) return;
+
+  const { livro, capitulo, numero } = JSON.parse(ultima);
+
+  const conteudo = document.getElementById("conteudo");
+
+  obterLivrosDoTestamento(`${removerAcentos(livro)}`).then(result => {
+    capitulosDisponiveis = result;
+    console.log('Capítulos disponíveis:', capitulosDisponiveis);
+  });
+
+  let html = `
+    <div class="card card-destaque">
+      <h3>Última leitura:</h3>
+      <p><strong>${livro} ${capitulo}:${numero}</strong></p>
+      <button onclick="carregarCapitulo('${removerAcentos(livro)}', ${capitulo})">Ir para versículo</button>
+    </div>
+  `;
+
+
+
+  conteudo.innerHTML = html + conteudo.innerHTML;
+  aplicarModoEscuroDinamico();
+}
+
 function mostrarUltimaLeitura() {
   const ultima = localStorage.getItem('ultimoVersiculo');
   if (!ultima) return;
@@ -1290,8 +1361,13 @@ function mostrarUltimaLeitura() {
 
   const conteudo = document.getElementById("conteudo");
 
+  obterLivrosDoTestamento(`${removerAcentos(livro)}`).then(result => {
+    capitulosDisponiveis = result;
+    console.log('Capítulos disponíveis:', capitulosDisponiveis);
+  });
+
   let html = `
-    <div class="card card-destaque">
+    <div class="card card-destaque" onclick="carregarCapitulo('${removerAcentos(livro)}', ${capitulo})" style="cursor: pointer;">
       <h3>Última leitura:</h3>
       <p><strong>${livro} ${capitulo}:${numero}</strong></p>
     </div>
@@ -1300,3 +1376,6 @@ function mostrarUltimaLeitura() {
   conteudo.innerHTML = html + conteudo.innerHTML;
   aplicarModoEscuroDinamico();
 }
+
+
+
