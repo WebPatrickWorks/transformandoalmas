@@ -136,6 +136,7 @@ function listarTestamento(testamento) {
         'exodo': 'livros/icone-exodo.png',
         'levitico': 'livros/icone-levitico.png',
         'numeros': 'livros/icone-numeros.png',
+        'deuteronomio': 'livros/icone-deuteronomio.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -174,6 +175,7 @@ function listarTestamento(testamento) {
         'exodo': 'Êxodo é o segundo livro da Bíblia e foi escrito por Moisés. Relata a libertação do povo de Israel da escravidão no Egito, conduzido por Moisés sob a direção de Deus. O livro narra eventos marcantes como as dez pragas, a travessia do Mar Vermelho, a entrega dos Dez Mandamentos no Monte Sinai e a aliança de Deus com o seu povo. Além de revelar o cuidado, a justiça e a fidelidade de Deus, Êxodo estabelece as bases da identidade espiritual, moral e cultural de Israel, destacando a importância da obediência e da adoração ao Deus único.',
         'levitico': 'Levítico é o terceiro livro da Bíblia, escrito por Moisés, e concentra-se nas leis, rituais e orientações dadas por Deus ao povo de Israel, especialmente aos sacerdotes da tribo de Levi. O livro aborda temas como sacrifícios, pureza, festas sagradas, normas alimentares e princípios de santidade. Seu propósito é ensinar que Deus é santo e que o povo, para se relacionar com Ele, também deve viver em santidade, justiça e reverência, refletindo Sua presença em todas as áreas da vida.',
         'numeros': 'Números é o quarto livro da Bíblia, escrito por Moisés, e narra a jornada do povo de Israel pelo deserto rumo à Terra Prometida. O nome se refere aos censos realizados para organizar as tribos. O livro combina registros numéricos, leis, relatos de rebeldias, milagres e experiências que revelam tanto a fidelidade de Deus quanto as falhas humanas. Mostra como a obediência conduz à bênção, enquanto a desobediência gera consequências, reafirmando o cuidado e a direção de Deus ao longo da caminhada do Seu povo.',
+        'deuteronomio': 'Deuteronômio é o quinto livro da Bíblia, escrito por Moisés, e reúne os discursos finais dele ao povo de Israel antes da entrada na Terra Prometida. O livro revisita as leis, os mandamentos e a aliança, reforçando a importância da obediência, do amor a Deus e da fidelidade. Nele, Moisés recorda os acontecimentos da caminhada no deserto, exorta o povo à santidade e destaca que a bênção está ligada à obediência e a maldição à desobediência. É um chamado à lembrança, à gratidão e à entrega total a Deus.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -901,6 +903,7 @@ function corrigirNomeLivro(nome) {
     'exodo': 'Êxodo',
     'levitico': 'Levítico',
     'numeros': 'Números',
+    'deuteronomio': 'Deuteronômio',
 
     'joao': 'João',
     'mateus': 'Mateus',
@@ -933,48 +936,6 @@ function corrigirNomeLivro(nome) {
 
   return correcoes[nome.toLowerCase()] || nome;
 }
-
-function corrigirNomeLivroParaNomeArquivo(nome) {
-  const correcoes = {
-    'salmos': 'Salmos',
-    'proverbios': 'Provérbios',
-    'genesis': 'Gênesis',
-    'exodo': 'Êxodo',
-    'levitico': 'Levítico',
-    'numeros': 'Números',
-
-    'João': 'joao',
-    'mateus': 'Mateus',
-    'marcos': 'Marcos',
-    'lucas': 'Lucas',
-    'atos': 'Atos',
-    'romanos': 'Romanos',
-    '1corintios': '1a Carta aos Coríntios',
-    '2corintios': '2a Carta aos Coríntios',
-    'galatas': 'Gálatas',
-    'efesios': 'Efésios',
-    'filipenses': 'Filipenses',
-    'colossenses': 'Colossenses',
-    '1tessalonicenses': '1a Carta aos Tessalonicenses',
-    '2tessalonicenses': '2a Carta aos Tessalonicenses',
-    '1timoteo': '1a Carta a Timóteo',
-    '2timoteo': '2a Carta a Timóteo',
-    'tito': 'Tito',
-    'filemom': 'Filemom',
-    'hebreus': 'Hebreus',
-    'tiago': 'Tiago',
-    '1pedro': '1a Carta de Pedro',
-    '2pedro': '2a Carta de Pedro',
-    '1joao': '1a Carta de João',
-    '2joao': '2a Carta de João',
-    '3joao': '3a Carta de João',
-    'judas': 'Judas',
-    'apocalipse': 'Apocalipse'
-  };
-
-  return correcoes[nome] || nome;
-}
-
 
 function mostrarOverlay(livro, capitulo, numero) {
   const overlay = document.getElementById("overlayVersiculo");
