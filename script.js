@@ -139,6 +139,7 @@ function listarTestamento(testamento) {
         'deuteronomio': 'livros/icone-deuteronomio.png',
         'josue': 'livros/icone-josue.png',
         'juizes': 'livros/icone-juizes.png',
+        'rute': 'livros/icone-rute.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -180,6 +181,7 @@ function listarTestamento(testamento) {
         'deuteronomio': 'Deuteronômio é o quinto livro da Bíblia, escrito por Moisés, e reúne os discursos finais dele ao povo de Israel antes da entrada na Terra Prometida. O livro revisita as leis, os mandamentos e a aliança, reforçando a importância da obediência, do amor a Deus e da fidelidade. Nele, Moisés recorda os acontecimentos da caminhada no deserto, exorta o povo à santidade e destaca que a bênção está ligada à obediência e a maldição à desobediência. É um chamado à lembrança, à gratidão e à entrega total a Deus.',
         'josue': 'Josué é o sexto livro da Bíblia e narra a conquista e a divisão da Terra Prometida entre as tribos de Israel, sob a liderança de Josué, sucessor de Moisés. Escrito provavelmente pelo próprio Josué, com registros posteriores de outros escribas, o livro destaca a fidelidade de Deus em cumprir Suas promessas. Relata grandes feitos, como a travessia do rio Jordão, a queda das muralhas de Jericó e a distribuição das terras. Sua mensagem central é que a obediência e a confiança em Deus são fundamentais para alcançar vitórias e viver debaixo de Suas bênçãos.',
         'juizes': 'Juízes é o sétimo livro da Bíblia e retrata o período entre a morte de Josué e o surgimento da monarquia em Israel. De autoria atribuída a Samuel, o livro descreve um ciclo constante de desobediência, opressão, arrependimento e libertação, quando Deus levanta juízes — líderes civis e militares — para salvar o povo. Relata histórias marcantes de Débora, Gideão, Sansão e outros, mostrando como a infidelidade a Deus traz consequências, mas Sua misericórdia se renova sempre que há arrependimento sincero.',
+        'rute': 'Rute é um livro curto, mas profundamente inspirador, que narra a história de lealdade, amor e redenção de uma mulher moabita chamada Rute, que escolhe seguir a Deus e acompanhar sua sogra, Noemi, ao retornar para Israel. A autoria é tradicionalmente atribuída ao profeta Samuel. Através de sua fé e fidelidade, Rute se torna parte da linhagem do rei Davi e, consequentemente, de Jesus. O livro revela como Deus age na simplicidade da vida cotidiana, transformando histórias comuns em propósitos eternos.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -915,6 +917,7 @@ function corrigirNomeLivro(nome) {
     'deuteronomio': 'Deuteronômio',
     'josue': 'Josué',
     'juizes': 'Juízes',
+    'rute': 'Rute',
 
     'joao': 'João',
     'mateus': 'Mateus',
