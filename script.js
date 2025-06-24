@@ -140,6 +140,7 @@ function listarTestamento(testamento) {
         'josue': 'livros/icone-josue.png',
         'juizes': 'livros/icone-juizes.png',
         'rute': 'livros/icone-rute.png',
+        '1samuel': 'livros/icone-1samuel.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -182,6 +183,7 @@ function listarTestamento(testamento) {
         'josue': 'Josué é o sexto livro da Bíblia e narra a conquista e a divisão da Terra Prometida entre as tribos de Israel, sob a liderança de Josué, sucessor de Moisés. Escrito provavelmente pelo próprio Josué, com registros posteriores de outros escribas, o livro destaca a fidelidade de Deus em cumprir Suas promessas. Relata grandes feitos, como a travessia do rio Jordão, a queda das muralhas de Jericó e a distribuição das terras. Sua mensagem central é que a obediência e a confiança em Deus são fundamentais para alcançar vitórias e viver debaixo de Suas bênçãos.',
         'juizes': 'Juízes é o sétimo livro da Bíblia e retrata o período entre a morte de Josué e o surgimento da monarquia em Israel. De autoria atribuída a Samuel, o livro descreve um ciclo constante de desobediência, opressão, arrependimento e libertação, quando Deus levanta juízes — líderes civis e militares — para salvar o povo. Relata histórias marcantes de Débora, Gideão, Sansão e outros, mostrando como a infidelidade a Deus traz consequências, mas Sua misericórdia se renova sempre que há arrependimento sincero.',
         'rute': 'Rute é um livro curto, mas profundamente inspirador, que narra a história de lealdade, amor e redenção de uma mulher moabita chamada Rute, que escolhe seguir a Deus e acompanhar sua sogra, Noemi, ao retornar para Israel. A autoria é tradicionalmente atribuída ao profeta Samuel. Através de sua fé e fidelidade, Rute se torna parte da linhagem do rei Davi e, consequentemente, de Jesus. O livro revela como Deus age na simplicidade da vida cotidiana, transformando histórias comuns em propósitos eternos.',
+        '1samuel': '1 Samuel é o livro que marca a transição do período dos juízes para a monarquia em Israel. De autoria atribuída ao profeta Samuel, com registros complementares de outros escribas, relata o nascimento e ministério de Samuel, o último juiz e primeiro profeta dessa nova fase. O livro narra a escolha e a queda do rei Saul e a ascensão de Davi, homem segundo o coração de Deus. Traz lições sobre obediência, liderança, fé e as consequências da desobediência, revelando que Deus exalta os humildes e rejeita os que endurecem o coração.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -918,6 +920,7 @@ function corrigirNomeLivro(nome) {
     'josue': 'Josué',
     'juizes': 'Juízes',
     'rute': 'Rute',
+    '1samuel': 'Primeiro Samuel',
 
     'joao': 'João',
     'mateus': 'Mateus',
