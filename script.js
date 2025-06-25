@@ -141,6 +141,7 @@ function listarTestamento(testamento) {
         'juizes': 'livros/icone-juizes.png',
         'rute': 'livros/icone-rute.png',
         '1samuel': 'livros/icone-1samuel.png',
+        '2samuel': 'livros/icone-2samuel.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -184,6 +185,7 @@ function listarTestamento(testamento) {
         'juizes': 'Juízes é o sétimo livro da Bíblia e retrata o período entre a morte de Josué e o surgimento da monarquia em Israel. De autoria atribuída a Samuel, o livro descreve um ciclo constante de desobediência, opressão, arrependimento e libertação, quando Deus levanta juízes — líderes civis e militares — para salvar o povo. Relata histórias marcantes de Débora, Gideão, Sansão e outros, mostrando como a infidelidade a Deus traz consequências, mas Sua misericórdia se renova sempre que há arrependimento sincero.',
         'rute': 'Rute é um livro curto, mas profundamente inspirador, que narra a história de lealdade, amor e redenção de uma mulher moabita chamada Rute, que escolhe seguir a Deus e acompanhar sua sogra, Noemi, ao retornar para Israel. A autoria é tradicionalmente atribuída ao profeta Samuel. Através de sua fé e fidelidade, Rute se torna parte da linhagem do rei Davi e, consequentemente, de Jesus. O livro revela como Deus age na simplicidade da vida cotidiana, transformando histórias comuns em propósitos eternos.',
         '1samuel': '1 Samuel é o livro que marca a transição do período dos juízes para a monarquia em Israel. De autoria atribuída ao profeta Samuel, com registros complementares de outros escribas, relata o nascimento e ministério de Samuel, o último juiz e primeiro profeta dessa nova fase. O livro narra a escolha e a queda do rei Saul e a ascensão de Davi, homem segundo o coração de Deus. Traz lições sobre obediência, liderança, fé e as consequências da desobediência, revelando que Deus exalta os humildes e rejeita os que endurecem o coração.',
+        '2samuel': '2 Samuel dá continuidade à história iniciada em 1 Samuel, relatando o reinado de Davi sobre Israel. De autoria atribuída ao profeta Samuel, com complementos dos profetas Natã e Gade, o livro descreve a consolidação do reino, as vitórias militares, a expansão de Israel e também os erros pessoais de Davi, como o episódio com Bate-Seba. Apesar das falhas, Davi é retratado como um homem segundo o coração de Deus, que se arrepende sinceramente e busca viver segundo a vontade divina. A obra destaca como Deus é fiel em Suas promessas e soberano sobre reis e nações.',
 
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
@@ -921,6 +923,7 @@ function corrigirNomeLivro(nome) {
     'juizes': 'Juízes',
     'rute': 'Rute',
     '1samuel': 'Primeiro Samuel',
+    '2samuel': 'Segundo Samuel',
 
     'joao': 'João',
     'mateus': 'Mateus',
