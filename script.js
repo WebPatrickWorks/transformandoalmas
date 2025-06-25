@@ -142,6 +142,7 @@ function listarTestamento(testamento) {
         'rute': 'livros/icone-rute.png',
         '1samuel': 'livros/icone-1samuel.png',
         '2samuel': 'livros/icone-2samuel.png',
+        '1reis': 'livros/icone-1reis.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -186,7 +187,7 @@ function listarTestamento(testamento) {
         'rute': 'Rute é um livro curto, mas profundamente inspirador, que narra a história de lealdade, amor e redenção de uma mulher moabita chamada Rute, que escolhe seguir a Deus e acompanhar sua sogra, Noemi, ao retornar para Israel. A autoria é tradicionalmente atribuída ao profeta Samuel. Através de sua fé e fidelidade, Rute se torna parte da linhagem do rei Davi e, consequentemente, de Jesus. O livro revela como Deus age na simplicidade da vida cotidiana, transformando histórias comuns em propósitos eternos.',
         '1samuel': '1 Samuel é o livro que marca a transição do período dos juízes para a monarquia em Israel. De autoria atribuída ao profeta Samuel, com registros complementares de outros escribas, relata o nascimento e ministério de Samuel, o último juiz e primeiro profeta dessa nova fase. O livro narra a escolha e a queda do rei Saul e a ascensão de Davi, homem segundo o coração de Deus. Traz lições sobre obediência, liderança, fé e as consequências da desobediência, revelando que Deus exalta os humildes e rejeita os que endurecem o coração.',
         '2samuel': '2 Samuel dá continuidade à história iniciada em 1 Samuel, relatando o reinado de Davi sobre Israel. De autoria atribuída ao profeta Samuel, com complementos dos profetas Natã e Gade, o livro descreve a consolidação do reino, as vitórias militares, a expansão de Israel e também os erros pessoais de Davi, como o episódio com Bate-Seba. Apesar das falhas, Davi é retratado como um homem segundo o coração de Deus, que se arrepende sinceramente e busca viver segundo a vontade divina. A obra destaca como Deus é fiel em Suas promessas e soberano sobre reis e nações.',
-
+        '1reis': '1 Reis narra a transição do reinado de Davi para o de seu filho Salomão, destacando a construção do Templo em Jerusalém e a glória do reino unificado. Contudo, após a morte de Salomão, o livro relata a divisão do reino em duas partes: Israel ao norte e Judá ao sul. Escrita por autores e escribas proféticos, a obra registra a história dos reis que sucederam Salomão, revelando como a fidelidade ou a infidelidade a Deus impactaram o destino da nação. O livro também apresenta a atuação marcante do profeta Elias, símbolo da voz profética em tempos de idolatria e injustiça.',
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
         'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
@@ -924,6 +925,7 @@ function corrigirNomeLivro(nome) {
     'rute': 'Rute',
     '1samuel': 'Primeiro Samuel',
     '2samuel': 'Segundo Samuel',
+    '1reis': 'Primeiro Reis',
 
     'joao': 'João',
     'mateus': 'Mateus',
