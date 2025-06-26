@@ -237,17 +237,14 @@ function listarTestamento(testamento) {
         const descricao = descricoesLivros[livro] || 'Livro bíblico';
 
         html += `
-          <div class="book-card" onclick="listarCapitulos('${livro}')">
+          <div class="book-card" onclick="abrirModalCapitulos('${livro}')">
             <img src="${icone}" alt="${livroFormatado}" class="book-image"/>
             <div class="book-summary">${descricao}</div>
           </div>
         `;
 
-        testamentoData[livro].forEach(num => {
-          html += `<button onclick="carregarCapitulo('${livro}', ${num})">Capítulo ${num}</button>`;
-        });
 
-        html += `</div></div></div>`;
+        html += `</div>`;
       }
 
       conteudo.innerHTML = html;
@@ -1262,6 +1259,41 @@ function abrirAjuda() {
 function fecharAjuda() {
   document.getElementById("modalAjuda").style.display = 'none';
 }
+
+// Abre o modal de capítulos para o livro selecionado
+function abrirModalCapitulos(livro) {
+  const modal = document.getElementById('modalCapitulos');
+  const titulo = document.getElementById('modalTitulo');
+  const body  = document.getElementById('modalBodyCapitulos');
+
+  titulo.textContent = `Capítulos de ${capitalizeFirstLetter(livro)}`;
+  body.innerHTML = '';
+
+  // Preenche botões de cada capítulo
+  (capitulosDisponiveis[livro] || []).forEach(num => {
+    const btn = document.createElement('button');
+    btn.textContent = `Capítulo ${num}`;
+    btn.onclick = () => {
+      fecharModalCapitulos();
+      carregarCapitulo(livro, num);
+    };
+    body.appendChild(btn);
+  });
+
+  modal.style.display = 'block';
+}
+
+// Fecha o modal de capítulos
+function fecharModalCapitulos() {
+  document.getElementById('modalCapitulos').style.display = 'none';
+}
+
+// Fecha se clicar fora do conteúdo
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('modalCapitulos');
+  if (event.target === modal) fecharModalCapitulos();
+});
+
 
 // Carrega a última marcação do localStorage
 function carregarUltimaLeitura() {
