@@ -1017,7 +1017,7 @@ body.dark-mode {
 .book-card {
   position: relative;
   background: transparent !important;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: none;  /* opcional: remove sombra, se desejar */
   overflow: hidden;
   cursor: pointer;
@@ -1056,8 +1056,9 @@ body.dark-mode {
 /* Badge circular + título no topo esquerdo */
 .book-image-wrapper .book-overlay {
   position: absolute;
-  top: 2.5rem;
-  left: 1.5rem;
+  top: 2rem;
+  left: 1rem;
+  right: 0.5rem;
   display: flex;
   align-items: center;
   z-index: 2;
@@ -1075,22 +1076,48 @@ body.dark-mode {
   margin-left: 0.5rem;
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
   white-space: nowrap;
 }
 
+/* Botão “Abrir” com fundo transparente, borda branca e alinhado à direita */
+.overlay-open-btn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.overlay-open-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+:root {
+  /* Ajuste aqui os valores padrão */
+  --summary-font-size: 0.9rem;
+  --summary-line-height: 1.2;
+}
 
 .book-summary {
+  margin-top: 1rem;     /* alternativo: define o espaçamento acima do resumo */
+  font-size: var(--summary-font-size);
+  line-height: var(--summary-line-height);
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;    /* mostra apenas 2 linhas */
+  -webkit-line-clamp: 2;
   overflow: hidden;
   cursor: pointer;
   transition: all .2s ease;
 }
+
 .book-summary.expanded {
-  -webkit-line-clamp: unset; /* remove o clamp, exibe todo o texto */
+  -webkit-line-clamp: unset;
 }
+
 
 
 /* Dark mode */
@@ -1110,13 +1137,14 @@ body.dark-mode {
   border-radius: 50%;
   border: 1px solid #fff;
   object-fit: cover;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7));
 }
 
 /* Título em branco ao lado */
 .overlay-title {
   margin-left: 0.5rem;
   color: #fff;
-  font-size: larger;
+  font-size: medium;
   font-weight: bold;
   text-shadow: 0 1px 2px rgba(0,0,0,0.7);
   white-space: nowrap;           /* Não quebra o nome em múltiplas linhas */

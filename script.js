@@ -10,6 +10,15 @@ window.addEventListener('DOMContentLoaded', function () {
   carregarPagina('inicio');
 });
 
+// Formata o resumo para deixar as 3 primeiras palavras em negrito
+function formatSummary(desc) {
+  const words = desc.trim().split(/\s+/);
+  const boldPart = words.slice(0, 3).join(' ');
+  const restPart = words.slice(3).join(' ');
+  return restPart
+    ? `<strong>${boldPart}</strong> ${restPart}`
+    : `<strong>${boldPart}</strong>`;
+}
 
 // Função para carregar página principal
 function carregarPagina(pagina) {
@@ -243,9 +252,10 @@ function listarTestamento(testamento) {
               <div class="book-overlay">
                 <img src="${icone}" alt="" class="overlay-icon"/>
                 <span class="overlay-title">${livroFormatado}</span>
+                <button class="overlay-open-btn">Abrir</button>
               </div>
             </div>
-            <div class="book-summary">${descricao}</div>
+            <div class="book-summary">${formatSummary(descricao)}</div>
           </div>
         `;
 
