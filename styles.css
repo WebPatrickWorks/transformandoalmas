@@ -1019,12 +1019,13 @@ body.dark-mode {
   gap: 1rem;
 }
 .book-card {
+  position: relative;
   background: var(--card-bg, #fff);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   overflow: hidden;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   transition: transform .2s ease;
 }
 .book-card:hover {
@@ -1032,53 +1033,68 @@ body.dark-mode {
 }
 .book-image {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: auto;       /* Altura automática para preservar proporção */
+  object-fit: contain;/* Garante que a imagem inteira seja mostrada */
   display: block;
 }
+.book-image-container {
+  position: relative;            /* Novo “relativo” para abrigar overlay */
+}
+
+/* Faz o wrapper ser posicionado para overlay */
+.book-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* A imagem continua responsiva */
+.book-image-wrapper .book-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Badge circular + título no topo esquerdo */
+.book-image-wrapper .book-overlay {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.book-overlay .overlay-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.book-overlay .overlay-title {
+  margin-left: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  white-space: nowrap;
+}
+
+
 .book-summary {
-  padding: .5rem;
-  font-size: .9rem;
-  color: #666;
-  font-style: italic;
-  line-height: 1.2;
-}
-/* Dark mode */
-.dark-mode .book-card { background: #202020; box-shadow: 0 2px 8px rgba(255,255,255,0.05); }
-.dark-mode .book-summary { color: #aaa; }
-
-
-/* Grid de livros estilo Instagram */
-.grid-livros {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
-}
-.book-card {
-  background: var(--card-bg, #fff);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;    /* mostra apenas 2 linhas */
   overflow: hidden;
   cursor: pointer;
-  text-align: center;
-  transition: transform .2s ease;
+  transition: all .2s ease;
 }
-.book-card:hover {
-  transform: translateY(-4px);
+.book-summary.expanded {
+  -webkit-line-clamp: unset; /* remove o clamp, exibe todo o texto */
 }
-.book-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-.book-summary {
-  padding: .5rem;
-  font-size: .9rem;
-  color: #666;
-  font-style: italic;
-  line-height: 1.2;
-}
+
 
 /* Dark mode */
 .dark-mode .book-card {
@@ -1087,4 +1103,73 @@ body.dark-mode {
 }
 .dark-mode .book-summary {
   color: #aaa;
+}
+
+
+/* Avatar circular com borda branca */
+.overlay-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+/* Título em branco ao lado */
+.overlay-title {
+  margin-left: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  white-space: nowrap;           /* Não quebra o nome em múltiplas linhas */
+}
+
+/* Ajuste para uso em dark mode, se domiciliar fonts claras */
+.dark-mode .overlay-title {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+}
+
+
+
+/* Estilização do container de capítulos no modal */
+.modal-conteudo #modalBodyCapitulos {
+  padding-top: 1rem;
+}
+
+/* Lista flexível de capítulos */
+.chapter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;             /* espaço entre itens */
+  font-size: 1.1rem;       /* fonte maior */
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/* Cada item fica sem borda, com leve padding e hover */
+.chapter-item {
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  background: none;
+  color: inherit;
+}
+
+/* Ícone separador “•” entre itens */
+.chapter-item:not(:last-child)::after {
+  content: '•';
+  margin: 0 0.5rem;
+  color: #888;
+}
+
+/* Efeito hover */
+.chapter-item:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Ajuste para dark mode */
+.dark-mode .chapter-item:hover {
+  background-color: rgba(255,255,255,0.1);
 }

@@ -238,7 +238,13 @@ function listarTestamento(testamento) {
 
         html += `
           <div class="book-card" onclick="abrirModalCapitulos('${livro}')">
-            <img src="${icone}" alt="${livroFormatado}" class="book-image"/>
+            <div class="book-image-wrapper">
+              <img src="${icone}" alt="${livroFormatado}" class="book-image"/>
+              <div class="book-overlay">
+                <img src="${icone}" alt="" class="overlay-icon"/>
+                <span class="overlay-title">${livroFormatado}</span>
+              </div>
+            </div>
             <div class="book-summary">${descricao}</div>
           </div>
         `;
@@ -248,6 +254,7 @@ function listarTestamento(testamento) {
       }
 
       conteudo.innerHTML = html;
+      attachSummaryToggle();
       aplicarModoEscuroDinamico();
     })
     .catch(err => {
@@ -1267,21 +1274,27 @@ function abrirModalCapitulos(livro) {
   const body  = document.getElementById('modalBodyCapitulos');
 
   titulo.textContent = `Capítulos de ${capitalizeFirstLetter(livro)}`;
-  body.innerHTML = '';
+  body.innerHTML = '';  // limpa antes de inserir
 
-  // Preenche botões de cada capítulo
+  // Cria a lista de capítulos
+  const ul = document.createElement('ul');
+  ul.className = 'chapter-list';
+
   (capitulosDisponiveis[livro] || []).forEach(num => {
-    const btn = document.createElement('button');
-    btn.textContent = `Capítulo ${num}`;
-    btn.onclick = () => {
+    const li = document.createElement('li');
+    li.className = 'chapter-item';
+    li.textContent = num;
+    li.onclick = () => {
       fecharModalCapitulos();
       carregarCapitulo(livro, num);
     };
-    body.appendChild(btn);
+    ul.appendChild(li);
   });
 
+  body.appendChild(ul);
   modal.style.display = 'block';
 }
+
 
 // Fecha o modal de capítulos
 function fecharModalCapitulos() {
@@ -1293,7 +1306,6 @@ window.addEventListener('click', function(event) {
   const modal = document.getElementById('modalCapitulos');
   if (event.target === modal) fecharModalCapitulos();
 });
-
 
 // Carrega a última marcação do localStorage
 function carregarUltimaLeitura() {
@@ -1390,4 +1402,16 @@ function mostrarUltimaLeitura() {
 
   conteudo.innerHTML = html + conteudo.innerHTML;
   aplicarModoEscuroDinamico();
+}
+
+
+
+// Anexa o toggle de expand/recolher a cada resumo
+function attachSummaryToggle() {
+  document.querySelectorAll('.book-summary').forEach(el => {
+    el.addEventListener('click', function(e) {
+      e.stopPropagation();             // Evita que o click suba para o .book-card
+      this.classList.toggle('expanded');
+    });
+  });
 }
