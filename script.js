@@ -144,6 +144,7 @@ function listarTestamento(testamento) {
         '2samuel': 'livros/icone-2samuel.png',
         '1reis': 'livros/icone-1reis.png',
         '2reis': 'livros/icone-2reis.png',
+        '1cronicas': 'livros/icone-1cronicas.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -190,6 +191,7 @@ function listarTestamento(testamento) {
         '2samuel': '2 Samuel dá continuidade à história iniciada em 1 Samuel, relatando o reinado de Davi sobre Israel. De autoria atribuída ao profeta Samuel, com complementos dos profetas Natã e Gade, o livro descreve a consolidação do reino, as vitórias militares, a expansão de Israel e também os erros pessoais de Davi, como o episódio com Bate-Seba. Apesar das falhas, Davi é retratado como um homem segundo o coração de Deus, que se arrepende sinceramente e busca viver segundo a vontade divina. A obra destaca como Deus é fiel em Suas promessas e soberano sobre reis e nações.',
         '1reis': '1 Reis narra a transição do reinado de Davi para o de seu filho Salomão, destacando a construção do Templo em Jerusalém e a glória do reino unificado. Contudo, após a morte de Salomão, o livro relata a divisão do reino em duas partes: Israel ao norte e Judá ao sul. Escrita por autores e escribas proféticos, a obra registra a história dos reis que sucederam Salomão, revelando como a fidelidade ou a infidelidade a Deus impactaram o destino da nação. O livro também apresenta a atuação marcante do profeta Elias, símbolo da voz profética em tempos de idolatria e injustiça.',
         '2reis': '2 Reis dá continuidade ao relato histórico iniciado em 1 Reis, abordando os reinados sucessivos em Israel e Judá até suas quedas — Israel sendo conquistado pela Assíria e Judá pelo Império Babilônico. A autoria é atribuída a escribas proféticos, sob inspiração divina, possivelmente com contribuições do profeta Jeremias. O livro destaca o ministério poderoso do profeta Eliseu, os altos e baixos da liderança dos reis e a contínua advertência de Deus ao povo por meio dos profetas. A narrativa revela como a infidelidade e a idolatria conduzem ao juízo, mas também como a misericórdia divina persiste em chamar à restauração.',
+        '1cronicas': '1 Crônicas foi escrito por Esdras, por volta do século V a.C., após o exílio babilônico, com o objetivo de relembrar ao povo de Israel suas origens, identidade e aliança com Deus. O livro começa com extensas genealogias desde Adão até as tribos de Israel, reforçando a importância da linhagem de Davi. Em seguida, foca no reinado de Davi, destacando sua fidelidade, as preparações para a construção do Templo e a centralidade da adoração ao Senhor. Mais do que um relato histórico, é uma reafirmação da esperança e do propósito divino para o povo restaurado.',
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
         'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
@@ -226,7 +228,7 @@ function listarTestamento(testamento) {
       const testamentoData = data[testamento];
 
       let html = `<h2>${testamento === 'velhoTestamento' ? 'Velho Testamento' : 'Novo Testamento'}</h2>`;
-      html += `<div class="livros-testamento">`;
+      html += `<div class="grid-testamento">`;
 
       for (const livro in testamentoData) {
         const livroFormatado1 = capitalizeFirstLetter(livro);
@@ -235,15 +237,10 @@ function listarTestamento(testamento) {
         const descricao = descricoesLivros[livro] || 'Livro bíblico';
 
         html += `
-          <div class="card-livro">
-            <button class="botao-livro" onclick="toggleCapitulos('${livro}', this)">
-              <img src="${icone}" alt="${livroFormatado}" class="icone-livro" />
-              <div class="nome-e-descricao">
-                <div class="nome-livro">${livroFormatado}</div>
-                <div class="descricao-livro">${descricao}</div>
-              </div>
-            </button>
-            <div class="lista-capitulos" id="capitulos-${livro}">
+          <div class="book-card" onclick="listarCapitulos('${livro}')">
+            <img src="${icone}" alt="${livroFormatado}" class="book-image"/>
+            <div class="book-summary">${descricao}</div>
+          </div>
         `;
 
         testamentoData[livro].forEach(num => {
@@ -929,6 +926,7 @@ function corrigirNomeLivro(nome) {
     '2samuel': 'Segundo Samuel',
     '1reis': 'Primeiro Reis',
     '2reis': 'Segundo Reis',
+    '1cronicas': 'Primeiro Crônicas',
 
     'joao': 'João',
     'mateus': 'Mateus',
@@ -1059,11 +1057,6 @@ function carregarTodosOsVersiculos() {
         reject(err);
       });
   });
-}
-
-
-function removerAcentos1(str) {
-  return str.normalize("NFD").replace(/[\u0300-\u036F]/g, "").toLowerCase();
 }
 
 function removerAcentos(str) {
@@ -1343,33 +1336,6 @@ function marcarComoLido(livro, capitulo, numero) {
   }
 }
 
-function mostrarUltimaLeitura1() {
-  const ultima = localStorage.getItem('ultimoVersiculo');
-  if (!ultima) return;
-
-  const { livro, capitulo, numero } = JSON.parse(ultima);
-
-  const conteudo = document.getElementById("conteudo");
-
-  obterLivrosDoTestamento(`${removerAcentos(livro)}`).then(result => {
-    capitulosDisponiveis = result;
-    console.log('Capítulos disponíveis:', capitulosDisponiveis);
-  });
-
-  let html = `
-    <div class="card card-destaque">
-      <h3>Última leitura:</h3>
-      <p><strong>${livro} ${capitulo}:${numero}</strong></p>
-      <button onclick="carregarCapitulo('${removerAcentos(livro)}', ${capitulo})">Ir para versículo</button>
-    </div>
-  `;
-
-
-
-  conteudo.innerHTML = html + conteudo.innerHTML;
-  aplicarModoEscuroDinamico();
-}
-
 function mostrarUltimaLeitura() {
   const ultima = localStorage.getItem('ultimoVersiculo');
   if (!ultima) return;
@@ -1393,6 +1359,3 @@ function mostrarUltimaLeitura() {
   conteudo.innerHTML = html + conteudo.innerHTML;
   aplicarModoEscuroDinamico();
 }
-
-
-
