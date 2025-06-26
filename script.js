@@ -143,6 +143,7 @@ function listarTestamento(testamento) {
         '1samuel': 'livros/icone-1samuel.png',
         '2samuel': 'livros/icone-2samuel.png',
         '1reis': 'livros/icone-1reis.png',
+        '2reis': 'livros/icone-2reis.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -188,6 +189,7 @@ function listarTestamento(testamento) {
         '1samuel': '1 Samuel é o livro que marca a transição do período dos juízes para a monarquia em Israel. De autoria atribuída ao profeta Samuel, com registros complementares de outros escribas, relata o nascimento e ministério de Samuel, o último juiz e primeiro profeta dessa nova fase. O livro narra a escolha e a queda do rei Saul e a ascensão de Davi, homem segundo o coração de Deus. Traz lições sobre obediência, liderança, fé e as consequências da desobediência, revelando que Deus exalta os humildes e rejeita os que endurecem o coração.',
         '2samuel': '2 Samuel dá continuidade à história iniciada em 1 Samuel, relatando o reinado de Davi sobre Israel. De autoria atribuída ao profeta Samuel, com complementos dos profetas Natã e Gade, o livro descreve a consolidação do reino, as vitórias militares, a expansão de Israel e também os erros pessoais de Davi, como o episódio com Bate-Seba. Apesar das falhas, Davi é retratado como um homem segundo o coração de Deus, que se arrepende sinceramente e busca viver segundo a vontade divina. A obra destaca como Deus é fiel em Suas promessas e soberano sobre reis e nações.',
         '1reis': '1 Reis narra a transição do reinado de Davi para o de seu filho Salomão, destacando a construção do Templo em Jerusalém e a glória do reino unificado. Contudo, após a morte de Salomão, o livro relata a divisão do reino em duas partes: Israel ao norte e Judá ao sul. Escrita por autores e escribas proféticos, a obra registra a história dos reis que sucederam Salomão, revelando como a fidelidade ou a infidelidade a Deus impactaram o destino da nação. O livro também apresenta a atuação marcante do profeta Elias, símbolo da voz profética em tempos de idolatria e injustiça.',
+        '2reis': '2 Reis dá continuidade ao relato histórico iniciado em 1 Reis, abordando os reinados sucessivos em Israel e Judá até suas quedas — Israel sendo conquistado pela Assíria e Judá pelo Império Babilônico. A autoria é atribuída a escribas proféticos, sob inspiração divina, possivelmente com contribuições do profeta Jeremias. O livro destaca o ministério poderoso do profeta Eliseu, os altos e baixos da liderança dos reis e a contínua advertência de Deus ao povo por meio dos profetas. A narrativa revela como a infidelidade e a idolatria conduzem ao juízo, mas também como a misericórdia divina persiste em chamar à restauração.',
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
         'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
@@ -926,6 +928,7 @@ function corrigirNomeLivro(nome) {
     '1samuel': 'Primeiro Samuel',
     '2samuel': 'Segundo Samuel',
     '1reis': 'Primeiro Reis',
+    '2reis': 'Segundo Reis',
 
     'joao': 'João',
     'mateus': 'Mateus',
