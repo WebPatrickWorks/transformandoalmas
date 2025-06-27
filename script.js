@@ -28,17 +28,7 @@ function carregarPagina(pagina) {
   let html = '';
 
   if (pagina === 'inicio') {
-    fetch('inicio.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("conteudo").innerHTML = html;
-        aplicarModoEscuroDinamico();
-        mostrarUltimaLeitura();
-      })
-      .catch(err => {
-        console.error('Erro ao carregar início:', err);
-        document.getElementById("conteudo").innerHTML = '<p>Erro ao carregar página inicial.</p>';
-      });
+    carregarCardsInicio();
   } else if (pagina === 'reflexoes') {
     fetch('reflexoes.html')
       .then(res => {
@@ -128,6 +118,65 @@ function carregarPagina(pagina) {
   conteudo.innerHTML = html || '';
   aplicarModoEscuroDinamico();
 }
+
+function carregarCardsInicio() {
+  fetch('inicio-cards.json')
+    .then(res => res.json())
+    .then(cards => {
+      const container = document.getElementById('conteudo');
+
+      // Primeiro, mostrar o card da última leitura
+      mostrarUltimaLeitura();
+
+      // Depois, montar os cards em grid
+      let html = document.getElementById('conteudo').innerHTML;
+      html += `<div class="grid-cards">`;
+
+      cards.forEach((card, index) => {
+        const resumo = card.texto[0].slice(0, 150) + '...';
+        html += `
+          <div class="card-inicio" onclick="abrirModalCard(${index})">
+            <img src="${card.imagem}" alt="${card.titulo}">
+            <h3>${card.titulo}</h3>
+            <p>${resumo}</p>
+          </div>
+        `;
+      });
+
+      html += `</div>`;
+
+      // Modal
+      html += `
+        <div id="modalCard" class="modal">
+          <div class="modal-conteudo">
+            <span class="modal-fechar" onclick="fecharModalCard()">×</span>
+            <h2 id="modalTitulo"></h2>
+            <div id="modalTexto"></div>
+          </div>
+        </div>
+      `;
+
+      container.innerHTML = html;
+      aplicarModoEscuroDinamico();
+
+      // Salva os dados globalmente
+      window.cardsInicio = cards;
+    });
+}
+
+
+function abrirModalCard(index) {
+  const card = window.cardsInicio[index];
+  document.getElementById("modalTitulo").textContent = card.titulo;
+  document.getElementById("modalTexto").innerHTML = card.texto.map(p => `<p>${p}</p>`).join('');
+  document.getElementById("modalCard").style.display = 'block';
+}
+
+function fecharModalCard() {
+  document.getElementById("modalCard").style.display = 'none';
+}
+
+
 
 function listarTestamento(testamento) {
   const conteudo = document.getElementById("conteudo");
