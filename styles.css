@@ -860,13 +860,20 @@ body.dark-mode {
 }
 
 .testamentos button {
-  background-color: #005792;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.2rem;
+  background: transparent; /* fundo transparente */
+  border: 1px solid #000;  /* borda preta no light mode */
+  color: #000;             /* texto preto no light mode */
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
-  border-radius: 6px;
   cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+
+/* Quando estiver em dark mode, borda e texto brancos */
+.dark-mode .testamentos button {
+  border-color: #fff;
+  color: #fff;
 }
 
 .testamentos button:hover {
