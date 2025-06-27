@@ -215,6 +215,40 @@ body {
   .dark-mode .menu-mobile button:hover {
     background-color: rgba(255, 255, 255, 0.05);
   }
+
+  /* 1) Esconde no topo o botão de modo e o hamburger */
+  #darkModeBtnMobile,
+  .hamburger {
+    display: none !important;
+  }
+
+  /* 2) Garante espaço para a nova barra inferior */
+  body {
+    padding-bottom: 60px; /* ajuste conforme a altura da nav */
+  }
+
+  /* 3) Estilo da barra fixa no rodapé */
+  .mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 87, 146, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem 0;
+    z-index: 1000;
+  }
+  .mobile-bottom-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex: 1;               /* ocupa espaços iguais */
+  }
 }
 
 .navbar h1 {
