@@ -1,0 +1,411 @@
+{
+  "livro": "1 Crônicas",
+  "capitulo": "6",
+  "versiculos": [
+    {
+      "numero": "1",
+      "texto": "Estes foram os filhos de Levi: Gérson, Coate e Merari.",
+      "reflexao": "A linhagem de Levi, separada para o serviço ao Senhor, nos lembra que há famílias consagradas desde a origem com uma missão santa. Toda vocação nasce com um propósito divino."
+    },
+    {
+      "numero": "2",
+      "texto": "Estes foram os filhos de Coate: Anrão, Isar, Hebrom e Uziel.",
+      "reflexao": "Cada nome nesta genealogia representa um elo na corrente do ministério. A herança espiritual não é só individual, mas coletiva — construída em conjunto por gerações que temem a Deus."
+    },
+    {
+      "numero": "3",
+      "texto": "Estes foram os filhos de Anrão: Arão, Moisés e Miriã. Estes foram os filhos de Arão: Nadabe, Abiú, Eleazar e Itamar.",
+      "reflexao": "A família de Anrão carrega o peso e a glória da liderança espiritual. Moisés foi o libertador, Arão o sacerdote, Miriã a profetisa. Quando uma família se consagra, Deus a usa com poder e propósito."
+    },
+    {
+      "numero": "4",
+      "texto": "Eleazar gerou Finéias, Finéias gerou Abisua,",
+      "reflexao": "Finéias, lembrado por seu zelo, passa adiante um legado de fervor. A fidelidade de um pode ser a raiz da constância em muitos."
+    },
+    {
+      "numero": "5",
+      "texto": "Abisua gerou Buqui, Buqui gerou Uzi,",
+      "reflexao": "Mesmo nos nomes menos conhecidos, a genealogia nos mostra que Deus acompanha cada geração. A continuidade da fé é tão importante quanto os atos grandiosos de seus ancestrais."
+    },
+    {
+      "numero": "6",
+      "texto": "Uzi gerou Zeraías, Zeraías gerou Meraiote,",
+      "reflexao": "Na simplicidade da sequência genealógica está a força da tradição. Cada filho recebe não apenas um nome, mas uma herança espiritual."
+    },
+    {
+      "numero": "7",
+      "texto": "Meraiote gerou Amarias, Amarias gerou Aitube,",
+      "reflexao": "De geração em geração, Deus ergue líderes. O nome que hoje é apenas um elo, amanhã pode se tornar um exemplo de fé viva."
+    },
+    {
+      "numero": "8",
+      "texto": "Aitube gerou Zadoque, Zadoque gerou Aimaás,",
+      "reflexao": "Zadoque, lembrado como fiel a Davi e a Deus, é fruto de uma linhagem moldada pela obediência. Quando somos fiéis hoje, marcamos o amanhã dos nossos descendentes."
+    },
+    {
+      "numero": "9",
+      "texto": "Aimaás gerou Azarias, Azarias gerou Joanã,",
+      "reflexao": "A fé que floresce em um coração pode frutificar em muitos. A herança não é apenas de sangue, mas de fé contínua que atravessa os séculos."
+    },
+    {
+      "numero": "10",
+      "texto": "Joanã gerou Azarias que foi sacerdote no templo construído por Salomão em Jerusalém;",
+      "reflexao": "Azarias teve a honra de servir no templo erguido pelo rei da paz. Os que são fiéis recebem a graça de servir nos lugares preparados para a glória de Deus."
+    },
+    {
+      "numero": "11",
+      "texto": "Azarias gerou Amarias, Amarias gerou Aitube,",
+      "reflexao": "Nomes que talvez não ecoem na história humana, mas que foram registrados no céu por sua continuidade no serviço sacerdotal. Deus honra os que mantêm o altar aceso em sua geração."
+    },
+    {
+      "numero": "12",
+      "texto": "Aitube gerou Zadoque, Zadoque gerou Salum,",
+      "reflexao": "Novamente vemos Zadoque, a figura que simboliza integridade em meio à instabilidade. Seu nome reaparece, como quem ecoa a importância de uma vida justa e constante."
+    },
+    {
+      "numero": "13",
+      "texto": "Salum gerou Hilquias, Hilquias gerou Azarias,",
+      "reflexao": "Hilquias, o sacerdote que encontrou o Livro da Lei no templo, marca um tempo de restauração. A linhagem sacerdotal não é estática — ela pode ser instrumento de reavivamento."
+    },
+    {
+      "numero": "14",
+      "texto": "Azarias gerou Seraías, e Seraías gerou Jeozadaque.",
+      "reflexao": "Seraías, sacerdote em tempos difíceis, gerou Jeozadaque, que enfrentaria o exílio. Em meio à dor do juízo, a fidelidade ainda florescia em alguns corações."
+    },
+    {
+      "numero": "15",
+      "texto": "Jeozadaque foi levado prisioneiro quando o Senhor enviou Judá e Jerusalém para o exílio por meio de Nabucodonosor.",
+      "reflexao": "Mesmo os que servem no altar podem passar pelo vale do exílio. Mas Deus não abandona os que lhe pertencem. A disciplina de Deus não é destruição, mas caminho para restauração."
+    },
+    {
+      "numero": "16",
+      "texto": "Estes foram os filhos de Levi: Gérson, Coate e Merari.",
+      "reflexao": "Os três filhos de Levi representam o alicerce do serviço sagrado. Quando Deus separa alguém para o Seu propósito, Ele também estrutura caminhos para que a missão seja cumprida com ordem e santidade."
+    },
+    {
+      "numero": "17",
+      "texto": "Estes são os nomes dos filhos de Gérson: Libni e Simei.",
+      "reflexao": "Os nomes registrados não são apenas história — são marcos de fidelidade. Mesmo os que não realizaram feitos grandiosos foram lembrados por sua linhagem no serviço ao Senhor."
+    },
+    {
+      "numero": "18",
+      "texto": "Estes foram os filhos de Coate: Anrão, Isar, Hebrom e Uziel.",
+      "reflexao": "Coate, pai de líderes e sacerdotes, carrega uma herança de responsabilidade. Quem gera filhos para Deus deve prepará-los para a reverência, pois o chamado é sagrado."
+    },
+    {
+      "numero": "19",
+      "texto": "Estes foram os filhos de Merari: Mali e Musi. Estes são os clãs dos levitas alistados de acordo com os seus antepassados:",
+      "reflexao": "Os clãs formavam comunidades de serviço. No Reino de Deus, ninguém serve sozinho; há uma rede invisível de comunhão, zelo e apoio mútuo."
+    },
+    {
+      "numero": "20",
+      "texto": "De Gérson: Seu filho Libni, que foi o pai de Jaate, pai de Zima,",
+      "reflexao": "Libni e seus descendentes mostram que a fé pode ser passada de geração em geração. A continuidade do bem não depende da fama, mas da constância."
+    },
+    {
+      "numero": "21",
+      "texto": "que foi o pai de Joá, pai de Ido, pai de Zerá, que foi o pai de Jeaterai.",
+      "reflexao": "Cada elo desta genealogia revela que a fidelidade silenciosa também é celebrada por Deus. Nenhuma geração está esquecida quando vive para Ele."
+    },
+    {
+      "numero": "22",
+      "texto": "De Coate: Seu filho Aminadabe, pai de Corá, que foi o pai de Assir,",
+      "reflexao": "Corá, lembrado por sua rebelião, também teve descendentes que retornaram à fidelidade. A graça de Deus alcança até aqueles que nasceram sob sombras, restaurando a história com luz."
+    },
+    {
+      "numero": "23",
+      "texto": "pai de Elcana, pai de Ebiasafe, que foi o pai de Assir,",
+      "reflexao": "Mesmo após quedas familiares, a fidelidade ressurge. Os filhos de Corá, em sua descendência, voltaram a cantar louvores — Deus sempre escreve redenções inesperadas."
+    },
+    {
+      "numero": "24",
+      "texto": "pai de Taate, pai de Uriel, pai de Uzias, que foi o pai de Saul.",
+      "reflexao": "As gerações se sucedem como passos firmes em direção ao altar. Quando nossos antepassados caminham com Deus, abrimos trilhas para que nossos filhos também o encontrem."
+    },
+    {
+      "numero": "25",
+      "texto": "De Elcana: Amasai, Aimote",
+      "reflexao": "Amasai e Aimote são nomes pouco lembrados, mas que carregam a tocha da linhagem sacerdotal. Deus honra até os que não aparecem, mas sustentam o sagrado nos bastidores."
+    },
+    {
+      "numero": "26",
+      "texto": "e Elcana, pai de Zofai, pai de Naate,",
+      "reflexao": "Elcana, ancestral do profeta Samuel, nos lembra que há fidelidade anônima preparando terreno para a grande obra de Deus nas gerações seguintes."
+    },
+    {
+      "numero": "27",
+      "texto": "que foi o pai de Eliabe, pai de Jeroão, pai de Elcana, que foi o pai de Samuel.",
+      "reflexao": "A genealogia de Samuel mostra que Deus prepara o nascimento de líderes espirituais muito antes de seu tempo. Cada geração foi moldada para acolher aquele que ouviria a voz de Deus desde menino."
+    },
+    {
+      "numero": "28",
+      "texto": "De Samuel: Joel, o mais velho, e Abias, o segundo.",
+      "reflexao": "Mesmo os filhos de grandes homens de Deus, como Samuel, enfrentam seus próprios caminhos e desafios. A herança espiritual é um legado, mas precisa ser cultivada em cada geração com temor e verdade."
+    },
+    {
+      "numero": "29",
+      "texto": "De Merari: Mali, pai de Libni, pai de Simei, que foi o pai de Uzá,",
+      "reflexao": "A linhagem levítica não era apenas uma questão de sangue, mas de propósito. Cada geração era chamada a continuar o louvor, a reverência e o serviço ao Deus vivo."
+    },
+    {
+      "numero": "30",
+      "texto": "pai de Siméia, pai de Hagias, que foi o pai de Asaías.",
+      "reflexao": "A continuidade dos nomes mostra a fidelidade de famílias que, mesmo em silêncio, mantinham viva a adoração. Deus valoriza a constância mais do que o destaque."
+    },
+    {
+      "numero": "31",
+      "texto": "Estes são os homens a quem Davi encarregou de dirigir os cânticos no templo do Senhor depois que a arca foi levada para lá.",
+      "reflexao": "A adoração precisa de líderes consagrados. Davi, homem segundo o coração de Deus, escolheu pessoas preparadas espiritualmente para conduzir o louvor com reverência e alegria santa."
+    },
+    {
+      "numero": "32",
+      "texto": "Eles ministravam o louvor diante do tabernáculo, da Tenda do Encontro, até quando Salomão construiu o templo do Senhor em Jerusalém. Eles exerciam suas funções de acordo com as normas estabelecidas.",
+      "reflexao": "Antes mesmo do templo, já havia louvor. O lugar físico era secundário; o essencial era a obediência e a entrega verdadeira ao Senhor, seguindo os princípios que Ele mesmo havia determinado."
+    },
+    {
+      "numero": "33",
+      "texto": "Estes são os que ministravam, junto com seus filhos: Dentre os coatitas: O músico Hemã, filho de Joel, filho de Samuel,",
+      "reflexao": "Hemã, neto de Samuel, representa a herança de adoração passada com honra. O louvor não é só som; é legado, é vida devotada à glória de Deus."
+    },
+    {
+      "numero": "34",
+      "texto": "filho de Elcana, filho de Jeroão, filho de Eliel, filho de Toá,",
+      "reflexao": "Cada geração aqui citada preparou o caminho para a adoração verdadeira. Deus honra os que O buscam em espírito e verdade, geração após geração."
+    },
+    {
+      "numero": "35",
+      "texto": "filho de Zufe, filho de Elcana, filho de Maate, filho de Amasai,",
+      "reflexao": "Nos registros silenciosos da Bíblia, há nomes escondidos que sustentaram a fé em seus dias. Eles não buscaram glória própria, mas glorificaram a Deus com fidelidade."
+    },
+    {
+      "numero": "36",
+      "texto": "filho de Elcana, filho de Joel, filho de Azarias, filho de Sofonias",
+      "reflexao": "A linhagem sacerdotal é um testemunho de que Deus trabalha ao longo do tempo. Cada nome representa uma vida, uma história, um altar construído com temor e louvor."
+    },
+    {
+      "numero": "37",
+      "texto": "filho de Taate, filho de Assir, filho de Ebiasafe, filho de Corá,",
+      "reflexao": "Mesmo vindo da linhagem de Corá, cujo início foi marcado pela rebelião, Deus mostra que pode restaurar histórias e levantar adoradores sinceros onde antes houve queda."
+    },
+    {
+      "numero": "38",
+      "texto": "filho de Isar, filho de Coate, filho de Levi, filho de Israel.",
+      "reflexao": "Do patriarca Israel até os levitas, vemos uma promessa sendo tecida pela fidelidade divina. Deus é quem sustenta a linhagem dos que O servem com temor, geração após geração."
+    },
+    {
+      "numero": "39",
+      "texto": "À direita de Hemã, ficava seu parente Asafe, filho de Berequias, filho de Siméia,",
+      "reflexao": "Na condução do louvor, havia ordem e harmonia. Asafe, conhecido pelos salmos que escreveu, era posto à direita, não por acaso, mas como símbolo de honra e de responsabilidade no culto ao Senhor."
+    },
+    {
+      "numero": "40",
+      "texto": "filho de Micael, filho de Baaséias, filho de Malquias,",
+      "reflexao": "A linhagem de adoradores revela a seriedade com que Deus trata o louvor. Cada geração que preserva a reverência ao Senhor se torna elo de uma corrente sagrada."
+    },
+    {
+      "numero": "41",
+      "texto": "filho de Etni, filho de Zerá, filho de Adaías,",
+      "reflexao": "De nome em nome, vemos o testemunho de que Deus lembra daqueles que O servem fielmente, mesmo que o mundo os esqueça. Seus nomes estão inscritos na memória eterna do Altíssimo."
+    },
+    {
+      "numero": "42",
+      "texto": "filho de Etã, filho de Zima, filho de Simei,",
+      "reflexao": "Os registros genealógicos destacam que o serviço a Deus é uma herança preciosa. Honrar o nome de Deus com cânticos e obediência é uma forma de eternizar o próprio nome nas páginas da fé."
+    },
+    {
+      "numero": "43",
+      "texto": "filho de Jaate, filho de Gérson, filho de Levi.",
+      "reflexao": "A linhagem levítica é símbolo de consagração. Desde Gérson, os descendentes foram preparados para o sagrado, e seu chamado não era para glória humana, mas para ministrar diante da Presença."
+    },
+    {
+      "numero": "44",
+      "texto": "Dentre os meraritas: À esquerda de Hemã, parente dos meraritas, ficava Etã, filho de Quisi, filho de Abdi, filho de Maluque,",
+      "reflexao": "Etã, posicionado à esquerda, completa o cenário de equilíbrio no louvor. O templo do Senhor era sustentado por vozes, mas também por corações preparados para adorar com santidade e ordem."
+    },
+    {
+      "numero": "45",
+      "texto": "filho de Hasabias, filho de Amazias, filho de Hilquias,",
+      "reflexao": "Mais do que um registro, esta genealogia nos convida a refletir: como temos usado nossa herança espiritual? Somos os filhos que continuarão o culto, ou os que deixarão o altar abandonado?"
+    },
+    {
+      "numero": "46",
+      "texto": "filho de Anzi, filho de Bani, filho de Sêmer,",
+      "reflexao": "Cada nome aqui representa um servo anônimo para o mundo, mas conhecido por Deus. Ser lembrado pelo céu é mais valioso do que qualquer prestígio terreno."
+    },
+    {
+      "numero": "47",
+      "texto": "filho de Mali, filho de Musi, filho de Merari, filho de Levi.",
+      "reflexao": "Filhos de Merari, com função muitas vezes prática e invisível, mas igualmente santa. Toda obra feita no templo, visível ou não, é valiosa quando feita para a glória de Deus."
+    },
+    {
+      "numero": "48",
+      "texto": "Seus parentes, os outros levitas, foram encarregados de cuidar de todo o serviço do tabernáculo, o templo de Deus.",
+      "reflexao": "Serviço é adoração. Os levitas cuidavam de cada detalhe do templo, lembrando-nos que cada tarefa, mesmo a mais simples, pode ser sagrada quando feita com amor e reverência."
+    },
+    {
+      "numero": "49",
+      "texto": "Mas era Arão e seus descendentes que cuidavam dos sacrifícios no altar do holocausto e das ofertas no altar de incenso e de todo o serviço do Lugar Santíssimo, e dos sacrifícios de propiciação por Israel, conforme tudo o que Moisés, servo de Deus, tinha ordenado.",
+      "reflexao": "Os filhos de Arão tinham acesso ao Santíssimo porque carregavam o peso da responsabilidade e da santidade. A reconciliação de um povo com Deus era mediada ali, prefigurando o sacrifício supremo de Cristo. Hoje, o véu foi rasgado, e todos temos acesso — mas a santidade ainda é o requisito essencial."
+    },
+    {
+      "numero": "50",
+      "texto": "Estes foram os descendentes de Arão: o seu filho Eleazar, pai de Finéias, que foi o pai de Abisua,",
+      "reflexao": "A linhagem sacerdotal começa com Arão e é cuidadosamente preservada. Isso nos lembra que o chamado de Deus pode atravessar gerações, mantendo viva a chama do ministério quando passado com zelo e temor."
+    },
+    {
+      "numero": "51",
+      "texto": "pai de Buqui, pai de Uzi, que foi o pai de Zeraías,",
+      "reflexao": "Cada nome neste registro carrega consigo a responsabilidade do sacerdócio. Uma herança espiritual não é apenas um título, mas uma missão contínua diante de Deus."
+    },
+    {
+      "numero": "52",
+      "texto": "pai de Meraiote, pai de Amarias, que foi o pai de Aitube,",
+      "reflexao": "A continuidade do sacerdócio mostra que o cuidado de Deus com o culto e a intercessão do povo nunca cessou. Ele levanta líderes fiéis, geração após geração."
+    },
+    {
+      "numero": "53",
+      "texto": "pai de Zadoque, pai de Aimaás.",
+      "reflexao": "Zadoque, figura central em momentos cruciais da história de Israel, representa o compromisso com a santidade. Seus descendentes trazem a marca de uma linhagem fiel à aliança com o Senhor."
+    },
+    {
+      "numero": "54",
+      "texto": "Estas foram as cidades e as regiões dadas aos levitas para nelas habitarem. Dentre os descendentes de Arão, o clã coatita foi sorteado primeiro;",
+      "reflexao": "A provisão de cidades aos levitas mostra como Deus sustenta aqueles que O servem. Eles não herdaram terras como as outras tribos, mas receberam moradas no meio do povo — pois sua herança era o próprio Senhor."
+    },
+    {
+      "numero": "55",
+      "texto": "foi-lhe dada Hebrom, em Judá, com suas pastagens ao redor.",
+      "reflexao": "Hebrom, cidade de Abraão, torna-se também lugar de refúgio e serviço sacerdotal. Onde há memória da fé, Deus planta novas raízes de santidade."
+    },
+    {
+      "numero": "56",
+      "texto": "Mas os campos e os povoados em torno da cidade foram dados a Calebe, filho de Jefoné.",
+      "reflexao": "Mesmo em meio à distribuição sagrada, há espaço para a fidelidade individual ser honrada. Calebe, o corajoso, recebe sua porção — um lembrete de que Deus recompensa aqueles que O seguem sem hesitar."
+    },
+    {
+      "numero": "57",
+      "texto": "Assim os descendentes de Arão receberam Hebrom, cidade de refúgio, e Libna, Jatir, Estemoa,",
+      "reflexao": "As cidades de refúgio mostram o coração de Deus: justiça temperada com misericórdia. O sacerdote não era apenas mediador de rituais, mas também guardião da esperança para os que fugiam do juízo humano."
+    },
+    {
+      "numero": "58",
+      "texto": "Hilém, Debir,",
+      "reflexao": "Debir, lugar de palavra e ensino, reforça que o ministério levítico era também um ministério de instrução. A presença do sacerdote iluminava a vida das cidades com sabedoria vinda do alto."
+    },
+    {
+      "numero": "59",
+      "texto": "Asã, Jutá e Bete-Semes, com suas respectivas pastagens.",
+      "reflexao": "Bete-Semes, ‘casa do sol’, nos lembra que os sacerdotes deveriam brilhar como luz no meio do povo, guiando com verdade e exemplo aqueles que buscavam a presença de Deus."
+    },
+    {
+      "numero": "60",
+      "texto": "E da tribo de Benjamim receberam Gibeão, Geba, Alemete e Anatote, com suas respectivas pastagens. Ao todo treze cidades foram distribuídas entre os seus clãs.",
+      "reflexao": "Treze cidades para os clãs sacerdotais significam mais que território: são pontos de presença divina espalhados por Israel. O serviço a Deus deve irradiar por toda parte, como um fio de luz ligando o céu à terra."
+    },
+    {
+      "numero": "61",
+      "texto": "Para os demais descendentes de Coate foram sorteadas dez cidades pertencentes aos clãs da metade da tribo de Manassés.",
+      "reflexao": "A sorte lançada pelos israelitas revela a soberania de Deus na distribuição das bênçãos. Cada cidade recebida era mais do que território: era um espaço para ministrar a presença divina."
+    },
+    {
+      "numero": "62",
+      "texto": "Para os descendentes de Gérson, clã por clã, foram sorteadas treze cidades das tribos de Issacar, de Aser e de Naftali, e da metade da tribo de Manassés que fica em Basã.",
+      "reflexao": "Gérson e seus descendentes espalharam-se pelo norte, levando com eles o testemunho do culto ao Senhor. Por onde andavam, havia consagração, louvor e serviço ao Deus de Israel."
+    },
+    {
+      "numero": "63",
+      "texto": "Para os descendentes de Merari, clã por clã, foram sorteadas doze cidades das tribos de Rúben, de Gade e de Zebulom.",
+      "reflexao": "Os meraritas, encarregados do transporte dos utensílios do tabernáculo, também receberam cidades — símbolo de que Deus honra até os que servem nos bastidores, sustentando com discrição o culto sagrado."
+    },
+    {
+      "numero": "64",
+      "texto": "Assim os israelitas deram aos levitas essas cidades com suas respectivas pastagens.",
+      "reflexao": "As pastagens eram sustento para os levitas, que não possuíam herança comum. Deus cuidava dos seus servos com dignidade e provisão, através da generosidade do Seu povo."
+    },
+    {
+      "numero": "65",
+      "texto": "As cidades anteriormente mencionadas dos territórios de Judá, de Simeão e de Benjamim também lhes foram dadas por sorteio.",
+      "reflexao": "A distribuição por sorteio não era acaso, mas direção divina. Deus organizava a vida da nação, incluindo até os detalhes da habitação daqueles que O serviam no sagrado."
+    },
+    {
+      "numero": "66",
+      "texto": "Alguns dos clãs coatitas receberam as seguintes cidades no território da tribo de Efraim:",
+      "reflexao": "A herança dos coatitas se espalhou por Efraim, demonstrando que onde houver povo de Deus, ali também deve haver sacerdócio, ensino e louvor para manter viva a aliança."
+    },
+    {
+      "numero": "67",
+      "texto": "Siquém, cidade de refúgio, nos montes de Efraim, e Gezer,",
+      "reflexao": "Siquém, lugar de abrigo para os injustiçados, mostra que o coração de Deus pulsa por misericórdia. O sacerdote ali presente representava o juízo equilibrado pela compaixão."
+    },
+    {
+      "numero": "68",
+      "texto": "Jocmeão, Bete-Horom,",
+      "reflexao": "Cidades como Bete-Horom, nas rotas de guerra, tornavam-se fortalezas espirituais nas mãos dos levitas. Mesmo onde há conflito, Deus planta paz através dos que O servem."
+    },
+    {
+      "numero": "69",
+      "texto": "Aijalom e Gate-Rimom, com suas respectivas pastagens.",
+      "reflexao": "Cada cidade com suas pastagens revela o cuidado integral de Deus: lugar de morada e sustento. A missão espiritual dos levitas era acompanhada pela provisão material do céu."
+    },
+    {
+      "numero": "70",
+      "texto": "E da metade da tribo de Manassés o restante dos clãs coatitas recebeu Aner e Bileã, com suas respectivas pastagens.",
+      "reflexao": "Aner e Bileã, distantes do centro, não estavam distantes da presença de Deus. Onde quer que um levita estivesse, ali havia adoração e aliança renovada. Deus não se limita à geografia — Ele habita entre os que O servem."
+    },
+    {
+      "numero": "71",
+      "texto": "Os gersonitas receberam as seguintes cidades: Do clã da meia tribo de Manassés, Golã, em Basã, e também Asterote, com suas respectivas pastagens;",
+      "reflexao": "Golã, cidade de refúgio, e Asterote, lugar de pasto, mostram que Deus oferece ao mesmo tempo abrigo e provisão àqueles que O servem. Onde há sacerdócio, há também proteção e sustento divino."
+    },
+    {
+      "numero": "72",
+      "texto": "da tribo de Issacar, Quedes, Daberate,",
+      "reflexao": "As terras concedidas pelos irmãos de tribo mostram a comunhão entre os filhos de Israel. A bênção do ministério é mantida pela generosidade do povo com os que dedicam a vida à obra de Deus."
+    },
+    {
+      "numero": "73",
+      "texto": "Ramote e Aném, com suas respectivas pastagens;",
+      "reflexao": "Ramote, que significa ‘altura’, relembra que o serviço levítico não era terreno, mas elevado, sagrado. Aném, lugar de águas, aponta para a renovação que vem do céu quando o louvor habita a terra."
+    },
+    {
+      "numero": "74",
+      "texto": "da tribo de Aser, Masal, Abdom,",
+      "reflexao": "De Aser, cuja bênção era a fartura, vieram cidades para os levitas. O povo que prospera é o que honra os que cuidam das coisas de Deus. Em Masal e Abdom, o serviço sagrado continuava a ecoar."
+    },
+    {
+      "numero": "75",
+      "texto": "Hucoque e Reobe, com suas respectivas pastagens;",
+      "reflexao": "Hucoque fala de porção designada; Reobe, de espaço amplo. Ambas expressam que Deus é ao mesmo tempo justo em distribuir e generoso em dar. Ele conhece a medida certa para cada servo Seu."
+    },
+    {
+      "numero": "76",
+      "texto": "e da tribo de Naftali, Quedes, na Galiléia, Hamom e Quiriataim, com suas respectivas pastagens.",
+      "reflexao": "Na Galileia, onde séculos depois o Verbo se faria carne, os levitas já louvavam ao Senhor. Essas terras preparadas no passado ecoavam a esperança do futuro — Deus já estava escrevendo a redenção."
+    },
+    {
+      "numero": "77",
+      "texto": "E estas foram as cidades que os outros meraritas receberam: Da tribo de Zebulom, Rimono e Tabor, com suas respectivas pastagens;",
+      "reflexao": "Rimono, nome associado à fruta e à fertilidade, e Tabor, monte de revelações, mostram que a adoração frutífera floresce quando o serviço é feito no alto da consagração. Ali Deus se revela."
+    },
+    {
+      "numero": "78",
+      "texto": "da tribo de Rúben, do outro lado do Jordão, a leste de Jericó, Bezer, no deserto, Jaza,",
+      "reflexao": "Mesmo no deserto há cidades de refúgio e esperança. Bezer e Jaza lembram que não importa a geografia: o Senhor cuida dos Seus servos até nos limites menos favorecidos da terra."
+    },
+    {
+      "numero": "79",
+      "texto": "Quedemote e Mefaate, com suas respectivas pastagens;",
+      "reflexao": "Quedemote (‘oriental’) e Mefaate (‘resplandecente’) apontam para a luz que nasce do oriente e se derrama sobre os que servem. Deus é a aurora de todo ministério fiel."
+    },
+    {
+      "numero": "80",
+      "texto": "e da tribo de Gade, Ramote, em Gileade, Maanaim,",
+      "reflexao": "Ramote (‘alturas’) e Maanaim (‘acampamento de Deus’) reforçam que o serviço sacerdotal é um chamado às alturas e um lugar de comunhão com os anjos. Onde há louvor, o céu se acampa."
+    },
+    {
+      "numero": "81",
+      "texto": "Hesbom e Jazar, com suas respectivas pastagens.",
+      "reflexao": "Hesbom, símbolo de reflexão, e Jazar, de ajuda, revelam que o ministério dos levitas também era sabedoria e auxílio. Em cada cidade, a presença de Deus se manifestava em silêncio e serviço."
+    }
+  ]
+}
