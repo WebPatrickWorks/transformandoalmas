@@ -12,6 +12,12 @@ html {
   scrollbar-width: none;
 }
 
+/* barra inferior sempre escondida, até a media-query ativar */
+.mobile-bottom-nav {
+  display: none;
+}
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
@@ -216,27 +222,26 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
   }
 
-  /* 1) Esconde no topo o botão de modo e o hamburger */
-  #darkModeBtnMobile,
-  .hamburger {
+  /* 1) Oculta apenas o botão de menu e o toggle de tema do TOPO */
+  .navbar .hamburger,
+  .navbar .dark-mode-btn {
     display: none !important;
   }
 
-  /* 2) Garante espaço para a nova barra inferior */
+  /* 2) Garante espaço embaixo */
   body {
-    padding-bottom: 60px; /* ajuste conforme a altura da nav */
+    padding-bottom: 60px;
   }
 
-  /* 3) Estilo da barra fixa no rodapé */
+  /* 3) Exibe e estiliza a barra inferior */
   .mobile-bottom-nav {
+    display: flex;            /* antes estava só dentro, sem efeito fora */
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 0; left: 0;
     width: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 87, 146, 0.7);
+    background-color: rgba(0,87,146,0.7);
     backdrop-filter: blur(5px);
     padding: 0.5rem 0;
     z-index: 1000;
@@ -247,7 +252,7 @@ body {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    flex: 1;               /* ocupa espaços iguais */
+    flex: 1;
   }
 }
 
