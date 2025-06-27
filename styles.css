@@ -233,6 +233,11 @@ body {
     padding-bottom: 60px;
   }
 
+  :root {
+    --mobile-nav-bg-light: rgba(0, 87, 146, 0.7);
+    --mobile-nav-bg-dark:  rgba(20, 20, 20, 0.9);
+  }
+
   /* 3) Exibe e estiliza a barra inferior */
   .mobile-bottom-nav {
     display: flex;            /* antes estava só dentro, sem efeito fora */
@@ -241,7 +246,7 @@ body {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0,87,146,0.7);
+    background-color: var(--mobile-nav-bg-light);
     backdrop-filter: blur(5px);
     padding: 0.5rem 0;
     z-index: 1000;
@@ -253,6 +258,10 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     flex: 1;
+  }
+  
+  .dark-mode .mobile-bottom-nav {
+    background-color: var(--mobile-nav-bg-dark);
   }
 }
 
