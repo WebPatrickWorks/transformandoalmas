@@ -147,8 +147,8 @@ function carregarCardsInicio() {
 
       // Modal
       html += `
-        <div id="modalCard" class="modal">
-          <div class="modal-conteudo">
+        <div id="modalCard" class="modal-card-inicio">
+          <div class="modal-conteudo-card">
             <span class="modal-fechar" onclick="fecharModalCard()">×</span>
             <h2 id="modalTitulo"></h2>
             <div id="modalTexto"></div>
@@ -164,10 +164,17 @@ function carregarCardsInicio() {
     });
 }
 
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    fecharModalCard();
+  }
+});
+
+
 
 function abrirModalCard(index) {
   const card = window.cardsInicio[index];
-  document.getElementById("modalTitulo").textContent = card.titulo;
+  document.getElementById("modalTitulo").innerHTML = card.titulo;
   document.getElementById("modalTexto").innerHTML = card.texto.map(p => `<p>${p}</p>`).join('');
   document.getElementById("modalCard").style.display = 'block';
 }
