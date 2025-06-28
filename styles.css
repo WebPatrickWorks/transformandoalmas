@@ -120,6 +120,7 @@ body {
 }
 
 
+
 /* ------ inicio.html ------ */
 
 /* Container geral */
@@ -183,7 +184,7 @@ body.dark-mode .card-inicio p {
 
 body.dark-mode .card-inicio h3 {
   background-color: tr;
-  color: #9e9e9e;
+  color: #ffffff;
 }
 
 
