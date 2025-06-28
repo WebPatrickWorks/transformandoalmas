@@ -133,12 +133,13 @@ function carregarCardsInicio() {
       html += `<div class="grid-cards">`;
 
       cards.forEach((card, index) => {
-        const resumo = card.texto[0].slice(0, 150) + '...';
+        const resumoLimpo = removerHTML(card.texto[0]).slice(0, 150) + '...';
+
         html += `
           <div class="card-inicio" onclick="abrirModalCard(${index})">
             <img src="${card.imagem}" alt="${card.titulo}">
             <h3>${card.titulo}</h3>
-            <p>${resumo}</p>
+            <p class="resumo-card">${resumoLimpo}</p>
           </div>
         `;
       });
@@ -1480,4 +1481,10 @@ function attachSummaryToggle() {
       this.classList.toggle('expanded');
     });
   });
+}
+
+function removerHTML(texto) {
+  const div = document.createElement('div');
+  div.innerHTML = texto;
+  return div.textContent || div.innerText || "";
 }
