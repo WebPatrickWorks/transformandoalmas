@@ -178,6 +178,7 @@ function abrirModalCard(index) {
   document.getElementById("modalTitulo").innerHTML = card.titulo;
   document.getElementById("modalTexto").innerHTML = card.texto.map(p => `<p>${p}</p>`).join('');
   document.getElementById("modalCard").style.display = 'block';
+  document.getElementById("modalCard").scrollTop = 0;
 }
 
 function fecharModalCard() {
