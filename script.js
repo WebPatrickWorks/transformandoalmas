@@ -212,6 +212,7 @@ function listarTestamento(testamento) {
         '1reis': 'livros/icone-1reis.png',
         '2reis': 'livros/icone-2reis.png',
         '1cronicas': 'livros/icone-1cronicas.png',
+        '2cronicas': 'livros/icone-2cronicas.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -259,6 +260,7 @@ function listarTestamento(testamento) {
         '1reis': '1 Reis narra a transição do reinado de Davi para o de seu filho Salomão, destacando a construção do Templo em Jerusalém e a glória do reino unificado. Contudo, após a morte de Salomão, o livro relata a divisão do reino em duas partes: Israel ao norte e Judá ao sul. Escrita por autores e escribas proféticos, a obra registra a história dos reis que sucederam Salomão, revelando como a fidelidade ou a infidelidade a Deus impactaram o destino da nação. O livro também apresenta a atuação marcante do profeta Elias, símbolo da voz profética em tempos de idolatria e injustiça.',
         '2reis': '2 Reis dá continuidade ao relato histórico iniciado em 1 Reis, abordando os reinados sucessivos em Israel e Judá até suas quedas — Israel sendo conquistado pela Assíria e Judá pelo Império Babilônico. A autoria é atribuída a escribas proféticos, sob inspiração divina, possivelmente com contribuições do profeta Jeremias. O livro destaca o ministério poderoso do profeta Eliseu, os altos e baixos da liderança dos reis e a contínua advertência de Deus ao povo por meio dos profetas. A narrativa revela como a infidelidade e a idolatria conduzem ao juízo, mas também como a misericórdia divina persiste em chamar à restauração.',
         '1cronicas': '1 Crônicas foi escrito por Esdras, por volta do século V a.C., após o exílio babilônico, com o objetivo de relembrar ao povo de Israel suas origens, identidade e aliança com Deus. O livro começa com extensas genealogias desde Adão até as tribos de Israel, reforçando a importância da linhagem de Davi. Em seguida, foca no reinado de Davi, destacando sua fidelidade, as preparações para a construção do Templo e a centralidade da adoração ao Senhor. Mais do que um relato histórico, é uma reafirmação da esperança e do propósito divino para o povo restaurado.',
+        '2cronicas': '2 Crônicas foi escrito por Esdras no período pós-exílio, por volta do século V a.C., com o propósito de lembrar ao povo de Judá sua herança espiritual e o chamado à fidelidade. O livro continua a narrativa de 1 Crônicas, focando nos reis de Judá, desde o reinado de Salomão até o exílio na Babilônia. Destaca a construção do Templo, a centralidade da adoração e os efeitos da obediência e da desobediência a Deus. Ao final, deixa uma mensagem de esperança com o decreto de Ciro, rei da Pérsia, permitindo o retorno dos exilados. É uma convocação à restauração da fé e da identidade do povo diante do Senhor.',
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
         'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
@@ -999,6 +1001,7 @@ function corrigirNomeLivro(nome) {
     '1reis': 'Primeiro Reis',
     '2reis': 'Segundo Reis',
     '1cronicas': 'Primeiro Crônicas',
+    '2cronicas': 'Segundo Crônicas',
 
     'joao': 'João',
     'mateus': 'Mateus',
