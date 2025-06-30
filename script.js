@@ -214,6 +214,7 @@ function listarTestamento(testamento) {
         '1cronicas': 'livros/icone-1cronicas.png',
         '2cronicas': 'livros/icone-2cronicas.png',
         'esdras': 'livros/icone-esdras.png',
+        'meemias': 'livros/icone-neemias.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
@@ -263,6 +264,7 @@ function listarTestamento(testamento) {
         '1cronicas': '1 Crônicas foi escrito por Esdras, por volta do século V a.C., após o exílio babilônico, com o objetivo de relembrar ao povo de Israel suas origens, identidade e aliança com Deus. O livro começa com extensas genealogias desde Adão até as tribos de Israel, reforçando a importância da linhagem de Davi. Em seguida, foca no reinado de Davi, destacando sua fidelidade, as preparações para a construção do Templo e a centralidade da adoração ao Senhor. Mais do que um relato histórico, é uma reafirmação da esperança e do propósito divino para o povo restaurado.',
         '2cronicas': '2 Crônicas foi escrito por Esdras no período pós-exílio, por volta do século V a.C., com o propósito de lembrar ao povo de Judá sua herança espiritual e o chamado à fidelidade. O livro continua a narrativa de 1 Crônicas, focando nos reis de Judá, desde o reinado de Salomão até o exílio na Babilônia. Destaca a construção do Templo, a centralidade da adoração e os efeitos da obediência e da desobediência a Deus. Ao final, deixa uma mensagem de esperança com o decreto de Ciro, rei da Pérsia, permitindo o retorno dos exilados. É uma convocação à restauração da fé e da identidade do povo diante do Senhor.',
         'esdras': 'Esdras foi escrito pelo próprio Esdras, sacerdote e escriba, por volta do século V a.C., e narra o retorno dos judeus do exílio babilônico, autorizado por Ciro, rei da Pérsia. O livro se divide em dois momentos: a reconstrução do Templo em Jerusalém e a restauração espiritual do povo. Destaca a liderança de Zorobabel na reconstrução e, mais tarde, a de Esdras, que conduz o povo ao arrependimento e à renovação da aliança com Deus. É um chamado à fidelidade, à santidade e à reconstrução da vida espiritual em tempos de recomeço.',
+        'neemias': 'Neemias foi escrito por Neemias, com possível colaboração de Esdras, por volta do século V a.C., e relata a reconstrução dos muros de Jerusalém após o exílio na Babilônia. Neemias, copeiro do rei da Pérsia, recebe permissão para retornar e lidera com coragem e fé a restauração física e espiritual da cidade, mesmo diante de oposição e ameaças. O livro destaca a importância da liderança piedosa, da oração constante e da obediência à Lei de Deus como fundamentos para a renovação da identidade do povo. É um testemunho de perseverança, unidade e dependência do Senhor em tempos de reconstrução.',
 
         'lucas': 'Um evangelho que revela com sensibilidade e compaixão o amor de Jesus pelos marginalizados, feridos e esquecidos. Aqui, vemos um Cristo que cura, restaura, acolhe e oferece salvação a todos, sem distinção. Suas páginas transbordam misericórdia, mostrando que o Filho do Homem veio buscar e salvar o que se havia perdido, tocando corações com uma mensagem de esperança, perdão e redenção.',
         'joao': 'Um evangelho que revela, de forma íntima e profunda, a divindade e o amor incondicional de Jesus Cristo. Suas palavras tocam diretamente a alma, mostrando que Ele é o Verbo de Deus, a Luz que dissipa as trevas e a Fonte da vida eterna. Cada capítulo nos convida a conhecer um Deus que se fez carne, habitou entre nós, e nos chama a crer para que, através da fé, encontremos a verdadeira esperança, consolo e salvação.',
@@ -1005,6 +1007,7 @@ function corrigirNomeLivro(nome) {
     '1cronicas': 'Primeiro Crônicas',
     '2cronicas': 'Segundo Crônicas',
     'esdras': 'Esdras',
+    'neemias': 'Neemias',
 
     'joao': 'João',
     'mateus': 'Mateus',
