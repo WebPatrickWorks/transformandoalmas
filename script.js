@@ -214,7 +214,7 @@ function listarTestamento(testamento) {
         '1cronicas': 'livros/icone-1cronicas.png',
         '2cronicas': 'livros/icone-2cronicas.png',
         'esdras': 'livros/icone-esdras.png',
-        'meemias': 'livros/icone-neemias.png',
+        'neemias': 'livros/icone-neemias.png',
 
         'joao': 'livros/icone-joao.png',
         'mateus': 'livros/icone-mateus.png',
